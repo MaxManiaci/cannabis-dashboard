@@ -1,0 +1,70 @@
+{
+ "updated": "2026-10-16T22:54:36Z",
+ "datasets": {
+  "bid": {
+   "title": "Curaleaf\u2013Aurora bid terms",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 1
+  },
+  "capmkts": {
+   "title": "Capital markets activity",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 8
+  },
+  "capquarters": {
+   "title": "Capital deployed by quarter",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 2
+  },
+  "capstats": {
+   "title": "Capital raised, 1H 2026",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 3
+  },
+  "catalysts": {
+   "title": "State catalysts and priorities",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 22
+  },
+  "comps": {
+   "title": "Deal multiples and benchmarks",
+   "updated": "2026-10-16T21:30:00Z",
+   "rows": 8
+  },
+  "deals": {
+   "title": "Cannabis M&A transactions",
+   "updated": "2026-10-16T21:55:00Z",
+   "rows": 19
+  },
+  "distress": {
+   "title": "Distressed situations",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 6
+  },
+  "financings": {
+   "title": "Debt financing terms",
+   "updated": "2026-10-16T21:38:00Z",
+   "rows": 13
+  },
+  "kpis": {
+   "title": "Sector headline figures",
+   "updated": "2026-10-16T21:55:00Z",
+   "rows": 5
+  },
+  "market": {
+   "title": "MSO stock snapshot",
+   "updated": "2026-10-16T21:14:05Z",
+   "rows": 6
+  },
+  "news": {
+   "title": "Cannabis headlines",
+   "updated": "2026-10-16T21:55:00Z",
+   "rows": 25
+  },
+  "timeline": {
+   "title": "Catalyst calendar",
+   "updated": "2026-10-16T21:55:00Z",
+   "rows": 21
+  }
+ }
+}

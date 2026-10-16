@@ -1,0 +1,56 @@
+[
+ {
+  "id": "x1",
+  "company": "The Cannabist Co. (fka Columbia Care)",
+  "process": "CCAA (Ontario) + Chapter 15 recognition",
+  "started": "Mar 2026",
+  "status": "Asset sales in progress",
+  "detail": "Ohio to Holistic ($47M, signed); Delaware sale agreed; up to 25 stores to Vireo (≤$35M); Colorado grows to Spherex",
+  "url": "https://secure.businesswire.com/news/home/20260324873583/en/The-Cannabist-Company-Announces-Strategic-Transactions-and-Initiates-Proceedings-Under-the-CCAA"
+ },
+ {
+  "id": "x2",
+  "company": "AYR Wellness",
+  "process": "CCAA wind-down; credit bid by senior noteholders (Arboretum Bidco)",
+  "started": "Nov 2025",
+  "status": "State-by-state transfers",
+  "detail": "Virginia, Florida, New Jersey, Nevada moved by Jun 2; Ohio on Oct 1; remaining states await approval",
+  "url": "https://www.cannabisbusinesstimes.com/us-states/ohio/news/15836521/ayr-wellness-announces-completion-of-ohio-asset-transfer"
+ },
+ {
+  "id": "x3",
+  "company": "Schwazze",
+  "process": "Restructuring sale",
+  "started": "Closed Mar 19, 2026",
+  "status": "Completed",
+  "detail": "45 Colorado / New Mexico dispensaries and 2 facilities to Vireo at about 4x EBITDA",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001771706/000110465926059455/vreof-20260331x10q.htm"
+ },
+ {
+  "id": "x4",
+  "company": "New York single-store retailers",
+  "process": "Supplier cash-on-delivery list",
+  "started": "Sep 2026",
+  "status": "Watch",
+  "detail": "87 retailers (~12% of licensees) owe ~$3.89M to 44 suppliers; average ~281 days delinquent",
+  "url": "https://vicentellp.com/insights/new-york-cab-meeting-cod-reporting-metrc-transfers-nursery-licenses/"
+ },
+ {
+  "id": "x5",
+  "company": "Industry-wide WARN filings",
+  "process": "Closures and layoffs",
+  "started": "Jul 2025 – Jul 2026",
+  "status": "Watch",
+  "detail": "About 1,400 workers across 8 states in a year of WARN notices, including Cannabist and an Ascend Michigan grow",
+  "url": "https://www.emeraldintel.ai/market-pulse/a-year-of-cannabis-warn-filings-closures-restructuring-and-job-losses"
+ },
+ {
+  "id": "x6",
+  "company": "Michigan operators",
+  "process": "Tax and enforcement squeeze",
+  "started": "Jan 2026",
+  "status": "Watch",
+  "detail": "24% wholesale excise since Jan 1 (plus 10% retail excise, 6% sales tax); Third Coast Ypsilanti fined $251K and license revoked Oct 1 (Emerald Intel)",
+  "url": "https://bdsa.com/ohio-sb-56/"
+ }
+]

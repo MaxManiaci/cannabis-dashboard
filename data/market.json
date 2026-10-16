@@ -1,0 +1,74 @@
+[
+ {
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "price": 4.12,
+  "ye2025_price": 4.72,
+  "msos_weight_pct": null,
+  "aum_m": 770.2,
+  "as_of": "2026-10-15",
+  "note": "Close; NAV $4.08",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": 4.08
+ },
+ {
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "price": 10.3,
+  "ye2025_price": null,
+  "msos_weight_pct": 34.16,
+  "aum_m": null,
+  "as_of": "2026-10-15",
+  "note": "NYSE",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": null
+ },
+ {
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "price": 8.4,
+  "ye2025_price": null,
+  "msos_weight_pct": 28.11,
+  "aum_m": null,
+  "as_of": "2026-10-15",
+  "note": "OTC",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": null
+ },
+ {
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "price": 6.38,
+  "ye2025_price": null,
+  "msos_weight_pct": 17.07,
+  "aum_m": null,
+  "as_of": "2026-10-15",
+  "note": "Held via swap",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": null
+ },
+ {
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "price": 5.13,
+  "ye2025_price": null,
+  "msos_weight_pct": 6.05,
+  "aum_m": null,
+  "as_of": "2026-10-15",
+  "note": "Held via swap",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": null
+ },
+ {
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "price": 0.62,
+  "ye2025_price": null,
+  "msos_weight_pct": 4.11,
+  "aum_m": null,
+  "as_of": "2026-10-15",
+  "note": "Held via swap",
+  "url": "https://advisorshares.com/etfs/msos/",
+  "nav": null
+ }
+]

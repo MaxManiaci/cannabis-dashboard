@@ -1,0 +1,191 @@
+[
+ {
+  "id": "t01",
+  "date": "2026-04-28",
+  "date_label": "Apr 28, 2026",
+  "category": "Federal",
+  "item": "State-licensed medical cannabis moves to Schedule III (DOJ order Apr 23); 280E stops applying to that activity",
+  "upcoming": false,
+  "url": "https://www.peasebell.com/insights/cannabis-rescheduling-280e-future/"
+ },
+ {
+  "id": "t02",
+  "date": "2026-06-24",
+  "date_label": "Jun 24, 2026",
+  "category": "Federal",
+  "item": "SAFE Banking Act of 2026 reintroduced in the Senate (House companion Jun 25)",
+  "upcoming": false,
+  "url": "https://www.merkley.senate.gov/merkley-bipartisan-senators-reintroduce-cannabis-banking-reform/"
+ },
+ {
+  "id": "t03",
+  "date": "2026-07-15",
+  "date_label": "Jul 15, 2026",
+  "category": "Federal",
+  "item": "DEA hearing on full rescheduling closes after 11 days of testimony",
+  "upcoming": false,
+  "url": "https://vicentellp.com/insights/dea-judge-pauses-marijuana-rescheduling-gao-report/"
+ },
+ {
+  "id": "t04",
+  "date": "2026-09-29",
+  "date_label": "Sep 29, 2026",
+  "category": "Federal",
+  "item": "DEA judge stays the rescheduling proceeding while weighing a new GAO report",
+  "upcoming": false,
+  "url": "https://www.gmlaw.com/news/cannabis-rescheduling-process-delayed-following-new-gao-report/"
+ },
+ {
+  "id": "t05",
+  "date": "2026-10-09",
+  "date_label": "Oct 9, 2026",
+  "category": "Federal",
+  "item": "DEA tells the judge the GAO report has no bearing and opposes extra briefing",
+  "upcoming": false,
+  "url": "https://themarijuanaherald.com/2026/10/dea-gao-no-bearing/"
+ },
+ {
+  "id": "t06",
+  "date": "2026-11-03",
+  "date_label": "Nov 3, 2026",
+  "category": "Ballot",
+  "item": "Election Day: Massachusetts Question 8 (repeal), Idaho HJR 4; PA, NH and WI legislative races",
+  "upcoming": true,
+  "url": "https://mgmagazine.com/policy-regulation/cannabis-ballot-2026-reform-pushback/"
+ },
+ {
+  "id": "t07",
+  "date": "2026-11-23",
+  "date_label": "Nov 23, 2026",
+  "category": "Licensing",
+  "item": "Rhode Island adult-use retail license applications due (dates subject to change)",
+  "upcoming": true,
+  "url": "https://vicentellp.com/insights/rhode-island-cannabis-retail-licensing-reopens-august-7-2026-what-you-need-to-know/"
+ },
+ {
+  "id": "t08",
+  "date": "2026-12-01",
+  "date_label": "Dec 2026",
+  "category": "Legislation",
+  "item": "North Carolina advisory council's final regulatory recommendations",
+  "upcoming": true,
+  "url": "https://www.cannabisbusinesstimes.com/us-states/north-carolina/news/15837705/nc-adults-back-cannabis-legalization-as-state-tees-up-2027-reform"
+ },
+ {
+  "id": "t09",
+  "date": "2026-12-04",
+  "date_label": "Dec 4, 2026",
+  "category": "Deal",
+  "item": "Curaleaf's take-over bid for Aurora expires (11:59pm MT)",
+  "upcoming": true,
+  "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15836695/curaleaf-enhances-offer-to-acquire-aurora-cannabis-in-takeover-bid"
+ },
+ {
+  "id": "t10",
+  "date": "2026-12-11",
+  "date_label": "Dec 11, 2026",
+  "category": "Federal",
+  "item": "Federal intoxicating-hemp THC restrictions take effect (delayed from Nov 12) — same day as the next federal funding deadline",
+  "upcoming": true,
+  "url": "https://www.akerman.com/en/perspectives/congress-approves-one-month-delay-of-federal-hemp-thc-restrictions.html"
+ },
+ {
+  "id": "t12",
+  "date": "2027-01-12",
+  "date_label": "Jan 2027",
+  "category": "Legislation",
+  "item": "Texas Legislature convenes — TCUP and hemp on the agenda",
+  "upcoming": true,
+  "url": "https://blog.mpp.org/blog/texas-formally-adopts-medical-cannabis-expansion/"
+ },
+ {
+  "id": "t13",
+  "date": "2027-02-01",
+  "date_label": "Feb 1, 2027",
+  "category": "Licensing",
+  "item": "Virginia opens adult-use retail license applications",
+  "upcoming": true,
+  "url": "https://beardbrospharms.com/articles/virginia-legalizes-recreational-cannabis-sales-and-heres-what-comes-next/"
+ },
+ {
+  "id": "t14",
+  "date": "2027-02-02",
+  "date_label": "Feb 2027 (est.)",
+  "category": "Legislation",
+  "item": "Pennsylvania governor's FY27-28 budget address — next adult-use vehicle",
+  "upcoming": true,
+  "url": "https://www.spotlightpa.org/news/2026/02/cannabis-marijuana-recreational-legalization-pennsylvania-shapiro-legislature-capitol/"
+ },
+ {
+  "id": "t15",
+  "date": "2027-07-01",
+  "date_label": "Jul 1, 2027",
+  "category": "Market launch",
+  "item": "Virginia adult-use retail sales begin",
+  "upcoming": true,
+  "url": "https://cca.virginia.gov/news/virginias-new-marijuana-and-hemp-laws-what-you-need-to-know"
+ },
+ {
+  "id": "t16",
+  "date": null,
+  "date_label": "Date TBD",
+  "category": "Federal",
+  "item": "DEA judge rules on the GAO motion, then issues a recommended decision on full rescheduling to the DEA Administrator (stay has no fixed end)",
+  "upcoming": true,
+  "url": "https://www.marijuanamoment.net/dea-is-ok-with-including-new-report-in-marijuana-rescheduling-hearing-as-opponents-seek-new-testimony-and-document-discovery/"
+ },
+ {
+  "id": "t17",
+  "date": null,
+  "date_label": "Date TBD",
+  "category": "Federal",
+  "item": "SAFE Banking Act awaits Senate Banking / House Financial Services action",
+  "upcoming": true,
+  "url": "https://natlawreview.com/article/long-and-winding-road-safe-banking-returns-congress-again"
+ },
+ {
+  "id": "t18",
+  "date": "2026-10-15",
+  "date_label": "Oct 15, 2026",
+  "category": "Deal",
+  "item": "Nevada regulators approve Vireo's merger with Planet 13",
+  "upcoming": false,
+  "url": "https://themarijuanaherald.com/2026/10/nevada-regulators-approve-vireo-growths-acquisition-of-planet-13-holdings/"
+ },
+ {
+  "id": "t19",
+  "date": "2026-09-11",
+  "date_label": "Sep 11, 2026",
+  "category": "Licensing",
+  "item": "Florida final order issues 22 new vertically integrated MMTC licenses",
+  "upcoming": false,
+  "url": "https://mjbizdaily.com/news/florida-grants-22-cannabis-licenses-despite-judges-call-to-rescore/618145"
+ },
+ {
+  "id": "t20",
+  "date": "2026-09-04",
+  "date_label": "Sep 4, 2026",
+  "category": "Legislation",
+  "item": "Nebraska Supreme Court upholds voter-approved medical cannabis laws",
+  "upcoming": false,
+  "url": "https://nebraskaexaminer.com/2026/09/04/nebraska-supreme-court-upholds-validity-of-state-medical-cannabis-laws/embed/"
+ },
+ {
+  "id": "t21",
+  "date": null,
+  "date_label": "Q4 2026",
+  "category": "Deal",
+  "item": "Expected closings: Vireo–FLUENT (FL) and Vireo's four-deal Ohio platform",
+  "upcoming": true,
+  "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15831354/vireo-growth-announces-4deal-transaction-to-establish-ohio-presence-with-8-dispensaries"
+ },
+ {
+  "id": "t22",
+  "date": "2026-10-21",
+  "date_label": "Oct 21, 2026",
+  "category": "Federal",
+  "item": "Government's response due on the motion to reopen the DEA rescheduling hearing; stay remains and the GAO-report ruling is reserved",
+  "upcoming": true,
+  "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
+ }
+]

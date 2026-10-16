@@ -1,0 +1,16 @@
+[
+ {
+  "deal": "Curaleaf → Aurora Cannabis",
+  "offer_per_share": 5.0,
+  "exch_ratio": 0.4013,
+  "cash_per_share": 1.0,
+  "cap_per_share": 6.0,
+  "unaffected_vwap": 2.75,
+  "premium_pct": 0.86,
+  "implied_equity_m": 324.2,
+  "expiry": "2026-12-04",
+  "expiry_label": "Dec 4, 2026, 11:59pm MT",
+  "aurora_position": "Aurora board reaffirmed its reject recommendation on Oct 14 and its special committee is exploring alternatives; StratCann reported Organigram held deal talks with Aurora",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001756770/000175677026000127/a106pr.htm"
+ }
+]

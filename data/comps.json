@@ -1,0 +1,82 @@
+[
+ {
+  "id": "c1",
+  "item": "Cronos / CanAdelaar (Netherlands)",
+  "kind": "Transaction",
+  "multiple": 2.9,
+  "low": null,
+  "high": null,
+  "basis": "Base price ÷ H1'26 annualized adj. EBITDA (also ~1.4x revenue) — Cronos release",
+  "url": "https://www.globenewswire.com/news-release/2026/10/15/3381478/0/en/cronos-completes-acquisition-of-canadelaar-europe-s-largest-adult-use-cannabis-company.html"
+ },
+ {
+  "id": "c2",
+  "item": "Curaleaf / Aurora (initial bid)",
+  "kind": "Transaction",
+  "multiple": 3.8,
+  "low": null,
+  "high": null,
+  "basis": "EV/EBITDA on the US$247.8M initial bid — CannaMonitor deal tracker",
+  "url": "https://cannamonitor.com/deal-tracker/"
+ },
+ {
+  "id": "c3",
+  "item": "Vireo / Schwazze (CO, NM)",
+  "kind": "Transaction",
+  "multiple": 4,
+  "low": null,
+  "high": null,
+  "basis": "About 4x EBITDA — reported by Cann.Dev (Apr 2026)",
+  "url": "https://www.cann.dev/cannabis-ma-april-2026-distressed-exits-consolidation/"
+ },
+ {
+  "id": "c4",
+  "item": "Store-level deals (typical)",
+  "kind": "Benchmark",
+  "multiple": null,
+  "low": 3,
+  "high": 6,
+  "basis": "Typical trailing-12-month EBITDA range in completed store deals — industry benchmark cited by Cann.Dev",
+  "url": "https://www.cann.dev/cannabis-ma-september-2026-curaleaf-vireo-consolidation/"
+ },
+ {
+  "id": "c5",
+  "item": "Cultivation & retail sector median",
+  "kind": "Trading",
+  "multiple": 5.27,
+  "low": null,
+  "high": null,
+  "basis": "EV / 2026E EBITDA, Viridian worldwide cultivation & retail median — as cited by Cann.Dev (Sep 2026)",
+  "url": "https://www.cann.dev/cannabis-ma-september-2026-curaleaf-vireo-consolidation/"
+ },
+ {
+  "id": "c6",
+  "item": "Trulieve (TRLV)",
+  "kind": "Trading",
+  "multiple": 6.92,
+  "low": null,
+  "high": null,
+  "basis": "Forward EV/EBITDA from analyst coverage — as cited by Cann.Dev (Sep 2026)",
+  "url": "https://www.cann.dev/cannabis-ma-september-2026-curaleaf-vireo-consolidation/"
+ },
+ {
+  "id": "c8",
+  "item": "Little Green Pharma + Cannatrek (Australia)",
+  "kind": "Transaction",
+  "multiple": 8.5,
+  "low": null,
+  "high": null,
+  "basis": "EV/EBITDA on A$85.1M merger — CannaMonitor deal tracker",
+  "url": "https://cannamonitor.com/deal-tracker/"
+ },
+ {
+  "id": "c7",
+  "item": "Organigram / Sanity Group (Germany)",
+  "kind": "Transaction",
+  "multiple": 33.1,
+  "low": null,
+  "high": null,
+  "basis": "EV/EBITDA on €227.2M for ~91% — CannaMonitor deal tracker",
+  "url": "https://cannamonitor.com/deal-tracker/"
+ }
+]

@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US Cannabis IB Dashboard</title>
+<meta name="description" content="US cannabis M&amp;A, financing terms, state catalysts and news for investment bankers, refreshed hourly from public filings and releases.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&amp;display=swap">
+<link rel="stylesheet" href="assets/theme.css">
+<script src="assets/d3.min.js"></script>
+<script src="assets/dash.js"></script>
+</head>
+<body>
+<main id="dash-root">
+<style>
+.cx { max-width: 1320px; margin-inline: auto; font-family: var(--font-sans); color: var(--color-fg); }
+.cx-head { display: flex; flex-direction: column; gap: var(--ui-gap-sm); margin-bottom: var(--ui-gap-lg); }
+.cx-title { margin: 0; font-family: var(--font-serif); font-weight: 400; font-size: var(--ui-font-size-title); line-height: 1.15; }
+.cx-take { margin: 0; font-size: var(--ui-font-size-body); line-height: 1.5; max-width: 80ch; }
+.cx .cx-take b { font-weight: 600; }
+.cx-sub { margin: 0; color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); max-width: 90ch; }
+.cx-tabs { display: flex; flex-wrap: wrap; gap: var(--ui-gap-xs); border-bottom: 1px solid var(--color-border-line); margin-top: var(--ui-gap-sm); }
+.cx-tab { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: var(--ui-pad-sm) var(--ui-pad-md); font: inherit; font-size: var(--ui-font-size-body); color: var(--color-fg-muted); cursor: pointer; }
+.cx-tab:hover { color: var(--color-fg); }
+.cx-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--ui-font-weight-medium); }
+.cx-page { display: flex; flex-direction: column; gap: var(--ui-gap-md); }
+.cx-page[hidden] { display: none; }
+.cx-grid { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); }
+.cx-kpis { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.cx-card { position: relative; min-width: 0; display: flex; flex-direction: column; gap: var(--ui-gap-sm); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--ui-radius); padding: var(--ui-pad-lg); }
+.cx-card h2 { margin: 0; font-size: var(--ui-font-size-heading); font-weight: var(--ui-font-weight-medium); }
+.cx-cardhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--ui-gap-sm); }
+.cx-note { margin: 0; color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); line-height: 1.45; }
+.cx-kl { color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); }
+.cx-kv { font-family: var(--font-serif); font-weight: 400; font-size: var(--ui-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; min-height: 1.1em; }
+.cx-kv-sm { font-size: var(--ui-font-size-heading); }
+.cx-period { margin: 0; margin-top: auto; color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); opacity: .8; }
+.cx-status { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: var(--ui-gap-sm) var(--ui-gap-md); }
+.cx-status-v { font-family: var(--font-serif); font-size: var(--ui-font-size-heading); }
+.cx-up { color: var(--color-ok); } .cx-down { color: var(--color-bad); }
+.cx-tablewrap { overflow: auto; max-height: 26rem; }
+.cx-tall { max-height: 34rem; }
+.cx-table { width: 100%; border-collapse: collapse; font-size: var(--ui-font-size-caption); font-variant-numeric: tabular-nums; }
+.cx-table th { position: sticky; top: 0; z-index: 1; background: var(--color-panel); text-align: left; color: var(--color-fg-muted); font-weight: var(--ui-font-weight-medium); border-bottom: 1px solid var(--color-border-line); padding: var(--ui-pad-xs) var(--ui-pad-sm); white-space: nowrap; }
+.cx-table td { padding: var(--ui-pad-xs) var(--ui-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; line-height: 1.4; }
+.cx-table .num { text-align: right; white-space: nowrap; }
+.cx-table td.cx-terms { min-width: 16rem; color: var(--color-fg-muted); }
+.cx-table td.cx-nowrap { white-space: nowrap; }
+.cx-table a, .cx-news a, .cx-tl a, .cx-detail a, .cx-list a { color: inherit; text-decoration: underline; text-decoration-color: var(--color-border-line); text-underline-offset: 2px; }
+.cx-table a:hover, .cx-news a:hover, .cx-tl a:hover, .cx-detail a:hover, .cx-list a:hover { text-decoration-color: currentColor; }
+.cx-sortbtn { all: unset; cursor: pointer; }
+.cx-sortbtn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+th[aria-sort="ascending"] .cx-sortbtn::after { content: " ↑"; }
+th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
+.cx-pri::before { content: ""; display: inline-block; width: .5rem; height: .5rem; border-radius: 50%; margin-right: .375rem; background: var(--cx-sw, var(--ui-chart-muted)); vertical-align: baseline; }
+.cx-pri-High { --cx-sw: var(--cx-c0); } .cx-pri-Medium { --cx-sw: var(--cx-c1); } .cx-pri-Risk { --cx-sw: var(--ui-chart-status-critical); } .cx-pri-Watch { --cx-sw: var(--ui-chart-muted); }
+.cx-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--ui-gap-sm); }
+.cx-search { font: inherit; font-size: var(--ui-font-size-caption); padding: var(--ui-pad-xs) var(--ui-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--ui-radius); background: var(--color-bg); color: var(--color-fg); min-width: 12rem; }
+.cx-chips { display: flex; flex-wrap: wrap; gap: var(--ui-gap-xs); }
+.cx-chip { appearance: none; font: inherit; font-size: var(--ui-font-size-caption); padding: 2px var(--ui-pad-sm); border: 1px solid var(--color-border-line); border-radius: 999px; background: none; color: var(--color-fg-muted); cursor: pointer; }
+.cx-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.cx-map { min-height: 12rem; }
+.cx-map svg { display: block; }
+.cx-map text { pointer-events: none; font-family: var(--font-sans); font-weight: 500; }
+.cx-legend { display: flex; flex-wrap: wrap; align-items: center; gap: var(--ui-gap-xs) var(--ui-gap-md); font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); min-height: 1.2em; }
+.cx-sw { display: inline-block; width: .75rem; height: .75rem; border-radius: 3px; margin-right: .3rem; vertical-align: -1px; }
+.cx-bars { display: flex; flex-direction: column; gap: var(--ui-gap-xs); min-height: 6rem; }
+.cx-bar-row { display: grid; grid-template-columns: minmax(6rem, 42%) 1fr auto; align-items: center; gap: var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
+.cx-bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cx-bar-track { height: .9rem; }
+.cx-bar { height: 100%; border-radius: 4px; min-width: 2px; }
+.cx-bar-val { font-variant-numeric: tabular-nums; color: var(--color-fg-muted); min-width: 3ch; text-align: right; }
+.cx-comps { display: flex; flex-direction: column; gap: var(--ui-gap-xs); min-height: 8rem; }
+.cx-c-row { display: grid; grid-template-columns: minmax(7rem, 38%) 1fr; align-items: center; gap: var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
+.cx-c-track { position: relative; height: 1.4rem; border-left: 1px solid var(--ui-chart-axis); }
+.cx-c-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--ui-chart-grid); }
+.cx-c-dot { position: absolute; top: 50%; width: .7rem; height: .7rem; border-radius: 50%; transform: translate(-50%, -50%); }
+.cx-c-range { position: absolute; top: 50%; height: .5rem; border-radius: 4px; transform: translateY(-50%); opacity: .55; }
+.cx-c-val { position: absolute; top: 50%; transform: translate(.6rem, -50%); white-space: nowrap; color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.cx-c-axis { position: relative; height: 1.1rem; font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); }
+.cx-c-tick { position: absolute; transform: translateX(-50%); }
+.cx-faded { opacity: .45; }
+.cx-c-row-sm .cx-c-track { height: 1.25rem; }
+.cx-tip { position: absolute; z-index: 5; pointer-events: none; max-width: 18rem; background: var(--ui-surface-popover); border: 1px solid var(--ui-border); border-radius: var(--ui-radius); box-shadow: var(--ui-shadow-popover); padding: var(--ui-pad-xs) var(--ui-pad-sm); font-size: var(--ui-font-size-caption); line-height: 1.4; }
+.cx-tip-h { color: var(--ui-text-secondary); }
+.cx-news, .cx-tl, .cx-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.cx-news li, .cx-list li { padding: var(--ui-pad-sm) 0; border-bottom: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: 2px; }
+.cx-news li:last-child, .cx-list li:last-child, .cx-tl li:last-child { border-bottom: 0; }
+.cx-meta { color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); display: flex; flex-wrap: wrap; gap: 0 var(--ui-gap-sm); }
+.cx-hl { font-size: var(--ui-font-size-body); line-height: 1.4; }
+.cx-tag { color: var(--color-fg); }
+.cx-tl li { display: grid; grid-template-columns: 7.5rem 1fr; gap: var(--ui-gap-sm); padding: var(--ui-pad-sm) 0; border-bottom: 1px solid var(--color-border-line); font-size: var(--ui-font-size-caption); line-height: 1.45; }
+.cx-tl-date { font-variant-numeric: tabular-nums; font-weight: var(--ui-font-weight-medium); }
+.cx-tl-cat { color: var(--color-fg-muted); display: block; }
+.cx-cal { display: grid; gap: var(--ui-gap-lg); grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+.cx-subh { margin: var(--ui-gap-sm) 0 0; font-size: var(--ui-font-size-caption); font-weight: var(--ui-font-weight-medium); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; }
+.cx-cal h3 { margin: 0 0 var(--ui-gap-xs); font-size: var(--ui-font-size-caption); font-weight: var(--ui-font-weight-medium); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; }
+.cx-detail { display: flex; flex-direction: column; gap: var(--ui-gap-sm); font-size: var(--ui-font-size-body); line-height: 1.5; min-height: 8rem; }
+.cx-detail-name { font-family: var(--font-serif); font-size: var(--ui-font-size-title); line-height: 1.1; }
+.cx-detail dl { margin: 0; display: grid; grid-template-columns: 7rem 1fr; gap: var(--ui-gap-xs) var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
+.cx-detail dt { color: var(--color-fg-muted); }
+.cx-detail dd { margin: 0; }
+.cx-bidgrid { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); }
+.cx-bidgrid > div { display: flex; flex-direction: column; gap: 2px; }
+.cx-list .cx-li-head { display: flex; gap: var(--ui-gap-sm); align-items: baseline; font-size: var(--ui-font-size-body); }
+.cx-list .cx-li-date { color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); min-width: 6.5rem; }
+.cx-fail { display: flex; align-items: center; justify-content: center; gap: .5rem; min-height: 6rem; color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); }
+.cx-faildot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.cx-empty { color: var(--color-fg-muted); font-size: var(--ui-font-size-caption); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--ui-dur-slow); }
+@media (max-width: 900px) { .cx-wide { display: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .cx-page { animation: cx-fade var(--ui-dur-slow) var(--ui-ease-out); }
+  @keyframes cx-fade { from { opacity: 0; } to { opacity: 1; } }
+}
+</style>
+
+<div class="cx" id="cx">
+  <header class="cx-head" id="top">
+    <h1 class="cx-title" id="dash-title">US cannabis — investment banking dashboard</h1>
+    <p class="cx-take" id="takeaway">Tracked 2026 deal flow is led by <b class="dash-skeleton" data-source="headline" data-field="lead_states" data-row="0" data-fmt="text"></b> (<span class="dash-skeleton" data-source="headline" data-field="lead_count" data-row="0" data-fmt="int"></span> deals). Next dated catalyst, <b class="dash-skeleton" data-source="headline" data-field="next_date_label" data-row="0" data-fmt="text"></b> — <span class="dash-skeleton" data-source="headline" data-field="next_event" data-row="0" data-fmt="text"></span>.</p>
+    <p class="cx-sub">Deals, financings, catalysts and headlines are researched from SEC filings, company releases, state regulators, trade press, Viridian Capital Advisors, CannaMonitor and AdvisorShares, and every row links to its source. Hemp is excluded. <span id="cx-updated"></span></p>
+    <nav class="cx-tabs" role="tablist" aria-label="Dashboard pages">
+      <button class="cx-tab" type="button" role="tab" id="tab-overview" data-tab="overview" aria-selected="true">Overview</button>
+      <button class="cx-tab" type="button" role="tab" id="tab-ma" data-tab="ma" aria-selected="false">M&amp;A</button>
+      <button class="cx-tab" type="button" role="tab" id="tab-capital" data-tab="capital" aria-selected="false">Capital markets</button>
+      <button class="cx-tab" type="button" role="tab" id="tab-catalysts" data-tab="catalysts" aria-selected="false">Catalysts &amp; target states</button>
+      <button class="cx-tab" type="button" role="tab" id="tab-news" data-tab="news" aria-selected="false">News</button>
+    </nav>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="cx-page" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+    <div class="cx-kpis" id="kpis">
+      <div class="cx-card cx-kpi" id="kpi-deals">
+        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=deals_2026_ytd" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=deals_2026_ytd" data-fmt="text"></div>
+        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=deals_2026_ytd" data-fmt="text"></p>
+        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=deals_2026_ytd" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-capital">
+        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=capital_1h26" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=capital_1h26" data-fmt="text"></div>
+        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=capital_1h26" data-fmt="text"></p>
+        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=capital_1h26" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-ma">
+        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=ma_1h26" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=ma_1h26" data-fmt="text"></div>
+        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=ma_1h26" data-fmt="text"></p>
+        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=ma_1h26" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-sales">
+        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=us_sales_2026e" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=us_sales_2026e" data-fmt="text"></div>
+        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=us_sales_2026e" data-fmt="text"></p>
+        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=us_sales_2026e" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-msos">
+        <div class="cx-kl">MSOS · US multistate operator ETF</div>
+        <div class="cx-kv dash-skeleton" data-source="market" data-field="price" data-where="ticker=MSOS" data-fmt="usd2"></div>
+        <p class="cx-note"><span id="msos-ytd" data-source="msos_ytd" data-field="ytd" data-row="0" data-fmt="pctSigned"></span> year to date · NAV <span data-source="market" data-field="nav" data-where="ticker=MSOS" data-fmt="usd2"></span> · AUM $<span data-source="market" data-field="aum_m" data-where="ticker=MSOS" data-fmt="dec1"></span>M</p>
+        <p class="cx-period">Close, <span data-source="market" data-field="as_of" data-where="ticker=MSOS" data-fmt="day"></span></p>
+      </div>
+    </div>
+
+    <div class="cx-card cx-status" id="fed-status">
+      <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=rescheduling" data-fmt="text"></div>
+      <div class="cx-status-v dash-skeleton" data-source="kpis" data-field="display" data-where="id=rescheduling" data-fmt="text"></div>
+      <p class="cx-note" data-source="kpis" data-field="note" data-where="id=rescheduling" data-fmt="text"></p>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-newdeals">
+        <h2>Newly announced and closed deals</h2>
+        <p class="cx-note">Transactions announced, revised or closed in roughly the last six weeks. The full tracker is on the M&amp;A tab.</p>
+        <div class="cx-tablewrap"><table class="cx-table" id="tbl-newdeals" data-source="deals" data-row-key="id"></table></div>
+      </div>
+      <div class="cx-card" id="card-next">
+        <h2>Next catalysts</h2>
+        <p class="cx-note">Dated events ahead. The full calendar is on the Catalysts tab.</p>
+        <ol class="cx-tl" id="list-next"></ol>
+      </div>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-topnews">
+        <h2>Latest headlines</h2>
+        <ul class="cx-news" id="list-topnews"></ul>
+      </div>
+      <div class="cx-card" id="card-market">
+        <h2>Public MSO snapshot</h2>
+        <p class="cx-note">Closing prices and MSOS portfolio weights from the ETF's holdings file.</p>
+        <div class="cx-tablewrap"><table class="cx-table" id="tbl-market" data-source="market" data-row-key="ticker"></table></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M&A -->
+  <section class="cx-page" id="ma" role="tabpanel" aria-labelledby="tab-ma" hidden>
+    <div class="cx-grid">
+      <div class="cx-card" id="card-dealmap">
+        <h2>Where 2026 deals are happening</h2>
+        <p class="cx-note">Tracked US transactions by target state — darker means more deals. Click a state to filter the tracker below.</p>
+        <div class="cx-map" id="map-deals" data-source="deal_states"></div>
+        <div class="cx-legend" id="legend-deals" data-source="deal_states"></div>
+      </div>
+      <div class="cx-card" id="card-acq">
+        <h2>Most active acquirers</h2>
+        <p class="cx-note">Tracked 2026 deals per acquirer, including cross-border bids.</p>
+        <div class="cx-bars" id="bars-acq" data-source="acquirers"></div>
+      </div>
+    </div>
+
+    <div class="cx-card" id="card-tracker">
+      <div class="cx-cardhead">
+        <h2>Transaction tracker</h2>
+        <div class="cx-controls">
+          <input type="search" class="cx-search" id="deal-search" placeholder="Search acquirer, target, terms" aria-label="Search deals">
+          <div class="cx-chips" id="deal-status" role="group" aria-label="Deal status"></div>
+          <button type="button" class="cx-chip" id="deal-state-clear" aria-pressed="true" hidden></button>
+        </div>
+      </div>
+      <p class="cx-note">Value is headline consideration in US$ millions where disclosed. Scroll sideways for terms and sources.</p>
+      <div class="cx-tablewrap cx-tall"><table class="cx-table" id="tbl-deals" data-source="deals" data-row-key="id"></table></div>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-bid">
+        <h2>Bid watch: Curaleaf → Aurora</h2>
+        <p class="cx-note">Hostile take-over bid; the share component moves with Curaleaf's stock.</p>
+        <div class="cx-bidgrid">
+          <div><div class="cx-kl">Headline offer</div><div class="cx-kv dash-skeleton" data-source="bid" data-field="offer_per_share" data-row="0" data-fmt="usd2"></div><p class="cx-note"><span data-source="bid" data-field="exch_ratio" data-row="0" data-fmt="text"></span> Curaleaf sh + <span data-source="bid" data-field="cash_per_share" data-row="0" data-fmt="usd2"></span> cash · cap <span data-source="bid" data-field="cap_per_share" data-row="0" data-fmt="usd2"></span></p></div>
+          <div><div class="cx-kl">Worth at today's CURLF</div><div class="cx-kv dash-skeleton" data-source="bid_implied" data-field="implied_value" data-row="0" data-fmt="usd2"></div><p class="cx-note"><span data-source="bid_implied" data-field="vs_offer" data-row="0" data-fmt="pctSigned"></span> vs headline · CURLF <span data-source="market" data-field="price" data-where="ticker=CURLF" data-fmt="usd2"></span></p></div>
+          <div><div class="cx-kl">Premium to unaffected</div><div class="cx-kv dash-skeleton" data-source="bid" data-field="premium_pct" data-row="0" data-fmt="pct0"></div><p class="cx-note">Unaffected 30-day VWAP <span data-source="bid" data-field="unaffected_vwap" data-row="0" data-fmt="usd2"></span> · values Aurora at $<span data-source="bid" data-field="implied_equity_m" data-row="0" data-fmt="dec1"></span>M (Dow Jones)</p></div>
+          <div><div class="cx-kl">Offer expires</div><div class="cx-kv cx-kv-sm dash-skeleton" data-source="bid" data-field="expiry" data-row="0" data-fmt="day"></div><p class="cx-note" data-source="bid" data-field="expiry_label" data-row="0" data-fmt="text"></p></div>
+        </div>
+        <p class="cx-note" data-source="bid" data-field="aurora_position" data-row="0" data-fmt="text"></p>
+      </div>
+      <div class="cx-card" id="card-perdoor">
+        <h2>Price per dispensary</h2>
+        <p class="cx-note">Disclosed value ÷ stores acquired, US$ millions, for retail-focused deals only (vertical deals with grows are excluded). Limited-license states carry the premium.</p>
+        <div class="cx-bars" id="bars-door" data-source="per_door"></div>
+      </div>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-comps">
+        <h2>Deal multiples and valuation benchmarks</h2>
+        <p class="cx-note">EV / EBITDA from recent deals, trading comps and store-deal norms. Hover a row for its basis and source.</p>
+        <div class="cx-comps" id="chart-comps" data-source="comps"></div>
+        <div class="cx-legend" id="legend-comps"></div>
+        <p class="cx-note" id="comps-off"></p>
+      </div>
+    </div>
+
+    <div class="cx-card" id="card-distress">
+      <h2>Distressed and restructuring watchlist</h2>
+      <p class="cx-note">Where sale and restructuring mandates are coming from. Federal illegality keeps operators out of US bankruptcy, so processes run through CCAA, receiverships and credit bids.</p>
+      <div class="cx-tablewrap"><table class="cx-table" id="tbl-distress" data-source="distress" data-row-key="id"></table></div>
+    </div>
+  </section>
+
+  <!-- CAPITAL MARKETS -->
+  <section class="cx-page" id="capital" role="tabpanel" aria-labelledby="tab-capital" hidden>
+    <div class="cx-kpis">
+      <div class="cx-card cx-kpi" id="kpi-cap-deployed">
+        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=cap_1h26" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=cap_1h26" data-fmt="text"></div>
+        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=cap_1h26" data-fmt="text"></p>
+        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=cap_1h26" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-cap-equity">
+        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=equity_1h26" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=equity_1h26" data-fmt="text"></div>
+        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=equity_1h26" data-fmt="text"></p>
+        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=equity_1h26" data-fmt="text"></p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-cap-debt">
+        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=debt_share" data-fmt="text"></div>
+        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=debt_share" data-fmt="text"></div>
+        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=debt_share" data-fmt="text"></p>
+        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=debt_share" data-fmt="text"></p>
+      </div>
+    </div>
+
+    <div class="cx-kpis" id="fin-kpis">
+      <div class="cx-card cx-kpi" id="kpi-fin-all">
+        <div class="cx-kl">Median all-in coupon, 2026 debt</div>
+        <div class="cx-kv dash-skeleton" data-source="fin_stats" data-field="median" data-where="segment=all" data-fmt="pctPt"></div>
+        <p class="cx-note">Range <span data-source="fin_stats" data-field="low" data-where="segment=all" data-fmt="pctPt"></span> to <span data-source="fin_stats" data-field="high" data-where="segment=all" data-fmt="pctPt"></span> across <span data-source="fin_stats" data-field="priced" data-where="segment=all" data-fmt="int"></span> fixed or floored deals</p>
+        <p class="cx-period">Floating loans with no floor excluded</p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-fin-bank">
+        <div class="cx-kl">Bank lenders, median coupon</div>
+        <div class="cx-kv dash-skeleton" data-source="fin_stats" data-field="median" data-where="segment=bank" data-fmt="pctPt"></div>
+        <p class="cx-note"><span data-source="fin_stats" data-field="low" data-where="segment=bank" data-fmt="pctPt"></span> to <span data-source="fin_stats" data-field="high" data-where="segment=bank" data-fmt="pctPt"></span> · revolvers, term loans, mortgages</p>
+        <p class="cx-period">2026</p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-fin-nonbank">
+        <div class="cx-kl">Notes and private credit, median coupon</div>
+        <div class="cx-kv dash-skeleton" data-source="fin_stats" data-field="median" data-where="segment=nonbank" data-fmt="pctPt"></div>
+        <p class="cx-note"><span data-source="fin_stats" data-field="premium_bp" data-where="segment=nonbank" data-fmt="int"></span> bp over bank debt</p>
+        <p class="cx-period">2026</p>
+      </div>
+      <div class="cx-card cx-kpi" id="kpi-fin-total">
+        <div class="cx-kl">2026 debt financings tracked</div>
+        <div class="cx-kv dash-skeleton" data-source="fin_stats" data-field="total_m" data-where="segment=all" data-fmt="usdBM"></div>
+        <p class="cx-note">Face amount across <span data-source="fin_stats" data-field="deals" data-where="segment=all" data-fmt="int"></span> financings</p>
+        <p class="cx-period">Commitments at face</p>
+      </div>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-finpx">
+        <h2>Where cannabis debt is pricing</h2>
+        <p class="cx-note">All-in coupon at issue, cash plus PIK. Excludes OID, so Jushi's and Ascend's discounts add to yield. Floating loans with no floor are in the table only. 2025 deals are faded for reference.</p>
+        <div class="cx-comps" id="chart-finpx" data-source="financings"></div>
+        <div class="cx-legend" id="legend-finpx" data-source="financings"></div>
+      </div>
+      <div class="cx-card" id="card-capq">
+        <h2>Capital deployed by quarter, 2026</h2>
+        <p class="cx-note">All cannabis capital transactions (debt, equity and M&amp;A) per Viridian's deal tracker; transaction counts in the tooltip. Q2 slowed as operators waited on the DEA hearing.</p>
+        <div class="cx-bars" id="bars-capq" data-source="capquarters"></div>
+      </div>
+    </div>
+
+    <div class="cx-card" id="card-fin">
+      <div class="cx-cardhead">
+        <h2>Financing terms</h2>
+        <div class="cx-chips" id="fin-type" role="group" aria-label="Lender type"></div>
+      </div>
+      <p class="cx-note">Debt raises from company releases and SEC filings: rate, maturity, collateral, lender or arranger, discount and covenants, and use of proceeds. Click a column to sort.</p>
+      <div class="cx-tablewrap cx-tall"><table class="cx-table" id="tbl-fin" data-source="financings" data-row-key="id"></table></div>
+    </div>
+
+    <div class="cx-grid">
+      <div class="cx-card" id="card-cap">
+        <h2>Financings, listings and buybacks</h2>
+        <p class="cx-note">Debt raises, equity issuance, uplistings, buybacks and stock used as deal currency.</p>
+        <ul class="cx-list" id="list-cap"></ul>
+      </div>
+      <div class="cx-card" id="card-capfed">
+        <h2>Policy that moves cost of capital</h2>
+        <p class="cx-note">Rescheduling (280E cash taxes) and banking access drive lending terms, listing eligibility and equity appetite.</p>
+        <h3 class="cx-subh">Ahead</h3><ol class="cx-tl" id="capfed-up"></ol>
+        <h3 class="cx-subh">Recent</h3><ol class="cx-tl" id="capfed-past"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALYSTS -->
+  <section class="cx-page" id="catalysts" role="tabpanel" aria-labelledby="tab-catalysts" hidden>
+    <div class="cx-grid">
+      <div class="cx-card" id="card-catmap">
+        <h2>Catalyst map — states to target</h2>
+        <p class="cx-note">Priority reflects near-term deal relevance: High = active mandates likely; Risk = binary downside; Medium = selective; Watch = longer-dated. Click a state for detail.</p>
+        <div class="cx-map" id="map-cat" data-source="catalysts"></div>
+        <div class="cx-legend" id="legend-cat" data-source="catalysts"></div>
+      </div>
+      <div class="cx-card" id="card-catdetail">
+        <h2>State detail</h2>
+        <div class="cx-detail" id="cat-detail"></div>
+      </div>
+    </div>
+
+    <div class="cx-card" id="card-calendar">
+      <h2>Catalyst calendar</h2>
+      <p class="cx-note">Federal, ballot, licensing and deal dates across the coverage universe.</p>
+      <div class="cx-cal">
+        <div><h3>Upcoming</h3><ol class="cx-tl" id="cal-up"></ol></div>
+        <div><h3>Undated and pending</h3><ol class="cx-tl" id="cal-tbd"></ol><h3 style="margin-top: var(--ui-gap-md)">Recent</h3><ol class="cx-tl" id="cal-past"></ol></div>
+      </div>
+    </div>
+
+    <div class="cx-card" id="card-cattable">
+      <div class="cx-cardhead">
+        <h2>State catalyst tracker</h2>
+        <input type="search" class="cx-search" id="cat-search" placeholder="Search states and catalysts" aria-label="Search catalysts">
+      </div>
+      <div class="cx-tablewrap cx-tall"><table class="cx-table" id="tbl-cat" data-source="catalysts" data-row-key="state"></table></div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="cx-page" id="news" role="tabpanel" aria-labelledby="tab-news" hidden>
+    <div class="cx-grid">
+      <div class="cx-card" id="card-news">
+        <div class="cx-cardhead"><h2>Headlines</h2><div class="cx-chips" id="news-tags" role="group" aria-label="Topic"></div></div>
+        <ul class="cx-news" id="list-news"></ul>
+      </div>
+    </div>
+
+  </section>
+  <footer class="cx-foot">For information only; not investment advice. Figures come from the linked public filings, releases and reports and can change as they are revised. Data refreshes hourly, roughly 6am–10pm ET.</footer>
+</div>
+
+<script>
+(() => {
+  // ---------- constants (layout and labels, not data) ----------
+  const STATE_NAMES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+  const TILES = {AK:[0,0],ME:[11,0],WI:[6,1],VT:[10,1],NH:[11,1],WA:[1,2],ID:[2,2],MT:[3,2],ND:[4,2],MN:[5,2],IL:[6,2],MI:[7,2],NY:[9,2],MA:[10,2],OR:[1,3],NV:[2,3],WY:[3,3],SD:[4,3],IA:[5,3],IN:[6,3],OH:[7,3],PA:[8,3],NJ:[9,3],CT:[10,3],RI:[11,3],CA:[1,4],UT:[2,4],CO:[3,4],NE:[4,4],MO:[5,4],KY:[6,4],WV:[7,4],VA:[8,4],MD:[9,4],DE:[10,4],AZ:[2,5],NM:[3,5],KS:[4,5],AR:[5,5],TN:[6,5],NC:[7,5],SC:[8,5],DC:[9,5],OK:[4,6],LA:[5,6],MS:[6,6],AL:[7,6],GA:[8,6],HI:[0,7],TX:[4,7],FL:[9,7]};
+  const PRIORITIES = ['High', 'Risk', 'Medium', 'Watch'];
+  const PRIORITY_RANK = {High: 0, Risk: 1, Medium: 2, Watch: 3};
+  const STATUS_CHIPS = ['All', 'Closed', 'Pending', 'Open bid'];
+  const NEWS_TAGS = ['All', 'M&A', 'Federal', 'State', 'Restructuring', 'Capital markets', 'Operators'];
+  const LENDER_TYPES = ['Bank', 'Private credit / notes', 'Convertible'];
+
+  const root = document.getElementById('cx');
+  root.style.setProperty('--cx-c0', dash.colors[0]);
+  root.style.setProperty('--cx-c1', dash.colors[1]);
+
+  // ---------- formatting ----------
+  const parseDay = (s) => (s ? new Date(String(s).slice(0, 10) + 'T00:00:00Z') : null);
+  const fmtDayY = d3.utcFormat('%b %-d, %Y');
+  const fmtDay = d3.utcFormat('%b %-d');
+  const isNum = (v) => v !== null && v !== undefined && v !== '' && !Number.isNaN(Number(v));
+  const FMT = {
+    text: (v) => (v === null || v === undefined || v === '' ? '—' : String(v)),
+    usd2: (v) => (isNum(v) ? d3.format('$,.2f')(Number(v)) : '—'),
+    pctSigned: (v) => (isNum(v) ? d3.format('+.1%')(Number(v)).replace('-', '−') : '—'),
+    pct0: (v) => (isNum(v) ? d3.format('.0%')(Number(v)) : '—'),
+    int: (v) => (isNum(v) ? d3.format(',')(Number(v)) : '—'),
+    dec1: (v) => (isNum(v) ? d3.format(',.1f')(Number(v)) : '—'),
+    day: (v) => (v ? fmtDayY(parseDay(v)) : '—'),
+    pctPt: (v) => (isNum(v) ? d3.format('.2f')(Number(v)) + '%' : '—'),
+    usdBM: (v) => (isNum(v) ? (Number(v) >= 1000 ? '$' + d3.format('.2f')(Number(v) / 1000) + 'B' : '$' + d3.format(',.0f')(Number(v)) + 'M') : '—'),
+  };
+  const fmtM = (v) => (isNum(v) ? d3.format(',.1f')(Number(v)) : '—');
+
+  // ---------- calculations ----------
+  dash.calc('deal_states', {
+    title: 'Deals by target state',
+    description: 'Counts tracked US deals per target state; a multi-state deal counts once in each of its states.',
+    inputs: ['deals'],
+    fn: (deals) => {
+      const counts = new Map();
+      deals.filter((d) => d.region === 'US').forEach((d) => String(d.states || '').split(/[,;]\s*/).filter(Boolean).forEach((s) => counts.set(s, (counts.get(s) || 0) + 1)));
+      return [...counts].map(([state, deal_count]) => ({ state, deal_count })).sort((a, b) => b.deal_count - a.deal_count || a.state.localeCompare(b.state));
+    },
+  });
+  dash.calc('acquirers', {
+    title: 'Most active acquirers',
+    description: 'Tracked deals per acquirer group.',
+    inputs: ['deals'],
+    fn: (deals) => {
+      const counts = new Map();
+      deals.forEach((d) => counts.set(d.buyer_group, (counts.get(d.buyer_group) || 0) + 1));
+      return [...counts].map(([buyer, deal_count]) => ({ buyer, deal_count })).sort((a, b) => b.deal_count - a.deal_count || a.buyer.localeCompare(b.buyer));
+    },
+  });
+  dash.calc('per_door', {
+    title: 'Price per dispensary',
+    description: 'Disclosed value divided by stores acquired, for retail-focused US deals (vertical deals with grows are excluded), US$ millions.',
+    inputs: ['deals'],
+    fn: (deals) => deals
+      .filter((d) => d.retail_deal === true && d.value_usd_m !== null && d.value_usd_m !== '' && Number(d.doors) > 0)
+      .map((d) => ({ id: d.id, label: `${d.buyer_group} → ${d.target_short}`, state: d.state, per_door_m: Number(d.value_usd_m) / Number(d.doors) }))
+      .sort((a, b) => b.per_door_m - a.per_door_m),
+  });
+  dash.calc('fin_stats', {
+    title: 'Debt pricing summary',
+    description: 'For 2026 debt financings: median, low and high all-in coupon (cash plus PIK; floating loans count only where a SOFR floor sets the rate), overall and by lender type, plus the total face amount tracked. The non-bank row also carries its median premium over bank debt in basis points.',
+    inputs: ['financings'],
+    fn: (fin) => {
+      const y = fin.filter((f) => Number(f.year) === 2026);
+      const seg = (segment, rows) => {
+        const r = rows.filter((f) => isNum(f.rate_pct)).map((f) => Number(f.rate_pct));
+        return { segment, priced: r.length, deals: rows.length, median: r.length ? d3.median(r) : null, low: r.length ? d3.min(r) : null, high: r.length ? d3.max(r) : null, total_m: d3.sum(rows, (f) => (isNum(f.amount_usd_m) ? Number(f.amount_usd_m) : 0)) };
+      };
+      const all = seg('all', y);
+      const bank = seg('bank', y.filter((f) => f.lender_type === 'Bank'));
+      const nonbank = seg('nonbank', y.filter((f) => f.lender_type === 'Private credit / notes'));
+      nonbank.premium_bp = isNum(nonbank.median) && isNum(bank.median) ? Math.round((nonbank.median - bank.median) * 100) : null;
+      return [all, bank, nonbank, seg('convertible', y.filter((f) => f.lender_type === 'Convertible'))];
+    },
+  });
+  dash.calc('msos_ytd', {
+    title: 'MSOS year to date',
+    description: 'MSOS latest close versus its 2025 year-end price.',
+    inputs: ['market'],
+    fn: (market) => market.filter((r) => r.ticker === 'MSOS' && Number(r.ye2025_price) > 0).map((r) => ({ ticker: r.ticker, ytd: Number(r.price) / Number(r.ye2025_price) - 1 })),
+  });
+  dash.calc('bid_implied', {
+    title: 'Aurora bid at today’s Curaleaf price',
+    description: 'Exchange ratio × latest Curaleaf (CURLF) price + cash per share, versus the headline offer.',
+    inputs: ['bid', 'market'],
+    fn: (bid, market) => {
+      const curlf = market.find((r) => r.ticker === 'CURLF');
+      if (!curlf) return [];
+      return bid.map((b) => {
+        const implied_value = Number(b.exch_ratio) * Number(curlf.price) + Number(b.cash_per_share);
+        return { deal: b.deal, implied_value, vs_offer: implied_value / Number(b.offer_per_share) - 1 };
+      });
+    },
+  });
+  dash.calc('headline', {
+    title: 'Takeaway',
+    description: 'States tied for the most tracked deals, and the next dated catalyst.',
+    inputs: ['deal_states', 'timeline'],
+    fn: (deal_states, timeline) => {
+      const top = deal_states.length ? deal_states[0].deal_count : 0;
+      const leaders = deal_states.filter((s) => s.deal_count === top).map((s) => s.state).join(' and ');
+      const next = timeline.filter((t) => t.upcoming === true && t.date).sort((a, b) => String(a.date).localeCompare(String(b.date)))[0] || {};
+      return [{ lead_states: leaders, lead_count: top, next_event: next.item || '', next_date_label: next.date_label || '' }];
+    },
+  });
+
+  // ---------- helpers ----------
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined && text !== null) e.textContent = text; return e; };
+  const mark = (e, source, field, where) => { e.dataset.source = source; if (field) e.dataset.field = field; if (where) e.dataset.where = where; return e; };
+  const link = (text, href) => { const a = el('a', null, text); if (href) { a.href = href; a.target = '_blank'; a.rel = 'noopener'; } return a; };
+  const BAD = ['error', 'connect', 'declined', 'missing'];
+
+  function failed(box) {
+    box.classList.remove('dash-skeleton');
+    const f = el('div', 'cx-fail'); f.append(el('span', 'cx-faildot'), el('span', null, 'Failed to load'));
+    box.replaceChildren(f);
+  }
+  // Returns the dataset's rows (or a list of row arrays for several ids) when all are ok;
+  // otherwise shows loading or failure and returns null.
+  function gate(ids, box) {
+    const rs = ids.map((id) => dash.data(id));
+    if (rs.every((r) => r.status === 'ok')) {
+      box.classList.remove('dash-skeleton');
+      const rows = rs.map((r) => (Array.isArray(r.data) ? r.data : []));
+      return rows.length === 1 ? rows[0] : rows;
+    }
+    if (rs.some((r) => BAD.includes(r.status))) failed(box);
+    else if (!box.childElementCount) box.classList.add('dash-skeleton');
+    return null;
+  }
+
+  function fillMarks(scope) {
+    scope.querySelectorAll('[data-fmt]').forEach((e) => {
+      const r = dash.data(e.dataset.source);
+      if (r.status !== 'ok') { if (BAD.includes(r.status)) { e.classList.remove('dash-skeleton'); e.textContent = '—'; } return; }
+      const rows = Array.isArray(r.data) ? r.data : [];
+      let row;
+      if (e.dataset.row !== undefined) row = rows[Number(e.dataset.row)];
+      else if (e.dataset.where) {
+        const pairs = e.dataset.where.split('&').map((p) => p.split('=').map(decodeURIComponent));
+        row = rows.find((x) => pairs.every(([k, v]) => String(x[k]) === v));
+      } else row = rows[0];
+      e.classList.remove('dash-skeleton');
+      const v = row ? row[e.dataset.field] : null;
+      e.textContent = FMT[e.dataset.fmt](v);
+      if (e.dataset.fmt === 'pctSigned') { e.classList.toggle('cx-up', isNum(v) && Number(v) > 0); e.classList.toggle('cx-down', isNum(v) && Number(v) < 0); }
+    });
+  }
+
+  // tooltips stay inside their card
+  function showTip(card, event, lines) {
+    let t = card.querySelector(':scope > .cx-tip');
+    if (!t) { t = el('div', 'cx-tip'); card.append(t); }
+    t.replaceChildren(...lines.filter((l) => l !== null && l !== undefined && l !== '').map((l, i) => el('div', i === 0 ? 'cx-tip-h' : null, l)));
+    t.hidden = false;
+    const r = card.getBoundingClientRect();
+    let x = event.clientX - r.left + 14; const y = event.clientY - r.top + 14;
+    const w = t.offsetWidth;
+    if (x + w > r.width - 8) x = Math.max(8, event.clientX - r.left - w - 14);
+    t.style.left = x + 'px'; t.style.top = y + 'px';
+  }
+  function hideTip(card) { const t = card.querySelector(':scope > .cx-tip'); if (t) t.hidden = true; }
+
+  // ---------- tables ----------
+  const sorts = { 'tbl-cat': { field: 'priority', dir: 'asc' }, 'tbl-deals': { field: 'date_label', dir: 'desc' }, 'tbl-newdeals': { field: 'date_label', dir: 'desc' }, 'tbl-fin': { field: 'date_label', dir: 'desc' } };
+  function drawTable(table, rows, cols, keyField) {
+    if (!table.tHead) {
+      const tr = table.createTHead().insertRow();
+      cols.forEach((c) => {
+        const th = document.createElement('th');
+        th.dataset.field = c.field;
+        if (c.num) th.classList.add('num');
+        if (c.wide) th.classList.add('cx-wide');
+        const b = el('button', 'cx-sortbtn', c.label); b.type = 'button';
+        b.addEventListener('click', () => {
+          const s = sorts[table.id];
+          sorts[table.id] = { field: c.field, dir: s && s.field === c.field && s.dir === 'desc' ? 'asc' : 'desc' };
+          render();
+        });
+        th.append(b); tr.append(th);
+      });
+    }
+    const s = sorts[table.id];
+    [...table.tHead.rows[0].cells].forEach((th) => th.setAttribute('aria-sort', s && th.dataset.field === s.field ? (s.dir === 'asc' ? 'ascending' : 'descending') : 'none'));
+    let out = rows.slice();
+    if (s) {
+      const col = cols.find((c) => c.field === s.field);
+      const acc = (col && col.sortBy) || ((d) => d[s.field]);
+      out.sort((a, b) => {
+        const x = acc(a), y = acc(b);
+        if (x === null || x === undefined || x === '') return 1;
+        if (y === null || y === undefined || y === '') return -1;
+        const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y));
+        return s.dir === 'asc' ? c : -c;
+      });
+    }
+    const body = table.tBodies[0] || table.createTBody();
+    body.replaceChildren(...out.map((d) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = String(d[keyField]);
+      cols.forEach((c) => {
+        const td = document.createElement('td');
+        if (c.num) td.classList.add('num');
+        if (c.wide) td.classList.add('cx-wide');
+        if (c.cls) td.classList.add(...(typeof c.cls === 'function' ? c.cls(d) : c.cls).split(' ').filter(Boolean));
+        const text = c.fmt ? c.fmt(d[c.field], d) : FMT.text(d[c.field]);
+        if (c.href && d[c.href]) td.append(link(text, d[c.href])); else td.textContent = text;
+        tr.append(td);
+      });
+      return tr;
+    }));
+  }
+
+  // ---------- tile map ----------
+  function tileMap(box, cfg) {
+    const s = 40, W = 12 * s, H = 8 * s;
+    const card = box.closest('.cx-card');
+    const svg = d3.select(box).selectAll('svg').data([0]).join('svg')
+      .attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('role', 'img').attr('aria-label', cfg.label);
+    const g = svg.selectAll('g.cx-tile').data(Object.entries(TILES), (d) => d[0]).join((enter) => {
+      const t = enter.append('g').attr('class', 'cx-tile');
+      t.append('rect'); t.append('text');
+      return t;
+    });
+    g.attr('transform', ([, [c, r]]) => `translate(${c * s + 2},${r * s + 2})`).style('cursor', 'pointer');
+    g.select('rect').attr('width', s - 4).attr('height', s - 4).attr('rx', 5)
+      .each(function ([k]) {
+        const st = cfg.style(k);
+        d3.select(this).style('fill', st.fill).style('fill-opacity', st.opacity)
+          .style('stroke', cfg.selected === k ? 'var(--color-fg)' : 'none').style('stroke-width', cfg.selected === k ? 2 : 0);
+      });
+    g.select('text').attr('x', (s - 4) / 2).attr('y', (s - 4) / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 11)
+      .text(([k]) => k).each(function ([k]) { d3.select(this).style('fill', cfg.style(k).text); });
+    g.on('mousemove', (event, [k]) => showTip(card, event, cfg.tip(k)))
+      .on('mouseleave', () => hideTip(card))
+      .on('click', (event, [k]) => cfg.onClick(k));
+  }
+
+  // ---------- bars ----------
+  function barList(box, rows, o) {
+    const card = box.closest('.cx-card');
+    const max = d3.max(rows, o.value) || 1;
+    box.replaceChildren(...rows.map((d) => {
+      const row = el('div', 'cx-bar-row');
+      const track = el('div', 'cx-bar-track');
+      const bar = el('div', 'cx-bar');
+      bar.style.width = (o.value(d) / max * 100) + '%';
+      bar.style.background = o.color ? o.color(d) : dash.colors[0];
+      track.append(bar);
+      row.append(el('div', 'cx-bar-label', o.label(d)), track, el('div', 'cx-bar-val', o.fmt(o.value(d))));
+      row.addEventListener('mousemove', (e) => showTip(card, e, o.tip(d)));
+      row.addEventListener('mouseleave', () => hideTip(card));
+      return row;
+    }));
+    if (!rows.length) box.replaceChildren(el('p', 'cx-empty', o.empty || 'Nothing to show yet.'));
+  }
+
+  const MARKET_COLS = [
+    { field: 'ticker', label: 'Ticker' },
+    { field: 'name', label: 'Company', wide: true },
+    { field: 'price', label: 'Close', num: true, fmt: (v) => FMT.usd2(v) },
+    { field: 'msos_weight_pct', label: 'MSOS weight', num: true, fmt: (v) => (isNum(v) ? d3.format('.1f')(Number(v)) + '%' : '—') },
+    { field: 'note', label: 'Listing', wide: true },
+  ];
+
+  // ---------- state ----------
+  let activeTab = 'overview';
+  let dealSearch = '';
+  let catSearch = '';
+  const visible = (id) => activeTab === id;
+
+  // ---------- OVERVIEW ----------
+  function drawOverview() {
+    const tNew = document.getElementById('tbl-newdeals');
+    const deals = gate(['deals'], tNew);
+    if (deals) drawTable(tNew, deals.filter((d) => d.is_new === true), [
+      { field: 'date_label', label: 'Date', sortBy: (d) => d.date, cls: 'cx-nowrap' },
+      { field: 'buyer', label: 'Acquirer' },
+      { field: 'target', label: 'Target' },
+      { field: 'value_usd_m', label: 'Value ($M)', num: true, fmt: fmtM },
+      { field: 'status', label: 'Status', wide: true },
+    ], 'id');
+
+    const next = document.getElementById('list-next');
+    const tl = gate(['timeline'], next);
+    if (tl) timelineList(next, tl.filter((t) => t.upcoming === true && t.date).sort((a, b) => String(a.date).localeCompare(String(b.date))).slice(0, 6));
+
+    const topNews = document.getElementById('list-topnews');
+    const news = gate(['news'], topNews);
+    if (news) newsList(topNews, news.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 7));
+
+    const tMk = document.getElementById('tbl-market');
+    const mk = gate(['market'], tMk);
+    if (mk) drawTable(tMk, mk, MARKET_COLS, 'ticker');
+  }
+
+  function timelineList(box, rows) {
+    box.replaceChildren(...rows.map((t) => {
+      const li = el('li');
+      const left = el('div');
+      left.append(mark(el('span', 'cx-tl-date', t.date_label), 'timeline', 'date_label', 'id=' + t.id), mark(el('span', 'cx-tl-cat', t.category), 'timeline', 'category', 'id=' + t.id));
+      const right = el('div');
+      right.append(mark(link(t.item, t.url), 'timeline', 'item', 'id=' + t.id));
+      li.append(left, right);
+      return li;
+    }));
+    if (!rows.length) box.replaceChildren(el('li', 'cx-empty', 'Nothing scheduled.'));
+  }
+
+  function newsList(box, rows) {
+    box.replaceChildren(...rows.map((n) => {
+      const li = el('li');
+      const meta = el('div', 'cx-meta');
+      meta.append(
+        mark(el('span', null, n.date ? fmtDay(parseDay(n.date)) : '—'), 'news', 'date', 'id=' + n.id),
+        mark(el('span', null, n.source), 'news', 'source', 'id=' + n.id),
+        mark(el('span', 'cx-tag', n.tag), 'news', 'tag', 'id=' + n.id),
+      );
+      li.append(meta, mark(link(n.headline, n.url), 'news', 'headline', 'id=' + n.id));
+      li.lastChild.classList.add('cx-hl');
+      return li;
+    }));
+    if (!rows.length) box.replaceChildren(el('li', 'cx-empty', 'No headlines for this topic.'));
+  }
+
+  // ---------- M&A ----------
+  function drawMA() {
+    const p = dash.params();
+    const mapBox = document.getElementById('map-deals');
+    const legend = document.getElementById('legend-deals');
+    const ds = gate(['deal_states'], mapBox);
+    if (ds && visible('ma')) {
+      const by = new Map(ds.map((r) => [r.state, Number(r.deal_count)]));
+      const max = d3.max(ds, (r) => Number(r.deal_count)) || 1;
+      const op = (n) => 0.25 + 0.75 * (n / max);
+      tileMap(mapBox, {
+        label: 'Tracked 2026 deals by state',
+        selected: p.deal_state || null,
+        style: (k) => {
+          const n = by.get(k) || 0;
+          return n ? { fill: dash.colors[0], opacity: op(n), text: op(n) >= 0.6 ? 'var(--color-bg)' : 'var(--color-fg)' } : { fill: 'var(--color-border-line)', opacity: 0.55, text: 'var(--color-fg-muted)' };
+        },
+        tip: (k) => [STATE_NAMES[k] || k, (by.get(k) || 0) === 1 ? '1 tracked deal' : `${by.get(k) || 0} tracked deals`, by.get(k) ? 'Click to filter the tracker' : null],
+        onClick: (k) => dash.setParams({ deal_state: p.deal_state === k ? null : k }),
+      });
+      const steps = d3.range(1, max + 1);
+      legend.replaceChildren(el('span', null, 'Deals:'), ...steps.map((n) => {
+        const item = el('span');
+        const sw = el('span', 'cx-sw'); sw.style.background = dash.colors[0]; sw.style.opacity = op(n);
+        item.append(sw, document.createTextNode(String(n)));
+        return item;
+      }));
+    }
+
+    const acqBox = document.getElementById('bars-acq');
+    const acq = gate(['acquirers'], acqBox);
+    if (acq && visible('ma')) barList(acqBox, acq.slice(0, 8), {
+      label: (d) => d.buyer, value: (d) => Number(d.deal_count), fmt: (v) => String(v),
+      color: (d, i) => dash.colors[0],
+      tip: (d) => [d.buyer, `${d.deal_count} tracked ${Number(d.deal_count) === 1 ? 'deal' : 'deals'}`],
+    });
+
+    // tracker
+    const statusBox = document.getElementById('deal-status');
+    const status = p.deal_status || 'All';
+    if (!statusBox.childElementCount) {
+      STATUS_CHIPS.forEach((sv) => {
+        const b = el('button', 'cx-chip', sv); b.type = 'button'; b.dataset.value = sv;
+        b.addEventListener('click', () => dash.setParams({ deal_status: sv }));
+        statusBox.append(b);
+      });
+    }
+    [...statusBox.children].forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === status)));
+    const clear = document.getElementById('deal-state-clear');
+    clear.hidden = !p.deal_state;
+    clear.textContent = p.deal_state ? `${STATE_NAMES[p.deal_state] || p.deal_state} ×` : '';
+
+    const tDeals = document.getElementById('tbl-deals');
+    const deals = gate(['deals'], tDeals);
+    if (deals) {
+      const q = dealSearch.trim().toLowerCase();
+      const rows = deals.filter((d) =>
+        (status === 'All' || d.status_group === status) &&
+        (!p.deal_state || String(d.states || '').split(/[,;]\s*/).includes(p.deal_state)) &&
+        (!q || [d.buyer, d.target, d.consideration, d.type, d.states, d.status].join(' ').toLowerCase().includes(q)));
+      drawTable(tDeals, rows, [
+        { field: 'date_label', label: 'Date', sortBy: (d) => d.date, cls: 'cx-nowrap' },
+        { field: 'buyer', label: 'Acquirer' },
+        { field: 'target', label: 'Target' },
+        { field: 'states', label: 'States', cls: 'cx-nowrap' },
+        { field: 'region', label: 'Region', wide: true },
+        { field: 'type', label: 'Type', wide: true },
+        { field: 'value_usd_m', label: 'Value ($M)', num: true, fmt: fmtM, sortBy: (d) => (isNum(d.value_usd_m) ? Number(d.value_usd_m) : null) },
+        { field: 'doors', label: 'Stores', num: true, fmt: (v) => FMT.int(v), sortBy: (d) => (isNum(d.doors) ? Number(d.doors) : null) },
+        { field: 'status', label: 'Status' },
+        { field: 'consideration', label: 'Terms', wide: true, cls: 'cx-terms' },
+        { field: 'source', label: 'Source', href: 'url', cls: 'cx-nowrap' },
+      ], 'id');
+      if (!rows.length) { const b = tDeals.tBodies[0]; const tr = b.insertRow(); const td = tr.insertCell(); td.colSpan = 11; td.className = 'cx-empty'; td.textContent = 'No deals match these filters.'; }
+    }
+
+    // per door
+    const doorBox = document.getElementById('bars-door');
+    const pd = gate(['per_door'], doorBox);
+    if (pd && visible('ma')) barList(doorBox, pd, {
+      label: (d) => `${d.label} (${d.state})`, value: (d) => Number(d.per_door_m), fmt: (v) => '$' + d3.format(',.1f')(v) + 'M',
+      color: () => dash.colors[0],
+      tip: (d) => [d.label, `${d.state} · $${d3.format(',.2f')(d.per_door_m)}M per store`],
+    });
+
+    // deal multiples
+    const compBox = document.getElementById('chart-comps');
+    const comps = gate(['comps'], compBox);
+    if (comps && visible('ma')) drawComps(compBox, comps);
+
+    // distress
+    const tDis = document.getElementById('tbl-distress');
+    const dis = gate(['distress'], tDis);
+    if (dis) drawTable(tDis, dis, [
+      { field: 'company', label: 'Company / situation', href: 'url' },
+      { field: 'process', label: 'Process', wide: true },
+      { field: 'started', label: 'Since', cls: 'cx-nowrap' },
+      { field: 'status', label: 'Status' },
+      { field: 'detail', label: 'Detail', cls: 'cx-terms' },
+    ], 'id');
+  }
+
+  function drawComps(box, rows) {
+    const card = box.closest('.cx-card');
+    const inScale = rows.filter((r) => (isNum(r.multiple) && Number(r.multiple) <= 15) || (isNum(r.low) && isNum(r.high)));
+    const off = rows.filter((r) => isNum(r.multiple) && Number(r.multiple) > 15);
+    const max = Math.ceil((d3.max(inScale, (r) => Number(isNum(r.high) ? r.high : r.multiple)) || 1) * 1.12);
+    const x = (v) => (Number(v) / max * 100) + '%';
+    const color = (r) => (r.kind === 'Transaction' ? dash.colors[0] : r.kind === 'Trading' ? dash.colors[1] : 'var(--ui-chart-muted)');
+    const ticks = d3.ticks(0, max, 4);
+    const sorted = inScale.slice().sort((a, b) => Number(isNum(a.multiple) ? a.multiple : a.low) - Number(isNum(b.multiple) ? b.multiple : b.low));
+    const items = sorted.map((r) => {
+      const row = el('div', 'cx-c-row');
+      const track = el('div', 'cx-c-track');
+      ticks.forEach((t) => { if (t > 0) { const gl = el('div', 'cx-c-grid'); gl.style.left = x(t); track.append(gl); } });
+      if (isNum(r.multiple)) {
+        const dot = el('div', 'cx-c-dot'); dot.style.left = x(r.multiple); dot.style.background = color(r);
+        const v = el('div', 'cx-c-val', d3.format('.1f')(Number(r.multiple)) + 'x'); v.style.left = x(r.multiple);
+        track.append(dot, v);
+      } else {
+        const rg = el('div', 'cx-c-range'); rg.style.left = x(r.low); rg.style.width = ((Number(r.high) - Number(r.low)) / max * 100) + '%'; rg.style.background = color(r);
+        const v = el('div', 'cx-c-val', `${d3.format('.0f')(Number(r.low))}–${d3.format('.0f')(Number(r.high))}x`); v.style.left = x(r.high);
+        track.append(rg, v);
+      }
+      row.append(el('div', 'cx-bar-label', r.item), track);
+      row.addEventListener('mousemove', (e) => showTip(card, e, [r.item, isNum(r.multiple) ? `${d3.format('.2f')(Number(r.multiple))}x EV/EBITDA` : `${r.low}x–${r.high}x EV/EBITDA`, r.basis]));
+      row.addEventListener('mouseleave', () => hideTip(card));
+      return row;
+    });
+    const axisRow = el('div', 'cx-c-row');
+    const axis = el('div', 'cx-c-axis');
+    ticks.forEach((t) => { const tk = el('span', 'cx-c-tick', d3.format('.0f')(t) + 'x'); tk.style.left = x(t); axis.append(tk); });
+    axisRow.append(el('div'), axis);
+    box.replaceChildren(...items, axisRow);
+
+    const legend = document.getElementById('legend-comps');
+    const KINDS = [['Transaction', dash.colors[0]], ['Trading', dash.colors[1]], ['Benchmark', 'var(--ui-chart-muted)']].filter(([k]) => rows.some((r) => r.kind === k));
+    legend.replaceChildren(...KINDS.map(([name, c]) => {
+      const it = el('span'); const sw = el('span', 'cx-sw'); sw.style.background = c; it.append(sw, document.createTextNode(name)); return it;
+    }));
+    const offBox = document.getElementById('comps-off');
+    offBox.replaceChildren();
+    if (off.length) {
+      offBox.append(document.createTextNode('Off scale: '));
+      off.forEach((r, i) => {
+        if (i) offBox.append(document.createTextNode('; '));
+        offBox.append(mark(el('span', null, r.item), 'comps', 'item', 'id=' + r.id), document.createTextNode(' at '), mark(el('span', null, d3.format('.1f')(Number(r.multiple)) + 'x'), 'comps', 'multiple', 'id=' + r.id));
+      });
+      offBox.append(document.createTextNode(' — European medical-market premium.'));
+    }
+  }
+
+  const lenderColor = (t) => (t === 'Bank' ? dash.colors[0] : t === 'Private credit / notes' ? dash.colors[1] : t === 'Convertible' ? dash.colors[2] : 'var(--ui-chart-muted)');
+
+  function drawFinPx(box, rows) {
+    const card = box.closest('.cx-card');
+    const priced = rows.filter((r) => isNum(r.rate_pct)).sort((a, b) => Number(b.rate_pct) - Number(a.rate_pct) || String(b.date).localeCompare(String(a.date)));
+    if (!priced.length) { box.replaceChildren(el('p', 'cx-empty', 'No priced financings yet.')); return; }
+    const lo = Math.max(0, Math.floor(d3.min(priced, (r) => Number(r.rate_pct))) - 1);
+    const hi = Math.ceil(d3.max(priced, (r) => Number(r.rate_pct))) + 1.5;
+    const x = (v) => ((Number(v) - lo) / (hi - lo) * 100) + '%';
+    const ticks = d3.ticks(lo, hi, 5).filter((t) => t >= lo && t <= hi);
+    const items = priced.map((r) => {
+      const row = el('div', 'cx-c-row cx-c-row-sm');
+      if (Number(r.year) < 2026) row.classList.add('cx-faded');
+      const track = el('div', 'cx-c-track');
+      ticks.forEach((t) => { if (t > lo) { const gl = el('div', 'cx-c-grid'); gl.style.left = x(t); track.append(gl); } });
+      const dot = el('div', 'cx-c-dot'); dot.style.left = x(r.rate_pct); dot.style.background = lenderColor(r.lender_type);
+      const v = el('div', 'cx-c-val', d3.format('.2f')(Number(r.rate_pct)) + '%'); v.style.left = x(r.rate_pct);
+      track.append(dot, v);
+      const yr = Number(r.year) < 2026 ? ` (${r.year})` : '';
+      row.append(mark(el('div', 'cx-bar-label', `${r.issuer}${yr}`), 'financings', 'issuer', 'id=' + r.id), track);
+      row.addEventListener('mousemove', (e) => showTip(card, e, [`${r.issuer} · ${r.date_label}`, `${r.instrument}, $${fmtM(r.amount_usd_m)}M`, r.rate_text, `Matures ${r.maturity_label}`, r.lender]));
+      row.addEventListener('mouseleave', () => hideTip(card));
+      return row;
+    });
+    const axisRow = el('div', 'cx-c-row');
+    const axis = el('div', 'cx-c-axis');
+    ticks.forEach((t) => { const tk = el('span', 'cx-c-tick', d3.format('.0f')(t) + '%'); tk.style.left = x(t); axis.append(tk); });
+    axisRow.append(el('div'), axis);
+    box.replaceChildren(...items, axisRow);
+    const legend = document.getElementById('legend-finpx');
+    legend.replaceChildren(...LENDER_TYPES.filter((t) => priced.some((r) => r.lender_type === t)).map((t) => {
+      const it = el('span'); const sw = el('span', 'cx-sw'); sw.style.background = lenderColor(t); sw.style.borderRadius = '50%'; it.append(sw, document.createTextNode(t)); return it;
+    }));
+  }
+
+  // ---------- CAPITAL MARKETS ----------
+  function drawCapital() {
+    const p = dash.params();
+    // financing terms
+    const pxBox = document.getElementById('chart-finpx');
+    const finPx = gate(['financings'], pxBox);
+    if (finPx && visible('capital')) drawFinPx(pxBox, finPx);
+
+    const typeBox = document.getElementById('fin-type');
+    const finType = p.fin_type || 'All';
+    if (!typeBox.childElementCount) {
+      ['All', ...LENDER_TYPES].forEach((tv) => {
+        const b = el('button', 'cx-chip', tv); b.type = 'button'; b.dataset.value = tv;
+        b.addEventListener('click', () => dash.setParams({ fin_type: tv }));
+        typeBox.append(b);
+      });
+    }
+    [...typeBox.children].forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === finType)));
+    const tFin = document.getElementById('tbl-fin');
+    const fin = gate(['financings'], tFin);
+    if (fin) {
+      const rows = fin.filter((f) => finType === 'All' || f.lender_type === finType);
+      drawTable(tFin, rows, [
+        { field: 'date_label', label: 'Date', sortBy: (d) => d.date, cls: 'cx-nowrap' },
+        { field: 'issuer', label: 'Issuer' },
+        { field: 'instrument', label: 'Instrument' },
+        { field: 'amount_usd_m', label: 'Amount ($M)', num: true, fmt: fmtM, sortBy: (d) => (isNum(d.amount_usd_m) ? Number(d.amount_usd_m) : null) },
+        { field: 'rate_text', label: 'Rate', sortBy: (d) => (isNum(d.rate_pct) ? Number(d.rate_pct) : null), cls: 'cx-nowrap' },
+        { field: 'maturity_label', label: 'Maturity', cls: 'cx-nowrap' },
+        { field: 'lender_type', label: 'Lender type', wide: true },
+        { field: 'lender', label: 'Lender / arranger' },
+        { field: 'security', label: 'Security', wide: true, cls: 'cx-terms' },
+        { field: 'issue_terms', label: 'Key terms', cls: 'cx-terms' },
+        { field: 'use_of_proceeds', label: 'Use of proceeds', wide: true, cls: 'cx-terms' },
+        { field: 'source', label: 'Source', href: 'url', wide: true },
+      ], 'id');
+      if (!rows.length) { const b = tFin.tBodies[0]; const tr = b.insertRow(); const td = tr.insertCell(); td.colSpan = 12; td.className = 'cx-empty'; td.textContent = 'No financings of this type yet.'; }
+    }
+
+    // capital markets
+    const capBox = document.getElementById('list-cap');
+    const cap = gate(['capmkts'], capBox);
+    if (cap) capBox.replaceChildren(...cap.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).map((k) => {
+      const li = el('li');
+      const head = el('div', 'cx-li-head');
+      head.append(mark(el('span', 'cx-li-date', k.date_label), 'capmkts', 'date_label', 'id=' + k.id), mark(link(k.item, k.url), 'capmkts', 'item', 'id=' + k.id));
+      li.append(head, mark(el('div', 'cx-note', k.detail), 'capmkts', 'detail', 'id=' + k.id));
+      return li;
+    }));
+
+
+    const qBox = document.getElementById('bars-capq');
+    const q = gate(['capquarters'], qBox);
+    if (q && visible('capital')) barList(qBox, q, {
+      label: (d) => d.quarter, value: (d) => Number(d.capital_m),
+      fmt: (v) => (v >= 1000 ? '$' + d3.format('.2f')(v / 1000) + 'B' : '$' + d3.format(',.0f')(v) + 'M'),
+      color: () => dash.colors[0],
+      tip: (d) => [d.quarter, `${d.note} across ${d.deals} transactions`],
+    });
+
+    const up = document.getElementById('capfed-up');
+    const tl = gate(['timeline'], up);
+    if (tl) {
+      const fed = tl.filter((t) => t.category === 'Federal' && /resched|schedule iii|280e|safe banking|dea/i.test(String(t.item)));
+      timelineList(up, fed.filter((t) => t.upcoming === true).sort((x, y) => String(x.date || '9999').localeCompare(String(y.date || '9999'))));
+      timelineList(document.getElementById('capfed-past'), fed.filter((t) => t.upcoming !== true).sort((x, y) => String(y.date).localeCompare(String(x.date))));
+    }
+  }
+
+  // ---------- CATALYSTS ----------
+  function drawCatalysts() {
+    const p = dash.params();
+    const sel = p.cat_state || 'MA';
+    const mapBox = document.getElementById('map-cat');
+    const cats = gate(['catalysts'], mapBox);
+    const priFill = (pr) => (pr === 'High' ? dash.colors[0] : pr === 'Medium' ? dash.colors[1] : pr === 'Risk' ? 'var(--ui-chart-status-critical)' : 'var(--ui-chart-muted)');
+    if (cats && visible('catalysts')) {
+      const by = new Map(cats.map((r) => [r.state, r]));
+      tileMap(mapBox, {
+        label: 'Catalyst priority by state',
+        selected: sel,
+        style: (k) => {
+          const r = by.get(k);
+          if (!r) return { fill: 'var(--color-border-line)', opacity: 0.55, text: 'var(--color-fg-muted)' };
+          return { fill: priFill(r.priority), opacity: 1, text: r.priority === 'Watch' ? 'var(--color-fg)' : 'var(--color-bg)' };
+        },
+        tip: (k) => { const r = by.get(k); return r ? [STATE_NAMES[k] || k, `${r.priority} · ${r.category}`, r.date_label] : [STATE_NAMES[k] || k, 'No tracked catalyst']; },
+        onClick: (k) => dash.setParams({ cat_state: k }),
+      });
+      const legend = document.getElementById('legend-cat');
+      legend.replaceChildren(...PRIORITIES.map((pr) => {
+        const n = cats.filter((r) => r.priority === pr).length;
+        const it = el('span'); const sw = el('span', 'cx-sw'); sw.style.background = priFill(pr);
+        it.append(sw, document.createTextNode(`${pr} (${n})`));
+        return it;
+      }));
+    }
+
+    // detail
+    const det = document.getElementById('cat-detail');
+    const cats2 = gate(['catalysts'], det);
+    if (cats2) {
+      const r = cats2.find((c) => c.state === sel);
+      if (!r) {
+        det.replaceChildren(el('div', 'cx-detail-name', STATE_NAMES[sel] || sel), el('p', 'cx-empty', 'No tracked catalyst for this state. Pick a colored state on the map.'));
+      } else {
+        const w = 'state=' + r.state;
+        const dl = el('dl');
+        const row = (label, field, cls) => { dl.append(el('dt', null, label)); const dd = mark(el('dd', cls, FMT.text(r[field])), 'catalysts', field, w); dl.append(dd); };
+        row('Priority', 'priority', 'cx-pri cx-pri-' + r.priority);
+        row('Category', 'category');
+        row('Timing', 'date_label');
+        row('Deal angle', 'ib_angle');
+        dl.append(el('dt', null, 'Source'));
+        const dd = el('dd'); dd.append(mark(link(r.source, r.url), 'catalysts', 'source', w)); dl.append(dd);
+        det.replaceChildren(mark(el('div', 'cx-detail-name', r.state_name), 'catalysts', 'state_name', w), mark(el('p', null, r.catalyst), 'catalysts', 'catalyst', w), dl);
+      }
+    }
+
+    // calendar
+    const up = document.getElementById('cal-up');
+    const tl = gate(['timeline'], up);
+    if (tl) {
+      timelineList(up, tl.filter((t) => t.upcoming === true && t.date).sort((a, b) => String(a.date).localeCompare(String(b.date))));
+      timelineList(document.getElementById('cal-tbd'), tl.filter((t) => t.upcoming === true && !t.date));
+      timelineList(document.getElementById('cal-past'), tl.filter((t) => t.upcoming !== true).sort((a, b) => String(b.date).localeCompare(String(a.date))));
+    }
+
+    // table
+    const tCat = document.getElementById('tbl-cat');
+    const c3 = gate(['catalysts'], tCat);
+    if (c3) {
+      const q = catSearch.trim().toLowerCase();
+      drawTable(tCat, c3.filter((r) => !q || [r.state, r.state_name, r.catalyst, r.category, r.ib_angle, r.priority].join(' ').toLowerCase().includes(q)), [
+        { field: 'state_name', label: 'State', cls: 'cx-nowrap' },
+        { field: 'priority', label: 'Priority', cls: (d) => 'cx-nowrap cx-pri cx-pri-' + d.priority, sortBy: (d) => PRIORITY_RANK[d.priority] ?? 9 },
+        { field: 'category', label: 'Category', wide: true },
+        { field: 'catalyst', label: 'Catalyst', cls: 'cx-terms' },
+        { field: 'date_label', label: 'Timing', sortBy: (d) => d.next_date || '9999' },
+        { field: 'ib_angle', label: 'Deal angle', wide: true, cls: 'cx-terms' },
+        { field: 'source', label: 'Source', href: 'url', cls: 'cx-nowrap' },
+      ], 'state');
+      [...tCat.tBodies[0].rows].forEach((tr) => tr.style.cursor = 'pointer');
+    }
+  }
+
+  // ---------- NEWS ----------
+  function drawNews() {
+    const p = dash.params();
+    const tag = p.news_tag || 'All';
+    const chips = document.getElementById('news-tags');
+    if (!chips.childElementCount) NEWS_TAGS.forEach((t) => {
+      const b = el('button', 'cx-chip', t); b.type = 'button'; b.dataset.value = t;
+      b.addEventListener('click', () => dash.setParams({ news_tag: t }));
+      chips.append(b);
+    });
+    [...chips.children].forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === tag)));
+
+    const list = document.getElementById('list-news');
+    const news = gate(['news'], list);
+    if (news) newsList(list, news.filter((n) => tag === 'All' || n.tag === tag).sort((a, b) => String(b.date).localeCompare(String(a.date))));
+
+  }
+
+  // ---------- render ----------
+  const fmtET = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+  function drawUpdated() {
+    const m = dash.meta && dash.meta();
+    const box = document.getElementById('cx-updated');
+    if (m && m.updated && box) box.textContent = 'Last updated ' + fmtET.format(new Date(m.updated)) + '.';
+  }
+
+  function render() {
+    drawUpdated();
+    fillMarks(root);
+    drawOverview();
+    drawMA();
+    drawCapital();
+    drawCatalysts();
+    drawNews();
+  }
+
+  // ---------- interactions (registered once) ----------
+  const tabs = [...document.querySelectorAll('.cx-tab')];
+  function showTab(id, setLink) {
+    activeTab = id;
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
+    document.querySelectorAll('.cx-page').forEach((pg) => { pg.hidden = pg.id !== id; });
+    if (setLink !== false) dash.setLink(id);
+    render();
+  }
+  tabs.forEach((t) => t.addEventListener('click', () => showTab(t.dataset.tab)));
+  document.getElementById('deal-search').addEventListener('input', (e) => { dealSearch = e.target.value; drawMA(); });
+  document.getElementById('cat-search').addEventListener('input', (e) => { catSearch = e.target.value; drawCatalysts(); });
+  document.getElementById('deal-state-clear').addEventListener('click', () => dash.setParams({ deal_state: null }));
+  document.getElementById('tbl-cat').addEventListener('click', (e) => {
+    const tr = e.target.closest('tr[data-key]');
+    if (tr && !e.target.closest('a')) { dash.setParams({ cat_state: tr.dataset.key }); document.getElementById('card-catmap').scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  });
+
+  // open the tab a link names
+  const hash = location.hash.slice(1);
+  const named = hash ? document.getElementById(hash) : null;
+  const page = named ? (named.classList.contains('cx-page') ? named : named.closest('.cx-page')) : null;
+  if (page) {
+    activeTab = page.id;
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === page.id)));
+    document.querySelectorAll('.cx-page').forEach((pg) => { pg.hidden = pg.id !== page.id; });
+  }
+
+  let scrolled = false;
+  dash.onData(() => {
+    render();
+    if (!scrolled && named && named !== page && dash.data('deals').status === 'ok') { scrolled = true; named.scrollIntoView(); }
+  });
+})();
+</script>
+</main>
+</body>
+</html>
