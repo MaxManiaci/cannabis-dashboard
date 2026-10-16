@@ -210,7 +210,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card" id="card-acq">
         <h2>Most active acquirers</h2>
-        <p class="cx-note">Tracked 2026 deals per acquirer, including cross-border bids.</p>
+        <p class="cx-note">Every acquirer in the tracker, counting each transaction once (a multi-agreement deal counts as one) and including pending deals and cross-border bids. Hover for closed vs pending.</p>
         <div class="cx-bars" id="bars-acq" data-source="acquirers"></div>
       </div>
     </div>
@@ -444,12 +444,17 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   });
   dash.calc('acquirers', {
     title: 'Most active acquirers',
-    description: 'Tracked deals per acquirer group.',
+    description: 'Tracked deals per acquirer group, split into closed and still pending (pending deals and open bids).',
     inputs: ['deals'],
     fn: (deals) => {
-      const counts = new Map();
-      deals.forEach((d) => counts.set(d.buyer_group, (counts.get(d.buyer_group) || 0) + 1));
-      return [...counts].map(([buyer, deal_count]) => ({ buyer, deal_count })).sort((a, b) => b.deal_count - a.deal_count || a.buyer.localeCompare(b.buyer));
+      const by = new Map();
+      deals.forEach((d) => {
+        const r = by.get(d.buyer_group) || { buyer: d.buyer_group, deal_count: 0, closed: 0, pending: 0 };
+        r.deal_count += 1;
+        if (d.status_group === 'Closed') r.closed += 1; else r.pending += 1;
+        by.set(d.buyer_group, r);
+      });
+      return [...by.values()].sort((a, b) => b.deal_count - a.deal_count || a.buyer.localeCompare(b.buyer));
     },
   });
   dash.calc('per_door', {
@@ -759,10 +764,10 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
     const acqBox = document.getElementById('bars-acq');
     const acq = gate(['acquirers'], acqBox);
-    if (acq && visible('ma')) barList(acqBox, acq.slice(0, 8), {
+    if (acq && visible('ma')) barList(acqBox, acq, {
       label: (d) => d.buyer, value: (d) => Number(d.deal_count), fmt: (v) => String(v),
-      color: (d, i) => dash.colors[0],
-      tip: (d) => [d.buyer, `${d.deal_count} tracked ${Number(d.deal_count) === 1 ? 'deal' : 'deals'}`],
+      color: () => dash.colors[0],
+      tip: (d) => [d.buyer, `${d.deal_count} tracked ${Number(d.deal_count) === 1 ? 'deal' : 'deals'}: ${d.closed} closed, ${d.pending} pending`],
     });
 
     // tracker
