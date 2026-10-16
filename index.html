@@ -210,8 +210,9 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card" id="card-acq">
         <h2>Most active acquirers</h2>
-        <p class="cx-note">Every acquirer in the tracker, counting each transaction once (a multi-agreement deal counts as one) and including pending deals and cross-border bids. Hover for closed vs pending.</p>
+        <p class="cx-note">Top 10 by number of tracked 2026 transactions; ties ordered by most recent deal. Each transaction counts once (a multi-agreement deal is one); pending deals and cross-border bids included. Hover for closed vs pending.</p>
         <div class="cx-bars" id="bars-acq" data-source="acquirers"></div>
+        <p class="cx-note" id="acq-more"></p>
       </div>
     </div>
 
@@ -444,17 +445,18 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   });
   dash.calc('acquirers', {
     title: 'Most active acquirers',
-    description: 'Tracked deals per acquirer group, split into closed and still pending (pending deals and open bids).',
+    description: 'Tracked deals per acquirer group, split into closed and still pending (pending deals and open bids); ranked by deal count, ties by most recent deal.',
     inputs: ['deals'],
     fn: (deals) => {
       const by = new Map();
       deals.forEach((d) => {
-        const r = by.get(d.buyer_group) || { buyer: d.buyer_group, deal_count: 0, closed: 0, pending: 0 };
+        const r = by.get(d.buyer_group) || { buyer: d.buyer_group, deal_count: 0, closed: 0, pending: 0, latest: '' };
         r.deal_count += 1;
         if (d.status_group === 'Closed') r.closed += 1; else r.pending += 1;
+        if (String(d.date) > r.latest) r.latest = String(d.date);
         by.set(d.buyer_group, r);
       });
-      return [...by.values()].sort((a, b) => b.deal_count - a.deal_count || a.buyer.localeCompare(b.buyer));
+      return [...by.values()].sort((a, b) => b.deal_count - a.deal_count || b.latest.localeCompare(a.latest) || a.buyer.localeCompare(b.buyer));
     },
   });
   dash.calc('per_door', {
@@ -764,11 +766,17 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
     const acqBox = document.getElementById('bars-acq');
     const acq = gate(['acquirers'], acqBox);
-    if (acq && visible('ma')) barList(acqBox, acq, {
-      label: (d) => d.buyer, value: (d) => Number(d.deal_count), fmt: (v) => String(v),
-      color: () => dash.colors[0],
-      tip: (d) => [d.buyer, `${d.deal_count} tracked ${Number(d.deal_count) === 1 ? 'deal' : 'deals'}: ${d.closed} closed, ${d.pending} pending`],
-    });
+    if (acq && visible('ma')) {
+      barList(acqBox, acq.slice(0, 10), {
+        label: (d) => d.buyer, value: (d) => Number(d.deal_count), fmt: (v) => String(v),
+        color: () => dash.colors[0],
+        tip: (d) => [d.buyer, `${d.deal_count} tracked ${Number(d.deal_count) === 1 ? 'deal' : 'deals'}: ${d.closed} closed, ${d.pending} pending`],
+      });
+      const rest = acq.slice(10);
+      document.getElementById('acq-more').textContent = rest.length
+        ? `Also with ${rest.every((r) => r.deal_count === 1) ? 'one deal each' : 'fewer deals'}: ${rest.map((r) => r.buyer).join(', ')}.`
+        : '';
+    }
 
     // tracker
     const statusBox = document.getElementById('deal-status');

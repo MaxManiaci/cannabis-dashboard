@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-16T23:18:46Z",
+ "updated": "2026-10-16T23:52:25Z",
  "datasets": {
   "bid": {
-   "title": "Curaleaf–Aurora bid terms",
+   "title": "Curaleaf\u2013Aurora bid terms",
    "updated": "2026-10-16T21:14:05Z",
    "rows": 1
   },
@@ -33,8 +33,8 @@
   },
   "deals": {
    "title": "Cannabis M&A transactions",
-   "updated": "2026-10-16T21:55:00Z",
-   "rows": 19
+   "updated": "2026-10-16T23:52:03Z",
+   "rows": 28
   },
   "distress": {
    "title": "Distressed situations",
