@@ -16,28 +16,12 @@
   "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15831354/vireo-growth-announces-4deal-transaction-to-establish-ohio-presence-with-8-dispensaries"
  },
  {
-  "id": "k3",
-  "date": "2026-06-30",
-  "date_label": "1H 2026",
-  "item": "Equity issuance stays thin",
-  "detail": "$109.6M across 10 equity deals in the first half; Q2 slowed to 22 deals (~$535M) from 39 (~$1.69B) in Q1 ahead of the DEA hearing",
-  "url": "https://www.viridianca.com/1H_2026_Viridian_Cannabis_Deal_Tracker_Report.pdf"
- },
- {
   "id": "k9",
   "date": "2026-06-24",
   "date_label": "Jun 24, 2026",
   "item": "SAFE Banking Act reintroduced",
   "detail": "Bipartisan Senate bill (Merkley) with a House companion; would give banks a safe harbor to serve state-legal operators",
   "url": "https://www.merkley.senate.gov/merkley-bipartisan-senators-reintroduce-cannabis-banking-reform/"
- },
- {
-  "id": "k4",
-  "date": "2026-06-15",
-  "date_label": "Jun 2026",
-  "item": "Debt dominates financing",
-  "detail": "More than 90% of capital raised in 2026 was debt, versus about 50% the year before (Viridian)",
-  "url": "https://highlycapitalized.com/viridian-reports-a-substantial-increase-in-cannabis-ma-deals/"
  },
  {
   "id": "k5",
@@ -57,10 +41,10 @@
  },
  {
   "id": "k7",
-  "date": "2026-02-15",
-  "date_label": "Feb 2026",
-  "item": "Curaleaf $500M notes",
-  "detail": "Led February's ~$1.0B of capital deployed, per Viridian",
-  "url": "https://www.viridianca.com/1H_2026_Viridian_Cannabis_Deal_Tracker_Report.pdf"
+  "date": "2026-02-19",
+  "date_label": "Feb 19, 2026",
+  "item": "Curaleaf places $500M of senior secured notes",
+  "detail": "11.50% notes, the largest 2026 cannabis debt raise in the financing tracker",
+  "url": "https://www.newcannabisventures.com/curaleaf-borrows-500-million-for-3-years-at-11-5/"
  }
 ]

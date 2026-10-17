@@ -1,43 +1,13 @@
 [
  {
-  "id": "deals_2026_ytd",
-  "label": "Cannabis deals, 2026 YTD",
-  "display": "100+",
-  "value": 100,
-  "note": "Passed 100 on Aug 11 — 31% ahead of 2025's pace (2025 record: 132)",
-  "period": "Global, through Aug 11",
-  "source": "CannaMonitor",
-  "url": "https://cannamonitor.com/deal-tracker/"
- },
- {
-  "id": "capital_1h26",
-  "label": "Capital deployed, 1H 2026",
-  "display": "$2.22B",
-  "value": 2.22,
-  "note": "61 deals incl. 32 M&A — strongest first half in Viridian's series",
-  "period": "Jan–Jun 2026",
-  "source": "Viridian Capital Advisors",
-  "url": "https://www.viridianca.com/1H_2026_Viridian_Cannabis_Deal_Tracker_Report.pdf"
- },
- {
-  "id": "ma_1h26",
-  "label": "M&A transactions, 1H 2026",
-  "display": "32",
-  "value": 32,
-  "note": "Only 8 of the 32 disclosed a deal value",
-  "period": "Jan–Jun 2026",
-  "source": "Viridian Capital Advisors",
-  "url": "https://www.viridianca.com/1H_2026_Viridian_Cannabis_Deal_Tracker_Report.pdf"
- },
- {
   "id": "us_sales_2026e",
-  "label": "US regulated sales, 2026E",
-  "display": "$32.8B",
-  "value": 32.8,
-  "note": "+5.2% vs 2025",
-  "period": "2026 projection",
-  "source": "Viridian Q1 2026 report",
-  "url": "https://www.viridianca.com/Viridian_Deal_Tracker_Q1_Report.pdf"
+  "label": "US legal cannabis sales, 2026E",
+  "display": "$30.5B",
+  "value": 30.5,
+  "note": "+4.9% vs 2025",
+  "period": "Whitney Economics forecast (Mar 24, 2026)",
+  "source": "Whitney Economics",
+  "url": "https://whitneyeconomics.com/press-detail/whitney-economics-forecasts-u.s.-cannabis-growth-to-resume-in-2026-%C2%A0"
  },
  {
   "id": "rescheduling",

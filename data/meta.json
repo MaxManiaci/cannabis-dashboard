@@ -1,25 +1,15 @@
 {
- "updated": "2026-10-17T00:02:16Z",
+ "updated": "2026-10-17T03:58:25Z",
  "datasets": {
   "bid": {
-   "title": "Curaleaf\u2013Aurora bid terms",
+   "title": "Curaleaf–Aurora bid terms",
    "updated": "2026-10-16T21:14:05Z",
    "rows": 1
   },
   "capmkts": {
    "title": "Capital markets activity",
-   "updated": "2026-10-16T21:14:05Z",
-   "rows": 8
-  },
-  "capquarters": {
-   "title": "Capital deployed by quarter",
-   "updated": "2026-10-16T21:14:05Z",
-   "rows": 2
-  },
-  "capstats": {
-   "title": "Capital raised, 1H 2026",
-   "updated": "2026-10-16T21:14:05Z",
-   "rows": 3
+   "updated": "2026-10-17T03:57:21Z",
+   "rows": 6
   },
   "catalysts": {
    "title": "State catalysts and priorities",
@@ -28,7 +18,7 @@
   },
   "comps": {
    "title": "Deal multiples and benchmarks",
-   "updated": "2026-10-16T21:30:00Z",
+   "updated": "2026-10-17T03:57:21Z",
    "rows": 8
   },
   "deals": {
@@ -43,16 +33,16 @@
   },
   "financings": {
    "title": "Debt financing terms",
-   "updated": "2026-10-16T21:38:00Z",
-   "rows": 13
+   "updated": "2026-10-17T03:57:21Z",
+   "rows": 16
   },
   "kpis": {
-   "title": "Sector headline figures",
-   "updated": "2026-10-16T21:55:00Z",
-   "rows": 5
+   "title": "Sales outlook and rescheduling status",
+   "updated": "2026-10-17T03:57:21Z",
+   "rows": 2
   },
   "market": {
-   "title": "MSO stock snapshot",
+   "title": "MSOS fund data and weights",
    "updated": "2026-10-16T21:14:05Z",
    "rows": 6
   },
@@ -60,6 +50,16 @@
    "title": "Cannabis headlines",
    "updated": "2026-10-16T21:55:00Z",
    "rows": 25
+  },
+  "otherdeals": {
+   "updated": "2026-10-17T03:57:21Z",
+   "title": "Other transactions (equity raises, ESOPs, JVs)",
+   "rows": 5
+  },
+  "perf": {
+   "updated": "2026-10-17T03:57:21Z",
+   "title": "Stock prices for YTD performance",
+   "rows": 512
   },
   "timeline": {
    "title": "Catalyst calendar",

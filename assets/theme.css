@@ -19,11 +19,15 @@
   --ui-chart-axis: #c3c2b7;
   --ui-chart-grid: rgba(11, 11, 11, .08);
   --ui-chart-status-critical: #d03b3b;
-  --cx-cat-1: #2a78d6;
-  --cx-cat-2: #d95926;
-  --cx-cat-3: #199e70;
-  --cx-cat-4: #b8860b;
-  --cx-cat-5: #b8509a;
+  --ui-chart-reference: #898781;
+  --ui-chart-categorical-1: #2a78d6;
+  --ui-chart-categorical-2: #eb6834;
+  --ui-chart-categorical-3: #1baf7a;
+  --ui-chart-categorical-4: #eda100;
+  --ui-chart-categorical-5: #e87ba4;
+  --ui-chart-categorical-6: #008300;
+  --ui-chart-categorical-7: #9085e9;
+  --ui-chart-categorical-8: #e66767;
   --sk-a: rgba(11, 11, 11, .05);
   --sk-b: rgba(11, 11, 11, .11);
 
@@ -62,11 +66,15 @@
     --ui-chart-muted: #5f5e5a;
     --ui-chart-axis: #383835;
     --ui-chart-grid: rgba(255, 255, 255, .08);
-    --cx-cat-1: #3987e5;
-    --cx-cat-2: #eb6834;
-    --cx-cat-3: #1baf7a;
-    --cx-cat-4: #d4a72c;
-    --cx-cat-5: #d36fb6;
+    --ui-chart-reference: #97958d;
+    --ui-chart-categorical-1: #3987e5;
+    --ui-chart-categorical-2: #d95926;
+    --ui-chart-categorical-3: #199e70;
+    --ui-chart-categorical-4: #c98500;
+    --ui-chart-categorical-5: #d55181;
+    --ui-chart-categorical-6: #008300;
+    --ui-chart-categorical-7: #9085e9;
+    --ui-chart-categorical-8: #e66767;
     --sk-a: rgba(255, 255, 255, .05);
     --sk-b: rgba(255, 255, 255, .11);
   }

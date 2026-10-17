@@ -83,6 +83,30 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 .cx-c-tick { position: absolute; transform: translateX(-50%); }
 .cx-faded { opacity: .45; }
 .cx-c-row-sm .cx-c-track { height: 1.25rem; }
+.cx-perf { display: grid; gap: var(--ui-gap-lg); grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); align-items: start; }
+@media (max-width: 1100px) { .cx-perf { grid-template-columns: minmax(0, 1fr); } }
+.cx-lc { position: relative; min-height: 15rem; }
+.cx-lc svg { display: block; width: 100%; height: auto; overflow: visible; }
+.cx-lc svg:focus { outline: none; }
+.cx-lc svg:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 4px; border-radius: 4px; }
+.cx-lc text { font-family: var(--font-sans); font-size: 11px; fill: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.cx-lc text.cx-endlab-strong { fill: var(--color-fg); font-weight: 500; }
+.cx-chip.cx-lchip { display: inline-flex; align-items: center; gap: .375rem; }
+.cx-chip.cx-lchip[aria-pressed="true"] { background: none; color: var(--color-fg); border-color: var(--color-border-line); }
+.cx-chip.cx-lchip[aria-pressed="false"] { opacity: .55; }
+.cx-chip.cx-lchip[aria-pressed="false"] .cx-key { border-top-color: var(--ui-chart-muted); }
+.cx-key { display: inline-block; flex: none; width: 14px; height: 0; border-top: 2px solid var(--cx-k, currentColor); vertical-align: middle; }
+.cx-key-dash { border-top-style: dashed; }
+.cx-table td .cx-key { margin-right: .4rem; }
+.cx-tip-row { display: flex; align-items: center; gap: .375rem; white-space: nowrap; }
+.cx-tip-v { font-weight: 600; color: var(--color-fg); font-variant-numeric: tabular-nums; min-width: 5ch; }
+.cx-tip-n { color: var(--ui-text-secondary); }
+.cx-tip-x { margin-left: auto; padding-left: .5rem; color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.cx-stack-row { display: grid; grid-template-columns: minmax(5.5rem, 7.5rem) 1fr; align-items: center; gap: var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
+.cx-stack { display: flex; align-items: center; gap: 2px; height: 1.25rem; }
+.cx-seg { height: 100%; min-width: 2px; cursor: default; }
+.cx-seg:hover, .cx-seg:focus-visible { filter: brightness(1.12); outline: none; }
+.cx-stack-val { margin-left: .5rem; color: var(--color-fg-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .cx-tip { position: absolute; z-index: 5; pointer-events: none; max-width: 18rem; background: var(--ui-surface-popover); border: 1px solid var(--ui-border); border-radius: var(--ui-radius); box-shadow: var(--ui-shadow-popover); padding: var(--ui-pad-xs) var(--ui-pad-sm); font-size: var(--ui-font-size-caption); line-height: 1.4; }
 .cx-tip-h { color: var(--ui-text-secondary); }
 .cx-news, .cx-tl, .cx-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
@@ -122,7 +146,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   <header class="cx-head" id="top">
     <h1 class="cx-title" id="dash-title">US cannabis — investment banking dashboard</h1>
     <p class="cx-take" id="takeaway">Tracked 2026 deal flow is led by <b class="dash-skeleton" data-source="headline" data-field="lead_states" data-row="0" data-fmt="text"></b> (<span class="dash-skeleton" data-source="headline" data-field="lead_count" data-row="0" data-fmt="int"></span> deals). Next dated catalyst, <b class="dash-skeleton" data-source="headline" data-field="next_date_label" data-row="0" data-fmt="text"></b> — <span class="dash-skeleton" data-source="headline" data-field="next_event" data-row="0" data-fmt="text"></span>.</p>
-    <p class="cx-sub">Deals, financings, catalysts and headlines are researched from SEC filings, company releases, state regulators, trade press, Viridian Capital Advisors, CannaMonitor and AdvisorShares, and every row links to its source. Hemp is excluded. <span id="cx-updated"></span></p>
+    <p class="cx-sub">Counts and totals are computed from the trackers on this page, which are researched from SEC filings, company releases, state regulators and trade press; stock prices are Yahoo Finance closes and fund data comes from AdvisorShares. Every row links to its source. Hemp is excluded. <span id="cx-updated"></span></p>
     <nav class="cx-tabs" role="tablist" aria-label="Dashboard pages">
       <button class="cx-tab" type="button" role="tab" id="tab-overview" data-tab="overview" aria-selected="true">Overview</button>
       <button class="cx-tab" type="button" role="tab" id="tab-ma" data-tab="ma" aria-selected="false">M&amp;A</button>
@@ -135,23 +159,23 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   <!-- OVERVIEW -->
   <section class="cx-page" id="overview" role="tabpanel" aria-labelledby="tab-overview">
     <div class="cx-kpis" id="kpis">
-      <div class="cx-card cx-kpi" id="kpi-deals">
-        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=deals_2026_ytd" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=deals_2026_ytd" data-fmt="text"></div>
-        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=deals_2026_ytd" data-fmt="text"></p>
-        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=deals_2026_ytd" data-fmt="text"></p>
+      <div class="cx-card cx-kpi" id="kpi-activity">
+        <div class="cx-kl">Industry activity, 2026 YTD</div>
+        <div class="cx-kv dash-skeleton" data-source="activity" data-field="total" data-row="0" data-fmt="int"></div>
+        <p class="cx-note"><span data-source="activity" data-field="ma" data-row="0" data-fmt="int"></span> M&amp;A · <span data-source="activity" data-field="debt" data-row="0" data-fmt="int"></span> debt financings · <span data-source="activity" data-field="other_label" data-row="0" data-fmt="text"></span></p>
+        <p class="cx-period">US transactions in the trackers on this page</p>
       </div>
       <div class="cx-card cx-kpi" id="kpi-capital">
-        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=capital_1h26" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=capital_1h26" data-fmt="text"></div>
-        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=capital_1h26" data-fmt="text"></p>
-        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=capital_1h26" data-fmt="text"></p>
+        <div class="cx-kl">Capital deployed, 2026 YTD</div>
+        <div class="cx-kv dash-skeleton" data-source="capital_total" data-field="total_m" data-row="0" data-fmt="usdBM"></div>
+        <p class="cx-note">M&amp;A <span data-source="capital_total" data-field="ma_m" data-row="0" data-fmt="usdBM"></span> · debt <span data-source="capital_total" data-field="debt_m" data-row="0" data-fmt="usdBM"></span> · equity <span data-source="capital_total" data-field="equity_m" data-row="0" data-fmt="usdBM"></span></p>
+        <p class="cx-period">Disclosed US values; M&amp;A announced or closed</p>
       </div>
       <div class="cx-card cx-kpi" id="kpi-ma">
-        <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=ma_1h26" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="kpis" data-field="display" data-where="id=ma_1h26" data-fmt="text"></div>
-        <p class="cx-note" data-source="kpis" data-field="note" data-where="id=ma_1h26" data-fmt="text"></p>
-        <p class="cx-period" data-source="kpis" data-field="period" data-where="id=ma_1h26" data-fmt="text"></p>
+        <div class="cx-kl">M&amp;A transactions, 2026 YTD</div>
+        <div class="cx-kv dash-skeleton" data-source="ma_summary" data-field="us" data-row="0" data-fmt="int"></div>
+        <p class="cx-note"><span data-source="ma_summary" data-field="us_closed" data-row="0" data-fmt="int"></span> closed · <span data-source="ma_summary" data-field="us_pending" data-row="0" data-fmt="int"></span> pending · plus <span data-source="ma_summary" data-field="cross_border" data-row="0" data-fmt="int"></span> cross-border</p>
+        <p class="cx-period">US deals in the M&amp;A tracker</p>
       </div>
       <div class="cx-card cx-kpi" id="kpi-sales">
         <div class="cx-kl" data-source="kpis" data-field="label" data-where="id=us_sales_2026e" data-fmt="text"></div>
@@ -161,9 +185,9 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card cx-kpi" id="kpi-msos">
         <div class="cx-kl">MSOS · US multistate operator ETF</div>
-        <div class="cx-kv dash-skeleton" data-source="market" data-field="price" data-where="ticker=MSOS" data-fmt="usd2"></div>
-        <p class="cx-note"><span id="msos-ytd" data-source="msos_ytd" data-field="ytd" data-row="0" data-fmt="pctSigned"></span> year to date · NAV <span data-source="market" data-field="nav" data-where="ticker=MSOS" data-fmt="usd2"></span> · AUM $<span data-source="market" data-field="aum_m" data-where="ticker=MSOS" data-fmt="dec1"></span>M</p>
-        <p class="cx-period">Close, <span data-source="market" data-field="as_of" data-where="ticker=MSOS" data-fmt="day"></span></p>
+        <div class="cx-kv dash-skeleton" data-source="perf_latest" data-field="close" data-where="ticker=MSOS" data-fmt="usd2"></div>
+        <p class="cx-note"><span id="msos-ytd" data-source="perf_latest" data-field="ytd" data-where="ticker=MSOS" data-fmt="pctSigned"></span> year to date · NAV <span data-source="market" data-field="nav" data-where="ticker=MSOS" data-fmt="usd2"></span> · AUM $<span data-source="market" data-field="aum_m" data-where="ticker=MSOS" data-fmt="dec1"></span>M</p>
+        <p class="cx-period">Close <span data-source="perf_latest" data-field="date" data-where="ticker=MSOS" data-fmt="day"></span> · NAV and AUM <span data-source="market" data-field="as_of" data-where="ticker=MSOS" data-fmt="day"></span></p>
       </div>
     </div>
 
@@ -176,7 +200,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     <div class="cx-grid">
       <div class="cx-card" id="card-newdeals">
         <h2>Newly announced and closed deals</h2>
-        <p class="cx-note">Transactions announced, revised or closed in roughly the last six weeks. The full tracker is on the M&amp;A tab.</p>
+        <p class="cx-note">US transactions announced, revised or closed in roughly the last six weeks. Cross-border deals and the full tracker are on the M&amp;A tab.</p>
         <div class="cx-tablewrap"><table class="cx-table" id="tbl-newdeals" data-source="deals" data-row-key="id"></table></div>
       </div>
       <div class="cx-card" id="card-next">
@@ -186,16 +210,20 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
     </div>
 
-    <div class="cx-grid">
-      <div class="cx-card" id="card-topnews">
-        <h2>Latest headlines</h2>
-        <ul class="cx-news" id="list-topnews"></ul>
+    <div class="cx-card" id="card-perf">
+      <h2>Year-to-date performance</h2>
+      <p class="cx-note">Change in closing price since the 2025 year-end close for large US operators, including the biggest MSOS holdings, against MSOS (the US cannabis ETF) and the S&amp;P 500. Click a name to show or hide its line; hover the chart, or focus it and use the arrow keys, to read values.</p>
+      <div class="cx-chips" id="legend-perf" role="group" aria-label="Lines shown"></div>
+      <div class="cx-perf">
+        <div class="cx-lc" id="chart-perf" data-source="perf_series"></div>
+        <div class="cx-tablewrap"><table class="cx-table" id="tbl-perf" data-source="perf_latest" data-row-key="ticker"></table></div>
       </div>
-      <div class="cx-card" id="card-market">
-        <h2>Public MSO snapshot</h2>
-        <p class="cx-note">Closing prices and MSOS portfolio weights from the ETF's holdings file.</p>
-        <div class="cx-tablewrap"><table class="cx-table" id="tbl-market" data-source="market" data-row-key="ticker"></table></div>
-      </div>
+      <p class="cx-period" id="perf-asof"></p>
+    </div>
+
+    <div class="cx-card" id="card-topnews">
+      <h2>Latest headlines</h2>
+      <ul class="cx-news" id="list-topnews"></ul>
     </div>
   </section>
 
@@ -225,8 +253,14 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
           <button type="button" class="cx-chip" id="deal-state-clear" aria-pressed="true" hidden></button>
         </div>
       </div>
-      <p class="cx-note">Value is headline consideration in US$ millions where disclosed. Scroll sideways for terms and sources.</p>
+      <p class="cx-note"><span data-source="ma_summary" data-field="us" data-row="0" data-fmt="int"></span> US and <span data-source="ma_summary" data-field="cross_border" data-row="0" data-fmt="int"></span> cross-border transactions. Value is headline consideration in US$ millions where disclosed. Scroll sideways for terms and sources.</p>
       <div class="cx-tablewrap cx-tall"><table class="cx-table" id="tbl-deals" data-source="deals" data-row-key="id"></table></div>
+    </div>
+
+    <div class="cx-card" id="card-other">
+      <h2>ESOPs, joint ventures and other transactions</h2>
+      <p class="cx-note">US ownership deals outside the M&amp;A tracker. They count toward Industry activity on the Overview; equity raises are on the Capital markets tab.</p>
+      <div class="cx-tablewrap"><table class="cx-table" id="tbl-other" data-source="otherdeals" data-row-key="id"></table></div>
     </div>
 
     <div class="cx-grid">
@@ -235,7 +269,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
         <p class="cx-note">Hostile take-over bid; the share component moves with Curaleaf's stock.</p>
         <div class="cx-bidgrid">
           <div><div class="cx-kl">Headline offer</div><div class="cx-kv dash-skeleton" data-source="bid" data-field="offer_per_share" data-row="0" data-fmt="usd2"></div><p class="cx-note"><span data-source="bid" data-field="exch_ratio" data-row="0" data-fmt="text"></span> Curaleaf sh + <span data-source="bid" data-field="cash_per_share" data-row="0" data-fmt="usd2"></span> cash · cap <span data-source="bid" data-field="cap_per_share" data-row="0" data-fmt="usd2"></span></p></div>
-          <div><div class="cx-kl">Worth at today's CURLF</div><div class="cx-kv dash-skeleton" data-source="bid_implied" data-field="implied_value" data-row="0" data-fmt="usd2"></div><p class="cx-note"><span data-source="bid_implied" data-field="vs_offer" data-row="0" data-fmt="pctSigned"></span> vs headline · CURLF <span data-source="market" data-field="price" data-where="ticker=CURLF" data-fmt="usd2"></span></p></div>
+          <div><div class="cx-kl">Worth at today's CURLF</div><div class="cx-kv dash-skeleton" data-source="bid_implied" data-field="implied_value" data-row="0" data-fmt="usd2"></div><p class="cx-note"><span data-source="bid_implied" data-field="vs_offer" data-row="0" data-fmt="pctSigned"></span> vs headline · CURLF <span data-source="bid_implied" data-field="curlf" data-row="0" data-fmt="usd2"></span></p></div>
           <div><div class="cx-kl">Premium to unaffected</div><div class="cx-kv dash-skeleton" data-source="bid" data-field="premium_pct" data-row="0" data-fmt="pct0"></div><p class="cx-note">Unaffected 30-day VWAP <span data-source="bid" data-field="unaffected_vwap" data-row="0" data-fmt="usd2"></span> · values Aurora at $<span data-source="bid" data-field="implied_equity_m" data-row="0" data-fmt="dec1"></span>M (Dow Jones)</p></div>
           <div><div class="cx-kl">Offer expires</div><div class="cx-kv cx-kv-sm dash-skeleton" data-source="bid" data-field="expiry" data-row="0" data-fmt="day"></div><p class="cx-note" data-source="bid" data-field="expiry_label" data-row="0" data-fmt="text"></p></div>
         </div>
@@ -267,24 +301,24 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
   <!-- CAPITAL MARKETS -->
   <section class="cx-page" id="capital" role="tabpanel" aria-labelledby="tab-capital" hidden>
-    <div class="cx-kpis">
+    <div class="cx-kpis" id="cap-kpis">
       <div class="cx-card cx-kpi" id="kpi-cap-deployed">
-        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=cap_1h26" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=cap_1h26" data-fmt="text"></div>
-        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=cap_1h26" data-fmt="text"></p>
-        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=cap_1h26" data-fmt="text"></p>
+        <div class="cx-kl">Capital deployed, 2026 YTD</div>
+        <div class="cx-kv dash-skeleton" data-source="capital_total" data-field="total_m" data-row="0" data-fmt="usdBM"></div>
+        <p class="cx-note">Across <span data-source="capital_total" data-field="n" data-row="0" data-fmt="int"></span> US transactions with disclosed values: M&amp;A, debt and equity</p>
+        <p class="cx-period">Same total as the Overview; quarters below</p>
       </div>
       <div class="cx-card cx-kpi" id="kpi-cap-equity">
-        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=equity_1h26" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=equity_1h26" data-fmt="text"></div>
-        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=equity_1h26" data-fmt="text"></p>
-        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=equity_1h26" data-fmt="text"></p>
+        <div class="cx-kl">Equity raised, 2026 YTD</div>
+        <div class="cx-kv dash-skeleton" data-source="capital_total" data-field="equity_m" data-row="0" data-fmt="usdBM"></div>
+        <p class="cx-note">Across <span data-source="capital_total" data-field="equity_n" data-row="0" data-fmt="int"></span> disclosed raises, listed below the financing terms</p>
+        <p class="cx-period">US operators</p>
       </div>
       <div class="cx-card cx-kpi" id="kpi-cap-debt">
-        <div class="cx-kl" data-source="capstats" data-field="label" data-where="id=debt_share" data-fmt="text"></div>
-        <div class="cx-kv dash-skeleton" data-source="capstats" data-field="display" data-where="id=debt_share" data-fmt="text"></div>
-        <p class="cx-note" data-source="capstats" data-field="note" data-where="id=debt_share" data-fmt="text"></p>
-        <p class="cx-period" data-source="capstats" data-field="period" data-where="id=debt_share" data-fmt="text"></p>
+        <div class="cx-kl">Debt share of capital raised</div>
+        <div class="cx-kv dash-skeleton" data-source="capital_total" data-field="debt_share" data-row="0" data-fmt="pct0"></div>
+        <p class="cx-note">Debt <span data-source="capital_total" data-field="debt_m" data-row="0" data-fmt="usdBM"></span> of <span data-source="capital_total" data-field="raised_m" data-row="0" data-fmt="usdBM"></span> raised (debt plus equity)</p>
+        <p class="cx-period">2026 year to date</p>
       </div>
     </div>
 
@@ -324,8 +358,10 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card" id="card-capq">
         <h2>Capital deployed by quarter, 2026</h2>
-        <p class="cx-note">All cannabis capital transactions (debt, equity and M&amp;A) per Viridian's deal tracker; transaction counts in the tooltip. Q2 slowed as operators waited on the DEA hearing.</p>
-        <div class="cx-bars" id="bars-capq" data-source="capquarters"></div>
+        <p class="cx-note">Disclosed US values from the trackers: M&amp;A headline value (announced or closed), debt face amounts and equity raised. Hover or focus a segment for detail; every figure is in the table.</p>
+        <div class="cx-legend" id="legend-capq"></div>
+        <div class="cx-bars" id="bars-capq" data-source="capital"></div>
+        <div class="cx-tablewrap"><table class="cx-table" id="tbl-capq" data-source="capital" data-row-key="quarter"></table></div>
       </div>
     </div>
 
@@ -336,6 +372,12 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <p class="cx-note">Debt raises from company releases and SEC filings: rate, maturity, collateral, lender or arranger, discount and covenants, and use of proceeds. Click a column to sort.</p>
       <div class="cx-tablewrap cx-tall"><table class="cx-table" id="tbl-fin" data-source="financings" data-row-key="id"></table></div>
+    </div>
+
+    <div class="cx-card" id="card-equity">
+      <h2>Equity raises and sale-leasebacks</h2>
+      <p class="cx-note">Non-debt capital raised by US operators this year, from company releases and trade press.</p>
+      <div class="cx-tablewrap"><table class="cx-table" id="tbl-equity" data-source="otherdeals" data-row-key="id"></table></div>
     </div>
 
     <div class="cx-grid">
@@ -409,6 +451,11 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   const STATUS_CHIPS = ['All', 'Closed', 'Pending', 'Open bid'];
   const NEWS_TAGS = ['All', 'M&A', 'Federal', 'State', 'Restructuring', 'Capital markets', 'Operators'];
   const LENDER_TYPES = ['Bank', 'Private credit / notes', 'Convertible'];
+  const YEAR = 2026; // the tracked year; the trackers hold this year's transactions
+  const FIN_CATS = ['Equity raise', 'Sale-leaseback']; // other transactions that are financing
+  const OTHER_LABELS = { 'Equity raise': ['equity raise', 'equity raises'], ESOP: ['ESOP', 'ESOPs'], 'Joint venture': ['joint venture', 'joint ventures'], 'Sale-leaseback': ['sale-leaseback', 'sale-leasebacks'] };
+  const CAT_TOKENS = ['var(--ui-chart-categorical-1)', 'var(--ui-chart-categorical-2)', 'var(--ui-chart-categorical-3)', 'var(--ui-chart-categorical-4)', 'var(--ui-chart-categorical-5)', 'var(--ui-chart-categorical-6)', 'var(--ui-chart-categorical-7)', 'var(--ui-chart-categorical-8)'];
+  const CAT = (i) => dash.colors[i] || CAT_TOKENS[i] || 'var(--ui-chart-muted)';
 
   const root = document.getElementById('cx');
   root.style.setProperty('--cx-c0', dash.colors[0]);
@@ -426,6 +473,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     pct0: (v) => (isNum(v) ? d3.format('.0%')(Number(v)) : '—'),
     int: (v) => (isNum(v) ? d3.format(',')(Number(v)) : '—'),
     dec1: (v) => (isNum(v) ? d3.format(',.1f')(Number(v)) : '—'),
+    dec2: (v) => (isNum(v) ? d3.format(',.2f')(Number(v)) : '—'),
     day: (v) => (v ? fmtDayY(parseDay(v)) : '—'),
     pctPt: (v) => (isNum(v) ? d3.format('.2f')(Number(v)) + '%' : '—'),
     usdBM: (v) => (isNum(v) ? (Number(v) >= 1000 ? '$' + d3.format('.2f')(Number(v) / 1000) + 'B' : '$' + d3.format(',.0f')(Number(v)) + 'M') : '—'),
@@ -485,22 +533,99 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       return [all, bank, nonbank, seg('convertible', y.filter((f) => f.lender_type === 'Convertible'))];
     },
   });
-  dash.calc('msos_ytd', {
-    title: 'MSOS year to date',
-    description: 'MSOS latest close versus its 2025 year-end price.',
-    inputs: ['market'],
-    fn: (market) => market.filter((r) => r.ticker === 'MSOS' && Number(r.ye2025_price) > 0).map((r) => ({ ticker: r.ticker, ytd: Number(r.price) / Number(r.ye2025_price) - 1 })),
+  const inYear = (d) => String(d.date || '').slice(0, 4) === String(YEAR);
+  const quarterOf = (day) => Math.floor((Number(String(day).slice(5, 7)) - 1) / 3) + 1;
+  dash.calc('ma_summary', {
+    title: 'M&A count',
+    description: `Tracked ${YEAR} M&A: US transactions split into closed and still pending (pending deals and open bids), plus cross-border deals by US or Canadian operators, counted separately.`,
+    inputs: ['deals'],
+    fn: (deals) => {
+      const y = deals.filter(inYear);
+      const us = y.filter((d) => d.region === 'US');
+      return [{ us: us.length, us_closed: us.filter((d) => d.status_group === 'Closed').length, us_pending: us.filter((d) => d.status_group !== 'Closed').length, cross_border: y.length - us.length, total: y.length }];
+    },
+  });
+  dash.calc('activity', {
+    title: 'Industry activity',
+    description: `US ${YEAR} transactions across the trackers: US deals in the M&A tracker, debt financings, and other transactions (equity raises, ESOPs, joint ventures and similar).`,
+    inputs: ['deals', 'financings', 'otherdeals'],
+    fn: (deals, fin, other) => {
+      const ma = deals.filter((d) => inYear(d) && d.region === 'US').length;
+      const debt = fin.filter((f) => Number(f.year) === YEAR).length;
+      const o = other.filter((x) => Number(x.year) === YEAR);
+      const cats = d3.rollups(o, (v) => v.length, (x) => x.category).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0])));
+      const name = (c, n) => { const s = OTHER_LABELS[c] || [String(c).toLowerCase(), String(c).toLowerCase() + 's']; return `${n} ${n === 1 ? s[0] : s[1]}`; };
+      return [{ total: ma + debt + o.length, ma, debt, other: o.length, other_label: cats.map(([c, n]) => name(c, n)).join(', ') }];
+    },
+  });
+  dash.calc('capital', {
+    title: 'Capital deployed by quarter',
+    description: `Disclosed US$ values of US ${YEAR} transactions by quarter: M&A headline value (US deals announced or closed, open bids excluded, plus ESOP and joint-venture values where disclosed), debt face amounts, equity raised, and other financing such as sale-leasebacks.`,
+    inputs: ['deals', 'financings', 'otherdeals'],
+    fn: (deals, fin, other) => {
+      const items = [];
+      deals.filter((d) => inYear(d) && d.region === 'US' && d.status_group !== 'Open bid' && isNum(d.value_usd_m)).forEach((d) => items.push({ cat: 'ma', date: d.date, v: Number(d.value_usd_m) }));
+      fin.filter((f) => Number(f.year) === YEAR && isNum(f.amount_usd_m)).forEach((f) => items.push({ cat: 'debt', date: f.date, v: Number(f.amount_usd_m) }));
+      other.filter((o) => Number(o.year) === YEAR && isNum(o.amount_usd_m)).forEach((o) => items.push({ cat: o.category === 'Equity raise' ? 'equity' : o.category === 'Sale-leaseback' ? 'other' : 'ma', date: o.date, v: Number(o.amount_usd_m) }));
+      const latest = d3.max([...deals, ...fin, ...other], (r) => String(r.date || '')) || '';
+      const lastQ = latest.startsWith(String(YEAR)) ? quarterOf(latest) : 4;
+      return d3.range(1, lastQ + 1).map((q) => {
+        const its = items.filter((i) => String(i.date).startsWith(String(YEAR)) && quarterOf(i.date) === q);
+        const sum = (c) => d3.sum(its.filter((i) => i.cat === c), (i) => i.v);
+        const cnt = (c) => its.filter((i) => i.cat === c).length;
+        const qEnd = new Date(Date.UTC(YEAR, q * 3, 0)).toISOString().slice(0, 10);
+        return { quarter: `Q${q} ${YEAR}${q === lastQ && latest < qEnd ? ' QTD' : ''}`, q, ma_m: sum('ma'), debt_m: sum('debt'), equity_m: sum('equity'), other_m: sum('other'), total_m: d3.sum(its, (i) => i.v), ma_n: cnt('ma'), debt_n: cnt('debt'), equity_n: cnt('equity'), other_n: cnt('other'), n: its.length };
+      });
+    },
+  });
+  dash.calc('capital_total', {
+    title: 'Capital deployed, year to date',
+    description: 'Sums of the quarterly figures: capital deployed (M&A plus capital raised), capital raised (debt, equity and other financing), equity raised, and debt as a share of capital raised.',
+    inputs: ['capital'],
+    fn: (qs) => {
+      const s = (k) => d3.sum(qs, (r) => r[k]);
+      const raised = s('debt_m') + s('equity_m') + s('other_m');
+      return [{ total_m: s('total_m'), ma_m: s('ma_m'), debt_m: s('debt_m'), equity_m: s('equity_m'), other_m: s('other_m'), raised_m: raised, debt_share: raised ? s('debt_m') / raised : null, ma_n: s('ma_n'), debt_n: s('debt_n'), equity_n: s('equity_n'), other_n: s('other_n'), n: s('n') }];
+    },
+  });
+  dash.calc('perf_series', {
+    title: 'Year-to-date change by stock',
+    description: `Each close divided by the stock’s last close before ${YEAR}, minus one (split-adjusted Yahoo Finance closes).`,
+    inputs: ['perf'],
+    fn: (perf) => {
+      const start = `${YEAR}-01-01`;
+      const out = [];
+      d3.group(perf.filter((r) => isNum(r.close) && r.date), (r) => r.ticker).forEach((rows, ticker) => {
+        const sorted = rows.slice().sort((a, b) => String(a.date).localeCompare(String(b.date)));
+        const base = sorted.filter((r) => String(r.date) < start).pop();
+        if (!base) return;
+        sorted.filter((r) => String(r.date) >= String(base.date)).forEach((r) => out.push({ ticker, label: r.label || r.name || ticker, name: r.name, kind: r.kind, slot: r.slot, date: String(r.date).slice(0, 10), close: Number(r.close), ytd: Number(r.close) / Number(base.close) - 1 }));
+      });
+      return out;
+    },
+  });
+  dash.calc('perf_latest', {
+    title: 'Latest close and YTD change',
+    description: 'Each stock’s latest close and its change since the last close of the prior year, with its MSOS portfolio weight from the AdvisorShares holdings file where listed.',
+    inputs: ['perf_series', 'market'],
+    fn: (series, market) => {
+      const w = new Map(market.map((m) => [m.ticker, m.msos_weight_pct]));
+      return [...d3.group(series, (r) => r.ticker)].map(([ticker, rows]) => {
+        const last = rows[rows.length - 1];
+        return { ticker, label: last.label, name: last.name, kind: last.kind, slot: last.slot, date: last.date, close: last.close, ytd: last.ytd, msos_weight_pct: isNum(w.get(ticker)) ? Number(w.get(ticker)) : null };
+      }).sort((a, b) => b.ytd - a.ytd);
+    },
   });
   dash.calc('bid_implied', {
     title: 'Aurora bid at today’s Curaleaf price',
-    description: 'Exchange ratio × latest Curaleaf (CURLF) price + cash per share, versus the headline offer.',
-    inputs: ['bid', 'market'],
-    fn: (bid, market) => {
-      const curlf = market.find((r) => r.ticker === 'CURLF');
+    description: 'Exchange ratio × latest Curaleaf (CURLF) close + cash per share, versus the headline offer.',
+    inputs: ['bid', 'perf_latest'],
+    fn: (bid, latest) => {
+      const curlf = latest.find((r) => r.ticker === 'CURLF');
       if (!curlf) return [];
       return bid.map((b) => {
-        const implied_value = Number(b.exch_ratio) * Number(curlf.price) + Number(b.cash_per_share);
-        return { deal: b.deal, implied_value, vs_offer: implied_value / Number(b.offer_per_share) - 1 };
+        const implied_value = Number(b.exch_ratio) * Number(curlf.close) + Number(b.cash_per_share);
+        return { deal: b.deal, implied_value, vs_offer: implied_value / Number(b.offer_per_share) - 1, curlf: curlf.close, curlf_date: curlf.date };
       });
     },
   });
@@ -563,7 +688,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   function showTip(card, event, lines) {
     let t = card.querySelector(':scope > .cx-tip');
     if (!t) { t = el('div', 'cx-tip'); card.append(t); }
-    t.replaceChildren(...lines.filter((l) => l !== null && l !== undefined && l !== '').map((l, i) => el('div', i === 0 ? 'cx-tip-h' : null, l)));
+    t.replaceChildren(...lines.filter((l) => l !== null && l !== undefined && l !== '').map((l, i) => (l instanceof Node ? l : el('div', i === 0 ? 'cx-tip-h' : null, l))));
     t.hidden = false;
     const r = card.getBoundingClientRect();
     let x = event.clientX - r.left + 14; const y = event.clientY - r.top + 14;
@@ -574,8 +699,9 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   function hideTip(card) { const t = card.querySelector(':scope > .cx-tip'); if (t) t.hidden = true; }
 
   // ---------- tables ----------
-  const sorts = { 'tbl-cat': { field: 'priority', dir: 'asc' }, 'tbl-deals': { field: 'date_label', dir: 'desc' }, 'tbl-newdeals': { field: 'date_label', dir: 'desc' }, 'tbl-fin': { field: 'date_label', dir: 'desc' } };
+  const sorts = { 'tbl-cat': { field: 'priority', dir: 'asc' }, 'tbl-deals': { field: 'date_label', dir: 'desc' }, 'tbl-newdeals': { field: 'date_label', dir: 'desc' }, 'tbl-fin': { field: 'date_label', dir: 'desc' }, 'tbl-perf': { field: 'ytd', dir: 'desc' }, 'tbl-capq': { field: 'quarter', dir: 'asc' }, 'tbl-other': { field: 'date_label', dir: 'desc' }, 'tbl-equity': { field: 'date_label', dir: 'desc' } };
   function drawTable(table, rows, cols, keyField) {
+    if (table.tHead && table.tHead.rows[0].cells.length !== cols.length) table.deleteTHead();
     if (!table.tHead) {
       const tr = table.createTHead().insertRow();
       cols.forEach((c) => {
@@ -617,6 +743,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
         if (c.cls) td.classList.add(...(typeof c.cls === 'function' ? c.cls(d) : c.cls).split(' ').filter(Boolean));
         const text = c.fmt ? c.fmt(d[c.field], d) : FMT.text(d[c.field]);
         if (c.href && d[c.href]) td.append(link(text, d[c.href])); else td.textContent = text;
+        if (c.key) td.prepend(c.key(d));
         tr.append(td);
       });
       return tr;
@@ -667,13 +794,208 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     if (!rows.length) box.replaceChildren(el('p', 'cx-empty', o.empty || 'Nothing to show yet.'));
   }
 
-  const MARKET_COLS = [
-    { field: 'ticker', label: 'Ticker' },
-    { field: 'name', label: 'Company', wide: true },
-    { field: 'price', label: 'Close', num: true, fmt: (v) => FMT.usd2(v) },
-    { field: 'msos_weight_pct', label: 'MSOS weight', num: true, fmt: (v) => (isNum(v) ? d3.format('.1f')(Number(v)) + '%' : '—') },
-    { field: 'note', label: 'Listing', wide: true },
+  // ---------- YTD performance ----------
+  const perfColor = (r) => (r.kind === 'ETF' ? 'var(--color-fg)' : r.kind === 'Index' ? 'var(--color-fg-muted)' : (isNum(r.slot) ? CAT(Number(r.slot)) : 'var(--ui-chart-muted)'));
+  const perfOrder = (r) => (r.kind === 'Company' ? (isNum(r.slot) ? Number(r.slot) : 50) : r.kind === 'ETF' ? 100 : 101);
+  const fmtClose = (v, r) => (r && r.kind === 'Index' ? FMT.dec2(v) : FMT.usd2(v));
+  const lineKey = (r) => { const k = el('span', 'cx-key' + (r.kind === 'Index' ? ' cx-key-dash' : '')); k.style.setProperty('--cx-k', perfColor(r)); return k; };
+  const PERF_COLS = [
+    { field: 'label', label: 'Name', key: lineKey, cls: 'cx-nowrap' },
+    { field: 'ticker', label: 'Ticker', wide: true },
+    { field: 'close', label: 'Close', num: true, fmt: (v, d) => fmtClose(v, d) },
+    { field: 'ytd', label: 'YTD', num: true, fmt: (v) => FMT.pctSigned(v), cls: (d) => (d.ytd > 0 ? 'cx-up' : d.ytd < 0 ? 'cx-down' : '') },
+    { field: 'msos_weight_pct', label: 'MSOS weight', num: true, fmt: (v) => (isNum(v) ? d3.format('.1f')(Number(v)) + '%' : '—'), sortBy: (d) => (isNum(d.msos_weight_pct) ? Number(d.msos_weight_pct) : null) },
   ];
+  let perfOn = null; // tickers drawn; set from the data on first draw
+  let perfIdx = null;
+  let perfW = 0;
+
+  function drawPerf(box, series, latest) {
+    const card = box.closest('.cx-card');
+    const meta = latest.slice().sort((a, b) => perfOrder(a) - perfOrder(b));
+    if (!perfOn) {
+      let top = latest.filter((r) => r.kind === 'Company' && isNum(r.msos_weight_pct)).sort((a, b) => b.msos_weight_pct - a.msos_weight_pct).slice(0, 4);
+      if (!top.length) top = meta.filter((r) => r.kind === 'Company').slice(0, 4);
+      perfOn = new Set([...top.map((r) => r.ticker), ...latest.filter((r) => r.kind !== 'Company').map((r) => r.ticker)]);
+    }
+    const legend = document.getElementById('legend-perf');
+    const sig = meta.map((r) => `${r.ticker}:${r.label}`).join('|');
+    if (legend.dataset.sig !== sig) {
+      legend.dataset.sig = sig;
+      legend.replaceChildren(...meta.map((r) => {
+        const b = el('button', 'cx-chip cx-lchip'); b.type = 'button'; b.dataset.ticker = r.ticker;
+        b.append(lineKey(r), document.createTextNode(r.label));
+        b.addEventListener('click', () => { if (perfOn.has(r.ticker)) perfOn.delete(r.ticker); else perfOn.add(r.ticker); drawOverviewPerf(true); });
+        return b;
+      }));
+    }
+    [...legend.children].forEach((b) => b.setAttribute('aria-pressed', String(perfOn.has(b.dataset.ticker))));
+
+    const W = Math.max(280, Math.round(box.clientWidth || 640));
+    perfW = W;
+    const narrow = W < 560;
+    const H = narrow ? 240 : 300;
+    const M = { top: 12, right: narrow ? 14 : 118, bottom: 26, left: 46 };
+    const byT = d3.group(series, (r) => r.ticker);
+    const lines = meta.filter((r) => perfOn.has(r.ticker))
+      .map((r) => ({ r, pts: (byT.get(r.ticker) || []).map((p) => ({ d: parseDay(p.date), v: p.ytd, close: p.close })) }))
+      .filter((l) => l.pts.length);
+    const svg = d3.select(box).selectAll('svg').data([0]).join('svg')
+      .attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'group').attr('tabindex', 0)
+      .attr('aria-label', 'Year-to-date performance chart. Arrow keys step through dates; the table beside it lists every value.');
+    svg.selectAll('*').remove();
+    const x = d3.scaleUtc(d3.extent(series, (p) => parseDay(p.date)), [M.left, W - M.right]);
+    const vals = lines.flatMap((l) => l.pts.map((p) => p.v));
+    const [lo, hi] = d3.extent([0, ...vals]);
+    const pad = (hi - lo) * 0.06 || 0.05;
+    const y = d3.scaleLinear([lo - pad, hi + pad], [H - M.bottom, M.top]).nice(10);
+    const pct = (v) => (Math.abs(v) < 1e-9 ? '0%' : d3.format('+.0%')(v).replace('-', '−'));
+
+    const grid = svg.append('g');
+    y.ticks(6).forEach((t) => {
+      grid.append('line').attr('x1', M.left).attr('x2', W - M.right).attr('y1', y(t)).attr('y2', y(t))
+        .style('stroke', Math.abs(t) < 1e-9 ? 'var(--ui-chart-reference)' : 'var(--ui-chart-grid)').attr('stroke-width', 1).attr('shape-rendering', 'crispEdges');
+      grid.append('text').attr('x', M.left - 8).attr('y', y(t)).attr('dy', '0.32em').attr('text-anchor', 'end').text(pct(t));
+    });
+    grid.append('line').attr('x1', M.left).attr('x2', W - M.right).attr('y1', H - M.bottom).attr('y2', H - M.bottom)
+      .style('stroke', 'var(--ui-chart-axis)').attr('stroke-width', 1).attr('shape-rendering', 'crispEdges');
+    x.ticks(narrow ? d3.utcMonth.every(2) : d3.utcMonth.every(1)).forEach((t) => {
+      grid.append('text').attr('x', x(t)).attr('y', H - M.bottom + 17).attr('text-anchor', 'middle').text(d3.utcFormat('%b')(t));
+    });
+
+    if (!lines.length) {
+      svg.append('text').attr('x', (M.left + W - M.right) / 2).attr('y', (M.top + H - M.bottom) / 2).attr('text-anchor', 'middle').text('Pick a name above to draw its line.');
+      hideTip(card);
+      return;
+    }
+    const z = (r) => (r.kind === 'Index' ? 0 : r.kind === 'Company' ? 1 : 2);
+    const line = d3.line().x((p) => x(p.d)).y((p) => y(p.v));
+    const g = svg.append('g');
+    g.selectAll('path').data(lines.slice().sort((a, b) => z(a.r) - z(b.r))).join('path')
+      .attr('d', (l) => line(l.pts)).attr('fill', 'none').attr('stroke-width', 2).attr('stroke-linejoin', 'round')
+      .attr('stroke-linecap', (l) => (l.r.kind === 'Index' ? 'butt' : 'round')).attr('stroke-dasharray', (l) => (l.r.kind === 'Index' ? '5 4' : null))
+      .style('stroke', (l) => perfColor(l.r));
+    const ends = lines.map((l) => ({ l, p: l.pts[l.pts.length - 1] }));
+    g.selectAll('circle').data(ends).join('circle').attr('cx', (e) => x(e.p.d)).attr('cy', (e) => y(e.p.v)).attr('r', 4)
+      .style('fill', (e) => perfColor(e.l.r)).style('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+    if (!narrow) {
+      const pri = (r) => (r.kind === 'ETF' ? 0 : r.kind === 'Index' ? 1 : 2);
+      const placed = [];
+      ends.slice().sort((a, b) => pri(a.l.r) - pri(b.l.r) || Math.abs(b.p.v) - Math.abs(a.p.v)).forEach((e) => {
+        const yy = y(e.p.v);
+        if (placed.every((q) => Math.abs(q - yy) >= 13)) {
+          placed.push(yy);
+          g.append('text').attr('class', e.l.r.kind === 'ETF' ? 'cx-endlab-strong' : null).attr('x', x(e.p.d) + 9).attr('y', yy).attr('dy', '0.32em')
+            .text(`${e.l.r.label} ${FMT.pctSigned(e.p.v)}`);
+        }
+      });
+    }
+
+    const dates = [...new Set(lines.flatMap((l) => l.pts.map((p) => +p.d)))].sort((a, b) => a - b);
+    const at = (l, t) => { let p = null; for (const q of l.pts) { if (+q.d <= t) p = q; else break; } return p; };
+    const hover = svg.append('g').style('display', 'none').attr('pointer-events', 'none');
+    hover.append('line').attr('y1', M.top).attr('y2', H - M.bottom).style('stroke', 'var(--ui-chart-axis)').attr('stroke-width', 1);
+    const showAt = (i, evt) => {
+      const t = dates[i];
+      hover.style('display', null);
+      hover.select('line').attr('x1', x(new Date(t))).attr('x2', x(new Date(t)));
+      const rows = lines.map((l) => ({ l, p: at(l, t) })).filter((o) => o.p).sort((a, b) => b.p.v - a.p.v);
+      hover.selectAll('circle').data(rows).join('circle').attr('r', 3.5).attr('cx', (o) => x(o.p.d)).attr('cy', (o) => y(o.p.v))
+        .style('fill', (o) => perfColor(o.l.r)).style('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+      showTip(card, evt, [el('div', 'cx-tip-h', fmtDayY(new Date(t))), ...rows.map((o) => {
+        const row = el('div', 'cx-tip-row');
+        row.append(lineKey(o.l.r), el('span', 'cx-tip-v', FMT.pctSigned(o.p.v)), el('span', 'cx-tip-n', o.l.r.label), el('span', 'cx-tip-x', fmtClose(o.p.close, o.l.r)));
+        return row;
+      })]);
+    };
+    const hide = () => { hover.style('display', 'none'); hideTip(card); };
+    const fake = (i) => { const r = svg.node().getBoundingClientRect(); const k = r.width / W; return { clientX: r.left + x(new Date(dates[i])) * k, clientY: r.top + (M.top + 24) * k }; };
+    svg.append('rect').attr('x', M.left).attr('y', M.top).attr('width', Math.max(0, W - M.left - M.right)).attr('height', Math.max(0, H - M.top - M.bottom))
+      .style('fill', 'transparent')
+      .on('pointermove', (event) => { const [px] = d3.pointer(event, svg.node()); perfIdx = d3.bisectCenter(dates, +x.invert(px)); showAt(perfIdx, event); })
+      .on('pointerleave', hide);
+    svg.on('focus', () => { perfIdx = dates.length - 1; showAt(perfIdx, fake(perfIdx)); })
+      .on('blur', hide)
+      .on('keydown', (event) => {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        perfIdx = Math.max(0, Math.min(dates.length - 1, (perfIdx === null ? dates.length - 1 : perfIdx) + (event.key === 'ArrowLeft' ? -1 : 1)));
+        showAt(perfIdx, fake(perfIdx));
+      });
+  }
+
+  function drawPerfAsOf(rows) {
+    const box = document.getElementById('perf-asof');
+    if (!rows.length) { box.replaceChildren(); return; }
+    const newest = rows.reduce((m, r) => (String(r.date) > String(m.date) ? r : m), rows[0]);
+    const lag = rows.filter((r) => r.date !== newest.date);
+    const parts = [document.createTextNode('Closes through '), mark(el('span', null, FMT.day(newest.date)), 'perf_latest', 'date', 'ticker=' + encodeURIComponent(newest.ticker))];
+    lag.forEach((r, i) => parts.push(document.createTextNode(i ? `, ${r.label} ` : ` (${r.label} `), mark(el('span', null, FMT.day(r.date)), 'perf_latest', 'date', 'ticker=' + encodeURIComponent(r.ticker))));
+    if (lag.length) parts.push(document.createTextNode(')'));
+    parts.push(document.createTextNode('; split-adjusted closing prices from Yahoo Finance.'));
+    box.replaceChildren(...parts);
+  }
+
+  function drawOverviewPerf(force) {
+    const perfBox = document.getElementById('chart-perf');
+    const got = gate(['perf_series', 'perf_latest'], perfBox);
+    if (!got || !visible('overview')) return;
+    const w = Math.round(perfBox.clientWidth);
+    if (force === 'resize' && Math.abs(w - perfW) < 2) return;
+    drawPerf(perfBox, got[0], got[1]);
+  }
+
+  // ---------- stacked quarterly bars ----------
+  const CAP_CATS = [
+    { key: 'ma_m', n: 'ma_n', label: 'M&A', color: () => CAT(3) },
+    { key: 'debt_m', n: 'debt_n', label: 'Debt', color: () => CAT(4) },
+    { key: 'equity_m', n: 'equity_n', label: 'Equity', color: () => CAT(5) },
+    { key: 'other_m', n: 'other_n', label: 'Other financing', color: () => CAT(6) },
+  ];
+  function stackBars(box, rows, cats) {
+    const card = box.closest('.cx-card');
+    const max = d3.max(rows, (r) => Number(r.total_m)) || 1;
+    box.replaceChildren(...rows.map((r) => {
+      const w = 'quarter=' + encodeURIComponent(r.quarter);
+      const row = el('div', 'cx-stack-row');
+      const track = el('div', 'cx-stack');
+      const segs = cats.filter((c) => Number(r[c.key]) > 0);
+      segs.forEach((c, i) => {
+        const s = mark(el('div', 'cx-seg'), 'capital', c.key, w);
+        s.style.width = (Number(r[c.key]) / max * 78) + '%';
+        s.style.background = c.color();
+        s.style.borderRadius = i === segs.length - 1 ? '0 4px 4px 0' : '0';
+        s.tabIndex = 0;
+        s.setAttribute('aria-label', `${c.label}, ${r.quarter}: ${FMT.usdBM(r[c.key])}`);
+        const tip = () => [`${c.label} · ${r.quarter}`, `${FMT.usdBM(r[c.key])} across ${r[c.n]} ${Number(r[c.n]) === 1 ? 'transaction' : 'transactions'}`, `Quarter total ${FMT.usdBM(r.total_m)}`];
+        s.addEventListener('mousemove', (e) => showTip(card, e, tip()));
+        s.addEventListener('mouseleave', () => hideTip(card));
+        s.addEventListener('focus', () => { const b = s.getBoundingClientRect(); showTip(card, { clientX: b.left + b.width / 2, clientY: b.bottom }, tip()); });
+        s.addEventListener('blur', () => hideTip(card));
+        track.append(s);
+      });
+      track.append(mark(el('span', 'cx-stack-val', FMT.usdBM(r.total_m)), 'capital', 'total_m', w));
+      row.append(mark(el('div', 'cx-bar-label', r.quarter), 'capital', 'quarter', w), track);
+      return row;
+    }));
+    if (!rows.length) box.replaceChildren(el('p', 'cx-empty', 'Nothing to show yet.'));
+  }
+
+  const OTHER_COLS = [
+    { field: 'date_label', label: 'Date', sortBy: (d) => d.date, cls: 'cx-nowrap' },
+    { field: 'category', label: 'Type', cls: 'cx-nowrap' },
+    { field: 'company', label: 'Company' },
+    { field: 'counterparty', label: 'Counterparty', wide: true },
+    { field: 'amount_usd_m', label: 'Amount ($M)', num: true, fmt: fmtM, sortBy: (d) => (isNum(d.amount_usd_m) ? Number(d.amount_usd_m) : null) },
+    { field: 'states', label: 'States', cls: 'cx-nowrap' },
+    { field: 'status', label: 'Status' },
+    { field: 'description', label: 'Detail', cls: 'cx-terms' },
+    { field: 'source', label: 'Source', href: 'url', cls: 'cx-nowrap' },
+  ];
+  function otherTable(table, rows, empty) {
+    drawTable(table, rows, OTHER_COLS, 'id');
+    if (!rows.length) { const b = table.tBodies[0]; const tr = b.insertRow(); const td = tr.insertCell(); td.colSpan = OTHER_COLS.length; td.className = 'cx-empty'; td.textContent = empty; }
+  }
 
   // ---------- state ----------
   let activeTab = 'overview';
@@ -685,7 +1007,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   function drawOverview() {
     const tNew = document.getElementById('tbl-newdeals');
     const deals = gate(['deals'], tNew);
-    if (deals) drawTable(tNew, deals.filter((d) => d.is_new === true), [
+    if (deals) drawTable(tNew, deals.filter((d) => d.is_new === true && d.region === 'US'), [
       { field: 'date_label', label: 'Date', sortBy: (d) => d.date, cls: 'cx-nowrap' },
       { field: 'buyer', label: 'Acquirer' },
       { field: 'target', label: 'Target' },
@@ -701,9 +1023,10 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     const news = gate(['news'], topNews);
     if (news) newsList(topNews, news.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 7));
 
-    const tMk = document.getElementById('tbl-market');
-    const mk = gate(['market'], tMk);
-    if (mk) drawTable(tMk, mk, MARKET_COLS, 'ticker');
+    drawOverviewPerf();
+    const tPerf = document.getElementById('tbl-perf');
+    const pl = gate(['perf_latest'], tPerf);
+    if (pl) { drawTable(tPerf, pl, PERF_COLS, 'ticker'); drawPerfAsOf(pl); }
   }
 
   function timelineList(box, rows) {
@@ -816,6 +1139,10 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       ], 'id');
       if (!rows.length) { const b = tDeals.tBodies[0]; const tr = b.insertRow(); const td = tr.insertCell(); td.colSpan = 11; td.className = 'cx-empty'; td.textContent = 'No deals match these filters.'; }
     }
+
+    const tOther = document.getElementById('tbl-other');
+    const oth = gate(['otherdeals'], tOther);
+    if (oth) otherTable(tOther, oth.filter((o) => !FIN_CATS.includes(o.category)), 'No ESOPs or joint ventures tracked yet.');
 
     // per door
     const doorBox = document.getElementById('bars-door');
@@ -980,13 +1307,24 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
 
     const qBox = document.getElementById('bars-capq');
-    const q = gate(['capquarters'], qBox);
-    if (q && visible('capital')) barList(qBox, q, {
-      label: (d) => d.quarter, value: (d) => Number(d.capital_m),
-      fmt: (v) => (v >= 1000 ? '$' + d3.format('.2f')(v / 1000) + 'B' : '$' + d3.format(',.0f')(v) + 'M'),
-      color: () => dash.colors[0],
-      tip: (d) => [d.quarter, `${d.note} across ${d.deals} transactions`],
-    });
+    const qs = gate(['capital'], qBox);
+    if (qs) {
+      const used = CAP_CATS.filter((c) => qs.some((r) => Number(r[c.key]) > 0));
+      if (visible('capital')) stackBars(qBox, qs, used);
+      document.getElementById('legend-capq').replaceChildren(...used.map((c) => {
+        const it = el('span'); const sw = el('span', 'cx-sw'); sw.style.background = c.color(); it.append(sw, document.createTextNode(c.label)); return it;
+      }));
+      drawTable(document.getElementById('tbl-capq'), qs, [
+        { field: 'quarter', label: 'Quarter', cls: 'cx-nowrap', sortBy: (d) => d.q },
+        ...used.map((c) => ({ field: c.key, label: c.label, num: true, fmt: (v) => FMT.usdBM(v) })),
+        { field: 'total_m', label: 'Total', num: true, fmt: (v) => FMT.usdBM(v) },
+        { field: 'n', label: 'Transactions', num: true, fmt: (v) => FMT.int(v) },
+      ], 'quarter');
+    }
+
+    const tEq = document.getElementById('tbl-equity');
+    const eq = gate(['otherdeals'], tEq);
+    if (eq) otherTable(tEq, eq.filter((o) => FIN_CATS.includes(o.category)), 'No equity raises or sale-leasebacks tracked yet.');
 
     const up = document.getElementById('capfed-up');
     const tl = gate(['timeline'], up);
@@ -1123,6 +1461,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
   document.getElementById('deal-search').addEventListener('input', (e) => { dealSearch = e.target.value; drawMA(); });
   document.getElementById('cat-search').addEventListener('input', (e) => { catSearch = e.target.value; drawCatalysts(); });
   document.getElementById('deal-state-clear').addEventListener('click', () => dash.setParams({ deal_state: null }));
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => requestAnimationFrame(() => drawOverviewPerf('resize'))).observe(document.getElementById('chart-perf'));
   document.getElementById('tbl-cat').addEventListener('click', (e) => {
     const tr = e.target.closest('tr[data-key]');
     if (tr && !e.target.closest('a')) { dash.setParams({ cat_state: tr.dataset.key }); document.getElementById('card-catmap').scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }

@@ -1,0 +1,4610 @@
+[
+ {
+  "date": "2025-12-31",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.69
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.2
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.92
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 7.99
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 7.5
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.91
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 7.67
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.5
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.1
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.4
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.39
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.4
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.44
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.21
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.09
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 5.6
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 5.85
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.18
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 6.73
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.15
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.66
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.84
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.79
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.31
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 7.99
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.44
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.29
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.61
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.5
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.45
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.5
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.83
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.54
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.89
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.63
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.67
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.06
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.65
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 8.44
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.11
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.09
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.43
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.51
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.69
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.77
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 11.55
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 12.54
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.9
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.78
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 9.97
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.3
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.01
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.56
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.44
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.25
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.29
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.96
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.63
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.96
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.29
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.2
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.44
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.99
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.99
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.96
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.9
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.87
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.42
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 6.69
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.23
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.83
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 11.48
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.82
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.56
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 11.42
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 11.82
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.99
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.48
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.52
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.23
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.39
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.58
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.33
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.81
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.52
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.7
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.7
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.37
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.36
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.83
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.35
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.87
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.83
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.46
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.7
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.0
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.2
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.98
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 11.9
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 10.26
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 9.85
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.56
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.4
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.84
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.04
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.2
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.36
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.75
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.18
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.66
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.3
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.7
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.49
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.52
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.58
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.5
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.51
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.53
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.35
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.38
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.54
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.69
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.16
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.92
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.71
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.15
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.34
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.54
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.25
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.58
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.07
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.65
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.47
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.65
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.03
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.91
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.6
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.39
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.26
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.07
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.87
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.1
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.74
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.2
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.62
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.58
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.73
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.53
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.83
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 7.39
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 8.09
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.65
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.66
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.36
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.38
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.11
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.3
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.05
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.65
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.8
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.45
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.25
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.7
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.94
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.17
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.9
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.5
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.75
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.6
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.0
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.9
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.55
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.7
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.0
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.25
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.735
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.2
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.5
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.95
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.05
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.3
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.6
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.9
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.6
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.89
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.67
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.31
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.53
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.19
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.92
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.77
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.55
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.14
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.45
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.15
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.83
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.09
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.91
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.2
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.03
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.11
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.995
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 6.17
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.34
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.27
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.14
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.13
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 4.89
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.23
+ },
+ {
+  "date": "2026-01-02",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.26
+ },
+ {
+  "date": "2026-01-09",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.24
+ },
+ {
+  "date": "2026-01-16",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.28
+ },
+ {
+  "date": "2026-01-23",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.25
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.04
+ },
+ {
+  "date": "2026-02-06",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.055
+ },
+ {
+  "date": "2026-02-13",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.01
+ },
+ {
+  "date": "2026-02-20",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.96
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.99
+ },
+ {
+  "date": "2026-03-06",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.05
+ },
+ {
+  "date": "2026-03-13",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.975
+ },
+ {
+  "date": "2026-03-20",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.91
+ },
+ {
+  "date": "2026-03-27",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.836
+ },
+ {
+  "date": "2026-04-03",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.965
+ },
+ {
+  "date": "2026-04-10",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.911
+ },
+ {
+  "date": "2026-04-17",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.937
+ },
+ {
+  "date": "2026-04-24",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.0
+ },
+ {
+  "date": "2026-05-01",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.09
+ },
+ {
+  "date": "2026-05-08",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 1.03
+ },
+ {
+  "date": "2026-05-15",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.846
+ },
+ {
+  "date": "2026-05-22",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.86
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.917
+ },
+ {
+  "date": "2026-06-05",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.904
+ },
+ {
+  "date": "2026-06-12",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.82
+ },
+ {
+  "date": "2026-06-19",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.81
+ },
+ {
+  "date": "2026-06-26",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.81
+ },
+ {
+  "date": "2026-07-03",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.82
+ },
+ {
+  "date": "2026-07-10",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.76
+ },
+ {
+  "date": "2026-07-17",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.75
+ },
+ {
+  "date": "2026-07-24",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.681
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.642
+ },
+ {
+  "date": "2026-08-07",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.745
+ },
+ {
+  "date": "2026-08-14",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.771
+ },
+ {
+  "date": "2026-08-21",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.82
+ },
+ {
+  "date": "2026-08-28",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.773
+ },
+ {
+  "date": "2026-09-04",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.78
+ },
+ {
+  "date": "2026-09-11",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.713
+ },
+ {
+  "date": "2026-09-18",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.75
+ },
+ {
+  "date": "2026-09-25",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.764
+ },
+ {
+  "date": "2026-10-02",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.67
+ },
+ {
+  "date": "2026-10-09",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.644
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.62
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.5945
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.85
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.97
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.044
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.0
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.8
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.201
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.2
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.45
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 7.55
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.67
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.14
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 7.84
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.15
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 7.65
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.49
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.16
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.39
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.08
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.39
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 10.06
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.624
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.63
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.5
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.044
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 10.08
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.01
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.09
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.33
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 13.01
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 13.09
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.01
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 13.0
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 12.32
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.49
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 11.02
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 10.53
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.41
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.53
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.26
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 10.29
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 9.7
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 10.4
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.93
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.55
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.14
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 8.03
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 7.85
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 5.61
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 5.13
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 3.69
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 3.71
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 3.19
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 18.39
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 17.4
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 17.34
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 15.0
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 16.5
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 16.08
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 17.16
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 15.54
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 14.7
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 14.52
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 13.2
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 13.2
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.9
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.06
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.6
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 11.4
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.09
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.0
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 13.5
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 14.91
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.84
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 13.2
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.45
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.45
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.45
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 13.2
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.9
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.3
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.9
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 11.24
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.01
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.04
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.56
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.07
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.99
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.81
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.44
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.44
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.93
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 11.1
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.97
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.55
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.53
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 10.8
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.15
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 12.11
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 11.82
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.66
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.03
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.11
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.16
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 9.0
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.72
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.78
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.798
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.76
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.64
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.614
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.683
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.61
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.59
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.699
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.661
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.695
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.663
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.67
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.67
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.636
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.665
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.655
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.71
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.835
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.688
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.765
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.757
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.686
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.642
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.68
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.69
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.666
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.72
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.651
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.645
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.678
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.62
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.61
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.58
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.543
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.48
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.493
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.471
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.584
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.609
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.595
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.65
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.65
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.689
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.651
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.683
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.505
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.509
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.468
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.5
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.4727
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.72
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.58
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.94
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.52
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.27
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.03
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.31
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.96
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.82
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.02
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.88
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.89
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.85
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.78
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.75
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.55
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.68
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.88
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.14
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.11
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.84
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.11
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.27
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.86
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.5
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.65
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.92
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.74
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.36
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.77
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.43
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.08
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.83
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.6
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.56
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.39
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.01
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.23
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.04
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.56
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.76
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.85
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.95
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.97
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.05
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.92
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 5.43
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.52
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.47
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.08
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.12
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.89
+ },
+ {
+  "date": "2025-12-31",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6845.5
+ },
+ {
+  "date": "2026-01-07",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6920.93
+ },
+ {
+  "date": "2026-01-14",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6926.6
+ },
+ {
+  "date": "2026-01-21",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6875.62
+ },
+ {
+  "date": "2026-01-28",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6978.03
+ },
+ {
+  "date": "2026-01-30",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6939.03
+ },
+ {
+  "date": "2026-02-04",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6882.72
+ },
+ {
+  "date": "2026-02-11",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6941.47
+ },
+ {
+  "date": "2026-02-18",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6881.31
+ },
+ {
+  "date": "2026-02-25",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6946.13
+ },
+ {
+  "date": "2026-02-27",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6878.88
+ },
+ {
+  "date": "2026-03-04",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6869.5
+ },
+ {
+  "date": "2026-03-11",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6775.8
+ },
+ {
+  "date": "2026-03-18",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6624.7
+ },
+ {
+  "date": "2026-03-25",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6591.9
+ },
+ {
+  "date": "2026-03-31",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6528.52
+ },
+ {
+  "date": "2026-04-01",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6575.32
+ },
+ {
+  "date": "2026-04-08",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 6782.81
+ },
+ {
+  "date": "2026-04-15",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7022.95
+ },
+ {
+  "date": "2026-04-22",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7137.9
+ },
+ {
+  "date": "2026-04-29",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7135.95
+ },
+ {
+  "date": "2026-04-30",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7209.01
+ },
+ {
+  "date": "2026-05-06",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7365.12
+ },
+ {
+  "date": "2026-05-13",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7444.25
+ },
+ {
+  "date": "2026-05-20",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7432.97
+ },
+ {
+  "date": "2026-05-27",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7520.36
+ },
+ {
+  "date": "2026-05-29",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7580.06
+ },
+ {
+  "date": "2026-06-03",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7553.68
+ },
+ {
+  "date": "2026-06-10",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7266.99
+ },
+ {
+  "date": "2026-06-17",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7420.1
+ },
+ {
+  "date": "2026-06-24",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7358.22
+ },
+ {
+  "date": "2026-06-30",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7499.36
+ },
+ {
+  "date": "2026-07-01",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7483.23
+ },
+ {
+  "date": "2026-07-08",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7482.71
+ },
+ {
+  "date": "2026-07-15",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7572.4
+ },
+ {
+  "date": "2026-07-22",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7498.96
+ },
+ {
+  "date": "2026-07-29",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7316.15
+ },
+ {
+  "date": "2026-07-31",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7489.72
+ },
+ {
+  "date": "2026-08-05",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7723.55
+ },
+ {
+  "date": "2026-08-12",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7748.5
+ },
+ {
+  "date": "2026-08-19",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7707.98
+ },
+ {
+  "date": "2026-08-26",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7675.7
+ },
+ {
+  "date": "2026-08-31",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7686.14
+ },
+ {
+  "date": "2026-09-02",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7666.6
+ },
+ {
+  "date": "2026-09-09",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7636.36
+ },
+ {
+  "date": "2026-09-16",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7551.81
+ },
+ {
+  "date": "2026-09-23",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7706.03
+ },
+ {
+  "date": "2026-09-30",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7651.54
+ },
+ {
+  "date": "2026-10-07",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7801.77
+ },
+ {
+  "date": "2026-10-14",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7718.94
+ },
+ {
+  "date": "2026-10-15",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7744.06
+ },
+ {
+  "date": "2026-10-16",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7659.44
+ }
+]

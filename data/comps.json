@@ -11,13 +11,13 @@
  },
  {
   "id": "c2",
-  "item": "Curaleaf / Aurora (initial bid)",
+  "item": "Curaleaf / Aurora (initial US$4.00 offer)",
   "kind": "Transaction",
-  "multiple": 3.8,
+  "multiple": 12.0,
   "low": null,
   "high": null,
-  "basis": "EV/EBITDA on the US$247.8M initial bid — CannaMonitor deal tracker",
-  "url": "https://cannamonitor.com/deal-tracker/"
+  "basis": "12.0x CY2026E adjusted EBITDA, versus a 7.1x Canadian peer average — Curaleaf's offer materials (SEC)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001756770/000175677026000111/curaleafbrochure_final.htm"
  },
  {
   "id": "c3",
@@ -46,7 +46,7 @@
   "multiple": 5.27,
   "low": null,
   "high": null,
-  "basis": "EV / 2026E EBITDA, Viridian worldwide cultivation & retail median — as cited by Cann.Dev (Sep 2026)",
+  "basis": "EV / 2026E EBITDA, worldwide cultivation & retail median — as cited by Cann.Dev (Sep 2026)",
   "url": "https://www.cann.dev/cannabis-ma-september-2026-curaleaf-vireo-consolidation/"
  },
  {
@@ -66,7 +66,7 @@
   "multiple": 8.5,
   "low": null,
   "high": null,
-  "basis": "EV/EBITDA on A$85.1M merger — CannaMonitor deal tracker",
+  "basis": "EV/EBITDA on the A$85.1M merger, per an industry deal tracker",
   "url": "https://cannamonitor.com/deal-tracker/"
  },
  {
@@ -76,7 +76,7 @@
   "multiple": 33.1,
   "low": null,
   "high": null,
-  "basis": "EV/EBITDA on €227.2M for ~91% — CannaMonitor deal tracker",
+  "basis": "EV/EBITDA on €227.2M for ~91%, per an industry deal tracker; Organigram's release cites 1.7x annualized revenue on the €130M upfront value",
   "url": "https://cannamonitor.com/deal-tracker/"
  }
 ]

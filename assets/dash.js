@@ -3,8 +3,8 @@
    fresh data every few minutes. No network calls beyond this site. */
 (function () {
   'use strict';
-  var DATASETS = ['deals', 'news', 'timeline', 'catalysts', 'kpis', 'capstats', 'capquarters',
-    'capmkts', 'financings', 'market', 'bid', 'comps', 'distress'];
+  var DATASETS = ['deals', 'news', 'timeline', 'catalysts', 'kpis', 'capmkts', 'financings',
+    'otherdeals', 'market', 'perf', 'bid', 'comps', 'distress'];
   var DEFAULT_PARAMS = { cat_state: 'MA', deal_state: null, deal_status: 'All', news_tag: 'All', fin_type: 'All' };
   var POLL_MS = 5 * 60 * 1000;
 
@@ -71,7 +71,9 @@
   }
 
   window.dash = {
-    colors: ['var(--cx-cat-1)', 'var(--cx-cat-2)', 'var(--cx-cat-3)', 'var(--cx-cat-4)', 'var(--cx-cat-5)'],
+    colors: ['var(--ui-chart-categorical-1)', 'var(--ui-chart-categorical-2)', 'var(--ui-chart-categorical-3)',
+      'var(--ui-chart-categorical-4)', 'var(--ui-chart-categorical-5)', 'var(--ui-chart-categorical-6)',
+      'var(--ui-chart-categorical-7)', 'var(--ui-chart-categorical-8)'],
     data: function (id) {
       if (calcs[id]) return runCalc(id);
       return store[id] || { status: 'missing', data: null };
