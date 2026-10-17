@@ -804,7 +804,6 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     { field: 'ticker', label: 'Ticker', wide: true },
     { field: 'close', label: 'Close', num: true, fmt: (v, d) => fmtClose(v, d) },
     { field: 'ytd', label: 'YTD', num: true, fmt: (v) => FMT.pctSigned(v), cls: (d) => (d.ytd > 0 ? 'cx-up' : d.ytd < 0 ? 'cx-down' : '') },
-    { field: 'msos_weight_pct', label: 'MSOS weight', num: true, fmt: (v) => (isNum(v) ? d3.format('.1f')(Number(v)) + '%' : '—'), sortBy: (d) => (isNum(d.msos_weight_pct) ? Number(d.msos_weight_pct) : null) },
   ];
   let perfOn = null; // tickers drawn; set from the data on first draw
   let perfIdx = null;
