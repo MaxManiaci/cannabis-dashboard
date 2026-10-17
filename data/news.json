@@ -1,19 +1,27 @@
 [
  {
+  "id": "n25",
+  "date": "2026-10-16",
+  "tag": "State",
+  "headline": "63 Massachusetts lawmakers, incl. both chamber leaders, endorse the No on 8 campaign against repeal",
+  "source": "No on 8 campaign release (Cannabis Business Times)",
+  "url": "https://www.cannabisbusinesstimes.com/us-states/massachusetts/news/15837667/60-massachusetts-lawmakers-endorse-campaign-to-protect-cannabis-legalization"
+ },
+ {
+  "id": "n27",
+  "date": "2026-10-16",
+  "tag": "Operators",
+  "headline": "Green Thumb opens its 26th Florida RISE store, in Belleview",
+  "source": "Green Thumb release (Cannabis Business Times)",
+  "url": "https://www.cannabisbusinesstimes.com/dispensary/news/15837730/green-thumb-opens-26th-florida-dispensary-in-belleview"
+ },
+ {
   "id": "n01",
   "date": "2026-10-16",
   "tag": "State",
   "headline": "NC poll: 63% back adult-use as the governor's council readies a 2027 roadmap",
   "source": "Cannabis Business Times",
   "url": "https://www.cannabisbusinesstimes.com/us-states/north-carolina/news/15837705/nc-adults-back-cannabis-legalization-as-state-tees-up-2027-reform"
- },
- {
-  "id": "n02",
-  "date": "2026-09-15",
-  "tag": "State",
-  "headline": "Minnesota tops $250M in the first year of statewide adult-use retail",
-  "source": "Minnesota Office of Cannabis Management",
-  "url": "https://content.govdelivery.com/accounts/MNOCM/bulletins/42aab6d"
  },
  {
   "id": "n03",
@@ -24,12 +32,12 @@
   "url": "https://www.globenewswire.com/news-release/2026/10/15/3381478/0/en/cronos-completes-acquisition-of-canadelaar-europe-s-largest-adult-use-cannabis-company.html"
  },
  {
-  "id": "n04",
-  "date": "2026-08-07",
-  "tag": "State",
-  "headline": "Rhode Island restarts adult-use retail licensing; applications due Nov 23",
-  "source": "Vicente LLP",
-  "url": "https://vicentellp.com/insights/rhode-island-cannabis-retail-licensing-reopens-august-7-2026-what-you-need-to-know/"
+  "id": "n21",
+  "date": "2026-10-15",
+  "tag": "M&A",
+  "headline": "Nevada regulators approve Vireo's Planet 13 merger; holder vote still pending",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/nevada-regulators-approve-vireo-growths-acquisition-of-planet-13-holdings/"
  },
  {
   "id": "n05",
@@ -46,6 +54,14 @@
   "headline": "DEA opposes more briefing on the GAO report, leaves reopening the record to the judge",
   "source": "Cannabis Business Times",
   "url": "https://www.cannabisbusinesstimes.com/cannabis-rescheduling/news/15837407/dea-objects-to-additional-rescheduling-briefing-request-by-prohibitionists-defers-to-judge"
+ },
+ {
+  "id": "n26",
+  "date": "2026-10-14",
+  "tag": "Federal",
+  "headline": "DEA judge keeps rescheduling stayed, orders the government to answer the motion to reopen by Oct 21",
+  "source": "DEA Office of Administrative Law Judges",
+  "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
  },
  {
   "id": "n07",
@@ -136,12 +152,28 @@
   "url": "https://mjbizdaily.com/news/new-jersey-cannabis-retailer-sells-to-marijuana-mso-for-9-million/618212/"
  },
  {
+  "id": "n02",
+  "date": "2026-09-15",
+  "tag": "State",
+  "headline": "Minnesota tops $250M in the first year of statewide adult-use retail",
+  "source": "Minnesota Office of Cannabis Management",
+  "url": "https://content.govdelivery.com/accounts/MNOCM/bulletins/42aab6d"
+ },
+ {
   "id": "n18",
   "date": "2026-09-11",
   "tag": "State",
   "headline": "Florida final order issues 22 new vertically integrated MMTC licenses; appeals expected",
   "source": "MJBizDaily",
   "url": "https://mjbizdaily.com/news/florida-grants-22-cannabis-licenses-despite-judges-call-to-rescore/618145"
+ },
+ {
+  "id": "n22",
+  "date": "2026-09-04",
+  "tag": "State",
+  "headline": "Nebraska Supreme Court upholds the voter-approved medical cannabis laws",
+  "source": "Nebraska Examiner",
+  "url": "https://nebraskaexaminer.com/2026/09/04/nebraska-supreme-court-upholds-validity-of-state-medical-cannabis-laws/embed/"
  },
  {
   "id": "n19",
@@ -160,43 +192,11 @@
   "url": "https://norml.org/news/2026/08/27/massachusetts-most-voters-oppose-ballot-initiative-effort-to-repeal-states-adult-use-marijuana-market/"
  },
  {
-  "id": "n21",
-  "date": "2026-10-15",
-  "tag": "M&A",
-  "headline": "Nevada regulators approve Vireo's Planet 13 merger; holder vote still pending",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/nevada-regulators-approve-vireo-growths-acquisition-of-planet-13-holdings/"
- },
- {
-  "id": "n22",
-  "date": "2026-09-04",
-  "tag": "State",
-  "headline": "Nebraska Supreme Court upholds the voter-approved medical cannabis laws",
-  "source": "Nebraska Examiner",
-  "url": "https://nebraskaexaminer.com/2026/09/04/nebraska-supreme-court-upholds-validity-of-state-medical-cannabis-laws/embed/"
- },
- {
   "id": "n23",
   "date": "2026-08-21",
   "tag": "M&A",
   "headline": "Vireo closes C21, adding three Nevada stores and ~104K sq ft of capacity",
   "source": "Vireo release (Cannabis Business Times)",
   "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15833148/vireo-growth-completes-acquisition-of-c21-investments"
- },
- {
-  "id": "n24",
-  "date": "2026-07-31",
-  "tag": "M&A",
-  "headline": "Vireo agrees to ~$208M all-stock deal for an eight-store Ohio platform",
-  "source": "Vireo release (Cannabis Business Times)",
-  "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15831354/vireo-growth-announces-4deal-transaction-to-establish-ohio-presence-with-8-dispensaries"
- },
- {
-  "id": "n26",
-  "date": "2026-10-14",
-  "tag": "Federal",
-  "headline": "DEA judge keeps rescheduling stayed, orders the government to answer the motion to reopen by Oct 21",
-  "source": "DEA Office of Administrative Law Judges",
-  "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
  }
 ]
