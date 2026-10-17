@@ -1,5 +1,13 @@
 [
  {
+  "id": "n28",
+  "date": "2026-10-16",
+  "tag": "State",
+  "headline": "Kentucky medical program now has 26 dispensaries open across all 11 licensing regions; 28K+ patients approved",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/kentucky-now-has-medical-marijuana-dispensaries-open-in-every-region-of-the-state-governor-announces/"
+ },
+ {
   "id": "n25",
   "date": "2026-10-16",
   "tag": "State",
@@ -190,13 +198,5 @@
   "headline": "UMass Amherst poll: only 33% of Massachusetts voters back the Question 8 repeal",
   "source": "NORML",
   "url": "https://norml.org/news/2026/08/27/massachusetts-most-voters-oppose-ballot-initiative-effort-to-repeal-states-adult-use-marijuana-market/"
- },
- {
-  "id": "n23",
-  "date": "2026-08-21",
-  "tag": "M&A",
-  "headline": "Vireo closes C21, adding three Nevada stores and ~104K sq ft of capacity",
-  "source": "Vireo release (Cannabis Business Times)",
-  "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15833148/vireo-growth-completes-acquisition-of-c21-investments"
  }
 ]
