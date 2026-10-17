@@ -318,5 +318,25 @@
   "use_of_proceeds": "Balance of the $88.5M New York facility purchase and closing costs",
   "source": "Vireo Growth release (SEC 8-K Ex. 99.1)",
   "url": "https://www.sec.gov/Archives/edgar/data/0001771706/000110465926068242/tm2615959d1_ex99-1.htm"
+ },
+ {
+  "id": "f17",
+  "date": "2026-01-21",
+  "date_label": "Jan 21, 2026",
+  "year": 2026,
+  "issuer": "S1 Enterprises (Illicit brand)",
+  "instrument": "Senior secured credit facility",
+  "amount_usd_m": null,
+  "rate_text": "Not disclosed",
+  "rate_pct": null,
+  "rate_type": null,
+  "maturity_label": "Not disclosed",
+  "security": "Senior secured",
+  "lender_type": "Private credit / notes",
+  "lender": "Chicago Atlantic (joint lead arranger and administrative agent)",
+  "issue_terms": "Not disclosed",
+  "use_of_proceeds": "Finances the sale of 100% of the company's equity to its employee stock ownership plan (Missouri and New Jersey operations)",
+  "source": "Chicago Atlantic release (Business Wire)",
+  "url": "https://www.businesswire.com/news/home/20260121034917/en/Chicago-Atlantic-Closes-Senior-Secured-Financing-to-S1-Enterprises-the-Parent-Company-of-Illicit-Cannabis"
  }
 ]
