@@ -32,6 +32,22 @@
   "url": "https://www.cannabisbusinesstimes.com/us-states/north-carolina/news/15837705/nc-adults-back-cannabis-legalization-as-state-tees-up-2027-reform"
  },
  {
+  "id": "n29",
+  "date": "2026-10-16",
+  "tag": "State",
+  "headline": "DC medical cannabis sales hit $10.2M in September, up 31% YoY; $88M year to date",
+  "source": "The Marijuana Herald (DC ABCA data)",
+  "url": "https://themarijuanaherald.com/2026/10/washington-d-c-medical-marijuana-sales-reach-88-1-million-through-september-with-monthly-sales-up-31-2/"
+ },
+ {
+  "id": "n30",
+  "date": "2026-10-16",
+  "tag": "State",
+  "headline": "California water board proposes 28% grower fee hike; about 500 cultivation enrollments face December termination",
+  "source": "The Marijuana Herald (CA State Water Board report)",
+  "url": "https://themarijuanaherald.com/2026/10/california-marijuana-water-regulators-propose-28-fee-increase-as-500-growers-face-loss-of-enrollment/"
+ },
+ {
   "id": "n03",
   "date": "2026-10-15",
   "tag": "M&A",
@@ -70,6 +86,14 @@
   "headline": "DEA judge keeps rescheduling stayed, orders the government to answer the motion to reopen by Oct 21",
   "source": "DEA Office of Administrative Law Judges",
   "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
+ },
+ {
+  "id": "n31",
+  "date": "2026-10-14",
+  "tag": "Operators",
+  "headline": "Curaleaf opens Wellington store, its 79th in Florida and 189th nationwide",
+  "source": "Curaleaf release (PR Newswire)",
+  "url": "https://prnewswire.com/news-releases/curaleaf-continues-florida-expansion-with-wellington-dispensary-opening-302908058.html"
  },
  {
   "id": "n07",
@@ -174,29 +198,5 @@
   "headline": "Florida final order issues 22 new vertically integrated MMTC licenses; appeals expected",
   "source": "MJBizDaily",
   "url": "https://mjbizdaily.com/news/florida-grants-22-cannabis-licenses-despite-judges-call-to-rescore/618145"
- },
- {
-  "id": "n22",
-  "date": "2026-09-04",
-  "tag": "State",
-  "headline": "Nebraska Supreme Court upholds the voter-approved medical cannabis laws",
-  "source": "Nebraska Examiner",
-  "url": "https://nebraskaexaminer.com/2026/09/04/nebraska-supreme-court-upholds-validity-of-state-medical-cannabis-laws/embed/"
- },
- {
-  "id": "n19",
-  "date": "2026-09-02",
-  "tag": "M&A",
-  "headline": "Cresco buys nine PharmaCann Pennsylvania dispensaries for $50M",
-  "source": "Cresco Labs release (Business Wire)",
-  "url": "https://secure.businesswire.com/news/home/20260902305608/en/Cresco-Labs-Acquires-Nine-Pennsylvania-Dispensaries-in-Accretive-Transaction-to-Strengthen-Market-Leadership"
- },
- {
-  "id": "n20",
-  "date": "2026-08-27",
-  "tag": "State",
-  "headline": "UMass Amherst poll: only 33% of Massachusetts voters back the Question 8 repeal",
-  "source": "NORML",
-  "url": "https://norml.org/news/2026/08/27/massachusetts-most-voters-oppose-ballot-initiative-effort-to-repeal-states-adult-use-marijuana-market/"
  }
 ]
