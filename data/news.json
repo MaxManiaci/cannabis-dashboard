@@ -1,5 +1,21 @@
 [
  {
+  "id": "n44",
+  "date": "2026-10-16",
+  "tag": "State",
+  "headline": "New Jersey Senate leaders' bipartisan bill S4287 would make unlicensed cannabis retail a third-degree crime; clears Judiciary panel",
+  "source": "MJBizDaily",
+  "url": "https://mjbizdaily.com/news/bipartisan-new-jersey-bill-targets-unlicensed-cannabis-retailers/618689/"
+ },
+ {
+  "id": "n45",
+  "date": "2026-10-16",
+  "tag": "Operators",
+  "headline": "Federal grand jury indicts La Mota CEO on eight counts over $1.5M+ in unpaid payroll taxes",
+  "source": "MJBizDaily",
+  "url": "https://mjbizdaily.com/news/controversial-oregon-cannabis-executive-charged-with-tax-fraud/618693/"
+ },
+ {
   "id": "n39",
   "date": "2026-10-16",
   "tag": "Operators",
@@ -182,21 +198,5 @@
   "headline": "Missouri launches state 'Show Me Your Age' ID-scanning tool for cannabis, alcohol and tobacco retailers",
   "source": "Missouri Office of Administration",
   "url": "https://oa.mo.gov/commissioners-office/news/state-agencies-launch-%E2%80%98show-me-your-age%E2%80%99-verification-tool-combat-underage"
- },
- {
-  "id": "n07",
-  "date": "2026-10-13",
-  "tag": "Federal",
-  "headline": "DEA says GAO scheduling report has no bearing on rescheduling",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/dea-gao-no-bearing/"
- },
- {
-  "id": "n33",
-  "date": "2026-10-13",
-  "tag": "State",
-  "headline": "Kansas Democratic governor nominee Holscher backs legalization, faults GOP rival Masterson for blocking medical access",
-  "source": "Marijuana Moment",
-  "url": "https://www.marijuanamoment.net/kansas-should-legalize-marijuana-democratic-candidate-for-governor-says-criticizing-gop-opponent-for-blocking-medical-access/"
  }
 ]
