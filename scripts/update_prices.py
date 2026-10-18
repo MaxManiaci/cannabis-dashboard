@@ -7,6 +7,7 @@ existing rows are never changed.
 """
 import csv
 import datetime as dt
+from decimal import ROUND_HALF_UP, Decimal
 import io
 import json
 import pathlib
@@ -83,7 +84,8 @@ def from_stooq(ticker):
 
 
 def rnd(v):
-    return round(v, 2) if abs(v) >= 1 else round(v, 4)
+    q = Decimal('0.01') if abs(v) >= 1 else Decimal('0.0001')
+    return float(Decimal(repr(v)).quantize(q, rounding=ROUND_HALF_UP))
 
 
 def main():
