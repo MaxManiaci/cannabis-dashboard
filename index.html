@@ -126,15 +126,19 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 .cx-detail dl { margin: 0; display: grid; grid-template-columns: 7rem 1fr; gap: var(--ui-gap-xs) var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
 .cx-detail dt { color: var(--color-fg-muted); }
 .cx-detail dd { margin: 0; }
-.cx-prof { display: flex; flex-direction: column; gap: var(--ui-gap-md); margin-top: var(--ui-gap-xs); padding-top: var(--ui-gap-md); border-top: 1px solid var(--color-border-line); }
+.cx-prof { display: flex; flex-direction: column; gap: var(--ui-gap-sm); margin-top: var(--ui-gap-xs); padding-top: var(--ui-gap-md); border-top: 1px solid var(--color-border-line); }
 .cx-prof.dash-skeleton { min-height: 10rem; }
 .cx-prof-sec { display: flex; flex-direction: column; gap: var(--ui-gap-xs); }
 .cx-prof .cx-subh { margin: 0; }
-.cx-prof-kpi { display: flex; flex-wrap: wrap; align-items: baseline; gap: .125rem .625rem; }
-.cx-prof-big { font-family: var(--font-serif); font-size: var(--ui-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; }
-.cx-prof-chg { font-size: var(--ui-font-size-caption); font-variant-numeric: tabular-nums; }
-.cx-prof-per { font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); }
-.cx-prof-txt { margin: 0; }
+.cx-prof-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--ui-gap-xs); }
+@media (max-width: 22rem) { .cx-prof-grid { grid-template-columns: minmax(0, 1fr); } }
+.cx-prof-stat { min-width: 0; display: flex; flex-direction: column; gap: .125rem; padding: .5rem .625rem; border: 1px solid var(--color-border-line); border-radius: 8px; }
+.cx-prof-lab { font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); }
+.cx-prof-val { font-family: var(--font-serif); font-size: 1.25rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.cx-prof-val.cx-prof-na { font-family: inherit; font-size: var(--ui-font-size-caption); line-height: 1.6; color: var(--color-fg-muted); }
+.cx-prof-sub { font-size: var(--ui-font-size-caption); line-height: 1.35; color: var(--color-fg-muted); }
+.cx-prof-players { margin: 0; font-size: var(--ui-font-size-caption); line-height: 1.45; }
+.cx-prof-players .cx-note { display: inline; }
 .cx-prof-deals { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .5rem; font-size: var(--ui-font-size-caption); }
 .cx-prof-deals .cx-chip { color: var(--color-fg); }
 @media (min-width: 70rem) { #card-catmap { align-self: start; position: sticky; top: var(--ui-gap-md); } }
@@ -418,7 +422,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card" id="card-catdetail">
         <h2>State detail</h2>
-        <p class="cx-note">The catalyst, then market size, regulation and notable players, each with its source.</p>
+        <p class="cx-note">The catalyst, then market data, regulation and notable players, each with its source.</p>
         <div class="cx-detail" id="cat-detail"></div>
       </div>
     </div>
@@ -1386,19 +1390,35 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     };
     const sec = (title, ...kids) => { const x = el('section', 'cx-prof-sec'); x.append(el('h3', 'cx-subh', title), ...kids.filter(Boolean)); return x; };
 
-    let kpi = null;
-    if (isNum(s.sales_m)) {
-      kpi = el('div', 'cx-prof-kpi');
-      kpi.append(m(el('span', 'cx-prof-big', FMT.usdBM(s.sales_m)), 'sales_m'));
-      if (isNum(s.sales_growth_pct)) {
-        const g = m(el('span', 'cx-prof-chg', FMT.pctSigned(s.sales_growth_pct) + ' y/y'), 'sales_growth_pct');
-        g.classList.add(Number(s.sales_growth_pct) >= 0 ? 'cx-up' : 'cx-down');
-        kpi.append(g);
-      }
-      if (s.sales_period) kpi.append(m(el('span', 'cx-prof-per', s.sales_period), 'sales_period'));
-    }
-    const market = sec('Market size', kpi, s.sales_note ? m(el('p', 'cx-prof-txt', s.sales_note), 'sales_note') : null,
-      sources([[s.sales_source, s.sales_url, 'sales_source'], [s.stats_source, s.stats_url, 'stats_source']]));
+    const stat = (label, val, ...subs) => { const d = el('div', 'cx-prof-stat'); d.append(el('div', 'cx-prof-lab', label), val, ...subs.filter(Boolean)); return d; };
+    const sub = (text, src, url, f) => {
+      if (!text && !src) return null;
+      const d = el('div', 'cx-prof-sub');
+      if (text) d.append(document.createTextNode(text));
+      if (src) { if (text) d.append(document.createTextNode(' · ')); d.append(m(link(src, url), f)); }
+      return d;
+    };
+    const na = (text, f) => m(el('div', 'cx-prof-val cx-prof-na', text), f);
+    const val = (text, f) => m(el('div', 'cx-prof-val', text), f);
+
+    const hasSales = isNum(s.sales_m) && isNum(s.sales_months) && Number(s.sales_months) > 0;
+    const sales = hasSales
+      ? stat('Avg. monthly sales', val(FMT.usdBM(Number(s.sales_m) / Number(s.sales_months)), 'sales_m'),
+        m(el('div', 'cx-prof-sub', s.sales_period), 'sales_period'),
+        sub(`Total ${FMT.usdBM(s.sales_m)} ÷ ${s.sales_months}`, s.sales_source, s.sales_url, 'sales_source'))
+      : stat('Avg. monthly sales', na(s.sales_period || 'Not published', 'sales_period'));
+    const pop = stat('Population', isNum(s.population) ? val(d3.format('.1f')(Number(s.population) / 1e6) + 'M', 'population') : na('—', 'population'),
+      sub(s.population_asof, s.pop_source, s.pop_url, 'pop_source'));
+    const pats = isNum(s.patients)
+      ? stat('Medical patients', val(FMT.int(s.patients), 'patients'),
+        sub([s.patients_asof, s.patients_note].filter(Boolean).join(' · '), s.patients_source, s.patients_url, 'patients_source'))
+      : stat('Medical patients', na(s.patients_note || 'Not published', 'patients_note'));
+    const stores = stat('Dispensaries open', val(FMT.int(s.stores) + (s.stores_plus ? '+' : ''), 'stores'),
+      sub(s.stores_asof, s.stores_source, s.stores_url, 'stores_source'),
+      sub(s.cap, s.cap_source, s.cap_url, 'cap_source'));
+    const grid = el('div', 'cx-prof-grid');
+    grid.append(sales, pop, pats, stores);
+    const market = sec('Market', grid);
 
     const dl = el('dl');
     const add = (label, node) => { const dd = el('dd'); dd.append(node); dl.append(el('dt', null, label), dd); };
@@ -1422,11 +1442,19 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
         deals.append(t, b);
       } else deals.append(el('span', 'cx-empty', 'No deals in this state on the M&A tracker yet.'));
     }
-    const players = sec('Notable players', s.players ? m(el('p', 'cx-prof-txt', s.players), 'players') : null,
-      sources([[s.players_source, s.players_url, 'players_source'], [s.players_source2, s.players_url2, 'players_source2']]), deals);
+    const pl = el('p', 'cx-prof-players');
+    if (s.players) pl.append(m(el('span', null, s.players), 'players'));
+    const srcs = [[s.players_source, s.players_url, 'players_source'], [s.players_source2, s.players_url2, 'players_source2']].filter(([n]) => n);
+    if (srcs.length) {
+      const n = el('span', 'cx-note');
+      n.append(document.createTextNode(' — '));
+      srcs.forEach(([t, u, f], i) => { if (i) n.append(document.createTextNode(' · ')); n.append(m(link(t, u), f)); });
+      pl.append(n);
+    }
+    const players = sec('Notable players', pl, deals);
 
     box.append(market, reg, players);
-    if (s.as_of) box.append(m(el('p', 'cx-note', 'Profile checked ' + FMT.day(s.as_of) + '. Taxes shown are cannabis-specific; general sales tax may also apply.'), 'as_of'));
+    if (s.as_of) box.append(m(el('p', 'cx-note', 'Profile checked ' + FMT.day(s.as_of) + '. Average monthly sales = latest reported period total ÷ months. Taxes are cannabis-specific; general sales tax may also apply.'), 'as_of'));
     return box;
   }
 
