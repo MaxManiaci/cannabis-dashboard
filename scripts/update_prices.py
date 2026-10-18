@@ -1,6 +1,6 @@
 """Append new daily closes to data/perf.json for every ticker already in it.
 
-Primary source: Yahoo Finance chart data. Fallback: Stooq daily CSV.
+Source: Yahoo Finance (via yfinance, then the raw chart endpoint). Fallback: Stooq daily CSV.
 Only completed sessions are added (today's bar only after 16:30 New York time).
 A ticker is skipped (and reported) if no source answers or a close looks wrong;
 existing rows are never changed.
@@ -35,6 +35,19 @@ def fetch(url):
             last = e
             time.sleep(3 * (attempt + 1))
     raise last
+
+
+def from_yfinance(ticker):
+    out = {}
+    try:
+        import yfinance as yf
+        hist = yf.Ticker(ticker).history(period='1mo', interval='1d', auto_adjust=False, actions=False)
+        for idx, c in hist['Close'].items():
+            if c == c:  # not NaN
+                out[idx.date().isoformat()] = float(c)
+    except Exception as e:
+        print(f'::warning::yfinance {ticker}: {type(e).__name__}: {str(e)[:150]}')
+    return out
 
 
 def from_yahoo(ticker):
@@ -87,8 +100,9 @@ def main():
     for t in tickers:
         mine = sorted((r for r in rows if r['ticker'] == t), key=lambda r: r['date'])
         last = mine[-1]
-        data = from_yahoo(t)
-        source = 'yahoo'
+        data, source = from_yfinance(t), 'yfinance'
+        if not data:
+            data, source = from_yahoo(t), 'yahoo'
         if not data:
             data, source = from_stooq(t), 'stooq'
         if not data:
