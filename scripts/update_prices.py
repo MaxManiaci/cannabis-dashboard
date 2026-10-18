@@ -26,13 +26,13 @@ DRY = '--dry-run' in sys.argv
 
 def fetch(url):
     last = None
-    for attempt in range(4):
+    for attempt in range(3):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=30) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=15) as r:
                 return r.read()
         except Exception as e:  # network errors, 429s
             last = e
-            time.sleep(5 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
     raise last
 
 
