@@ -22,6 +22,7 @@ META = ROOT / 'data' / 'meta.json'
 NY = ZoneInfo('America/New_York')
 HEADERS = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'}
 DRY = '--dry-run' in sys.argv
+PROBE = '--probe' in sys.argv
 
 
 def fetch(url):
@@ -50,7 +51,7 @@ def from_yahoo(ticker):
             if out:
                 return out
         except Exception as e:
-            print(f'  yahoo {host} {ticker}: {e}')
+            print(f'::warning::yahoo {host} {ticker}: {type(e).__name__}: {str(e)[:150]}')
     return out
 
 
@@ -64,7 +65,7 @@ def from_stooq(ticker):
             if c and c not in ('N/D', '0'):
                 out[r['Date']] = float(c)
     except Exception as e:
-        print(f'  stooq {ticker}: {e}')
+        print(f'::warning::stooq {ticker}: {type(e).__name__}: {str(e)[:150]}')
     return out
 
 
@@ -80,6 +81,8 @@ def main():
     for r in rows:
         if r['ticker'] not in tickers:
             tickers.append(r['ticker'])
+    if PROBE:
+        tickers = ['TRLV', '^GSPC']
     added, failed = 0, []
     for t in tickers:
         mine = sorted((r for r in rows if r['ticker'] == t), key=lambda r: r['date'])
@@ -105,7 +108,7 @@ def main():
                              'kind': last['kind'], 'slot': last['slot'], 'close': c})
             prev = c
         latest = max(data) if data else None
-        print(f'{t}: source {source}, latest bar {latest} {rnd(data[latest]) if latest else ""}, stored {last["date"]}, adding {len(accepted)}')
+        print(f'::notice::{t}: source {source}, latest bar {latest} {rnd(data[latest]) if latest else ""}, stored {last["date"]}, adding {len(accepted)}')
         rows.extend(accepted)
         added += len(accepted)
     if failed:

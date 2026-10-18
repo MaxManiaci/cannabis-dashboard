@@ -28,7 +28,7 @@ jobs:
           python-version: '3.12'
       - name: Dry run
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: python scripts/update_prices.py --dry-run
+        run: python scripts/update_prices.py --dry-run --probe
       - name: Update prices and push
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
         env:
