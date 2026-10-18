@@ -26,6 +26,7 @@
 .cx-tab:hover { color: var(--color-fg); }
 .cx-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--ui-font-weight-medium); }
 .cx-page { display: flex; flex-direction: column; gap: var(--ui-gap-md); }
+.cx-intel { display: flex; flex-direction: column; gap: var(--ui-gap-md); }
 .cx-page[hidden] { display: none; }
 .cx-grid { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); }
 .cx-kpis { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
@@ -447,13 +448,12 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
   <!-- NEWS -->
   <section class="cx-page" id="news" role="tabpanel" aria-labelledby="tab-news" hidden>
-    <div class="cx-grid">
+    <div class="cx-grid" id="news-grid">
       <div class="cx-card" id="card-news">
         <div class="cx-cardhead"><h2>Headlines</h2><div class="cx-chips" id="news-tags" role="group" aria-label="Topic"></div></div>
         <ul class="cx-news" id="list-news"></ul>
       </div>
     </div>
-
   </section>
   <footer class="cx-foot">For information only; not investment advice. Figures come from the linked public filings, releases and reports and can change as they are revised. Headlines refresh hourly, roughly 6am–10pm ET; deals, financings, prices and other figures refresh once a day, by about 6am ET.</footer>
 </div>
