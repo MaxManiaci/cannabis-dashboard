@@ -66,6 +66,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 .cx-map text { pointer-events: none; font-family: var(--font-sans); font-weight: 500; }
 .cx-legend { display: flex; flex-wrap: wrap; align-items: center; gap: var(--ui-gap-xs) var(--ui-gap-md); font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); min-height: 1.2em; }
 .cx-sw { display: inline-block; width: .75rem; height: .75rem; border-radius: 3px; margin-right: .3rem; vertical-align: -1px; }
+.cx-sw.cx-sw-ring { background: var(--color-panel); box-shadow: inset 0 0 0 1.25px var(--color-fg-muted); }
 .cx-bars { display: flex; flex-direction: column; gap: var(--ui-gap-xs); min-height: 6rem; }
 .cx-bar-row { display: grid; grid-template-columns: minmax(6rem, 42%) 1fr auto; align-items: center; gap: var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
 .cx-bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -416,7 +417,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     <div class="cx-grid">
       <div class="cx-card" id="card-catmap">
         <h2>Catalyst map — states to target</h2>
-        <p class="cx-note">Priority reflects near-term deal relevance: High = active mandates likely; Risk = binary downside; Medium = selective; Watch = longer-dated. Click a state for detail.</p>
+        <p class="cx-note">Priority reflects near-term deal relevance: High = active mandates likely; Risk = binary downside; Medium = selective; Watch = longer-dated. Outlined states have a legal market but no tracked catalyst. Click any state for detail.</p>
         <div class="cx-map" id="map-cat" data-source="catalysts"></div>
         <div class="cx-legend" id="legend-cat" data-source="catalysts"></div>
       </div>
@@ -803,7 +804,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       .each(function ([k]) {
         const st = cfg.style(k);
         d3.select(this).style('fill', st.fill).style('fill-opacity', st.opacity)
-          .style('stroke', cfg.selected === k ? 'var(--color-fg)' : 'none').style('stroke-width', cfg.selected === k ? 2 : 0);
+          .style('stroke', cfg.selected === k ? 'var(--color-fg)' : (st.stroke || 'none')).style('stroke-width', cfg.selected === k ? 2 : (st.stroke ? 1.25 : 0));
       });
     g.select('text').attr('x', (s - 4) / 2).attr('y', (s - 4) / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 11)
       .text(([k]) => k).each(function ([k]) { d3.select(this).style('fill', cfg.style(k).text); });
@@ -1403,17 +1404,20 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 
     const hasSales = isNum(s.sales_m) && isNum(s.sales_months) && Number(s.sales_months) > 0;
     const sales = hasSales
-      ? stat('Avg. monthly sales', val(FMT.usdBM(Number(s.sales_m) / Number(s.sales_months)), 'sales_m'),
+      ? stat('Monthly sales', val(FMT.usdBM(Number(s.sales_m) / Number(s.sales_months)), 'sales_m'),
         m(el('div', 'cx-prof-sub', s.sales_period), 'sales_period'),
         sub(`Total ${FMT.usdBM(s.sales_m)} ÷ ${s.sales_months}`, s.sales_source, s.sales_url, 'sales_source'))
-      : stat('Avg. monthly sales', na(s.sales_period || 'Not published', 'sales_period'));
+      : (isNum(s.monthly_low_m) && isNum(s.monthly_high_m))
+        ? stat('Monthly sales', val(`$${d3.format('~g')(Number(s.monthly_low_m))}–${d3.format('~g')(Number(s.monthly_high_m))}M`, 'monthly_low_m'),
+          m(el('div', 'cx-prof-sub', s.sales_period), 'sales_period'), sub(null, s.sales_source, s.sales_url, 'sales_source'))
+        : stat('Monthly sales', na(s.sales_period || 'Not published', 'sales_period'));
     const pop = stat('Population', isNum(s.population) ? val(d3.format('.1f')(Number(s.population) / 1e6) + 'M', 'population') : na('—', 'population'),
       sub(s.population_asof, s.pop_source, s.pop_url, 'pop_source'));
     const pats = isNum(s.patients)
       ? stat('Medical patients', val(FMT.int(s.patients), 'patients'),
         sub([s.patients_asof, s.patients_note].filter(Boolean).join(' · '), s.patients_source, s.patients_url, 'patients_source'))
       : stat('Medical patients', na(s.patients_note || 'Not published', 'patients_note'));
-    const stores = stat('Dispensaries open', val(FMT.int(s.stores) + (s.stores_plus ? '+' : ''), 'stores'),
+    const stores = stat('Dispensaries open', isNum(s.stores) ? val(FMT.int(s.stores) + (s.stores_plus ? '+' : ''), 'stores') : na('Not published', 'stores'),
       sub(s.stores_asof, s.stores_source, s.stores_url, 'stores_source'),
       sub(s.cap, s.cap_source, s.cap_url, 'cap_source'));
     const grid = el('div', 'cx-prof-grid');
@@ -1454,7 +1458,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     const players = sec('Notable players', pl, deals);
 
     box.append(market, reg, players);
-    if (s.as_of) box.append(m(el('p', 'cx-note', 'Profile checked ' + FMT.day(s.as_of) + '. Average monthly sales = latest reported period total ÷ months. Taxes are cannabis-specific; general sales tax may also apply.'), 'as_of'));
+    if (s.as_of) box.append(m(el('p', 'cx-note', 'Profile checked ' + FMT.day(s.as_of) + '. Monthly sales = latest reported period total ÷ months, or a data provider’s monthly estimate where a state publishes no total. Taxes are cannabis-specific; general sales tax may also apply.'), 'as_of'));
     return box;
   }
 
@@ -1467,24 +1471,27 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     const priFill = (pr) => (pr === 'High' ? dash.colors[0] : pr === 'Medium' ? dash.colors[1] : pr === 'Risk' ? 'var(--ui-chart-status-critical)' : 'var(--ui-chart-muted)');
     if (cats && visible('catalysts')) {
       const by = new Map(cats.map((r) => [r.state, r]));
+      const sp = dash.data('states');
+      const prof = new Set(sp.status === 'ok' && Array.isArray(sp.data) ? sp.data.filter((x) => !by.has(x.state)).map((x) => x.state) : []);
       tileMap(mapBox, {
         label: 'Catalyst priority by state',
         selected: sel,
         style: (k) => {
           const r = by.get(k);
-          if (!r) return { fill: 'var(--color-border-line)', opacity: 0.55, text: 'var(--color-fg-muted)' };
+          if (!r) return prof.has(k) ? { fill: 'var(--color-panel)', opacity: 1, text: 'var(--color-fg)', stroke: 'var(--color-fg-muted)' } : { fill: 'var(--color-border-line)', opacity: 0.55, text: 'var(--color-fg-muted)' };
           return { fill: priFill(r.priority), opacity: 1, text: r.priority === 'Watch' ? 'var(--color-fg)' : 'var(--color-bg)' };
         },
-        tip: (k) => { const r = by.get(k); return r ? [STATE_NAMES[k] || k, `${r.priority} · ${r.category}`, r.date_label] : [STATE_NAMES[k] || k, 'No tracked catalyst']; },
+        tip: (k) => { const r = by.get(k); return r ? [STATE_NAMES[k] || k, `${r.priority} · ${r.category}`, r.date_label] : [STATE_NAMES[k] || k, prof.has(k) ? 'Legal market · no tracked catalyst' : 'No tracked catalyst']; },
         onClick: (k) => dash.setParams({ cat_state: k }),
       });
       const legend = document.getElementById('legend-cat');
-      legend.replaceChildren(...PRIORITIES.map((pr) => {
+      const ring = el('span'); ring.append(el('span', 'cx-sw cx-sw-ring'), document.createTextNode(`Legal, no catalyst (${prof.size})`));
+      legend.replaceChildren(...[...PRIORITIES.map((pr) => {
         const n = cats.filter((r) => r.priority === pr).length;
         const it = el('span'); const sw = el('span', 'cx-sw'); sw.style.background = priFill(pr);
         it.append(sw, document.createTextNode(`${pr} (${n})`));
         return it;
-      }));
+      }), ...(prof.size ? [ring] : [])]);
     }
 
     // detail
@@ -1493,7 +1500,8 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     if (cats2) {
       const r = cats2.find((c) => c.state === sel);
       if (!r) {
-        det.replaceChildren(...[el('div', 'cx-detail-name', STATE_NAMES[sel] || sel), el('p', 'cx-empty', 'No tracked catalyst for this state. Pick a colored state on the map.'), stateProfile(sel)].filter(Boolean));
+        const prof = stateProfile(sel);
+        det.replaceChildren(...[el('div', 'cx-detail-name', STATE_NAMES[sel] || sel), el('p', 'cx-empty', prof ? 'No tracked catalyst for this state; market data below.' : 'No tracked catalyst or legal market for this state. Pick a colored or outlined state on the map.'), prof].filter(Boolean));
       } else {
         const w = 'state=' + r.state;
         const dl = el('dl');

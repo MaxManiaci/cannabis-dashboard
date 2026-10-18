@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T01:08:23Z",
+ "updated": "2026-10-18T01:42:57Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
@@ -63,8 +63,8 @@
   },
   "states": {
    "title": "State market and regulatory profiles",
-   "updated": "2026-10-18T01:08:10Z",
-   "rows": 22
+   "updated": "2026-10-18T01:42:43Z",
+   "rows": 46
   },
   "timeline": {
    "title": "Catalyst calendar",
