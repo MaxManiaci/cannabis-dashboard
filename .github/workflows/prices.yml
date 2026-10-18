@@ -1,0 +1,52 @@
+name: Update stock prices
+on:
+  schedule:
+    - cron: '25 21 * * 1-5'
+    - cron: '25 23 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Fetch and log prices without writing'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: prices
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dry run
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: python scripts/update_prices.py --dry-run
+      - name: Update prices and push
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "MaxManiaci"
+          git config user.email "MaxManiaci@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python scripts/update_prices.py
+            git add data/perf.json data/meta.json
+            if git diff --cached --quiet; then echo "No new closes"; exit 0; fi
+            git commit -q -m "Price refresh $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+            if git push -q origin HEAD:refs/heads/main; then
+              echo "Pushed $(git rev-parse HEAD)"
+              gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null || echo "Pages build request failed (the next push will deploy it)"
+              exit 0
+            fi
+            sleep $((attempt*20))
+          done
+          echo "Push failed after 5 attempts"; exit 1
