@@ -85,7 +85,7 @@ def from_stooq(ticker):
 
 def rnd(v):
     q = Decimal('0.01') if abs(v) >= 1 else Decimal('0.0001')
-    return float(Decimal(repr(v)).quantize(q, rounding=ROUND_HALF_UP))
+    return float(Decimal(f'{v:.6f}').quantize(q, rounding=ROUND_HALF_UP))
 
 
 def main():
