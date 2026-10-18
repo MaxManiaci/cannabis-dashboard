@@ -126,6 +126,18 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
 .cx-detail dl { margin: 0; display: grid; grid-template-columns: 7rem 1fr; gap: var(--ui-gap-xs) var(--ui-gap-sm); font-size: var(--ui-font-size-caption); }
 .cx-detail dt { color: var(--color-fg-muted); }
 .cx-detail dd { margin: 0; }
+.cx-prof { display: flex; flex-direction: column; gap: var(--ui-gap-md); margin-top: var(--ui-gap-xs); padding-top: var(--ui-gap-md); border-top: 1px solid var(--color-border-line); }
+.cx-prof.dash-skeleton { min-height: 10rem; }
+.cx-prof-sec { display: flex; flex-direction: column; gap: var(--ui-gap-xs); }
+.cx-prof .cx-subh { margin: 0; }
+.cx-prof-kpi { display: flex; flex-wrap: wrap; align-items: baseline; gap: .125rem .625rem; }
+.cx-prof-big { font-family: var(--font-serif); font-size: var(--ui-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.cx-prof-chg { font-size: var(--ui-font-size-caption); font-variant-numeric: tabular-nums; }
+.cx-prof-per { font-size: var(--ui-font-size-caption); color: var(--color-fg-muted); }
+.cx-prof-txt { margin: 0; }
+.cx-prof-deals { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .5rem; font-size: var(--ui-font-size-caption); }
+.cx-prof-deals .cx-chip { color: var(--color-fg); }
+@media (min-width: 70rem) { #card-catmap { align-self: start; position: sticky; top: var(--ui-gap-md); } }
 .cx-bidgrid { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); }
 .cx-bidgrid > div { display: flex; flex-direction: column; gap: 2px; }
 .cx-list .cx-li-head { display: flex; gap: var(--ui-gap-sm); align-items: baseline; font-size: var(--ui-font-size-body); }
@@ -406,6 +418,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       </div>
       <div class="cx-card" id="card-catdetail">
         <h2>State detail</h2>
+        <p class="cx-note">The catalyst, then market size, regulation and notable players, each with its source.</p>
         <div class="cx-detail" id="cat-detail"></div>
       </div>
     </div>
@@ -489,6 +502,26 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
       const counts = new Map();
       deals.filter((d) => d.region === 'US').forEach((d) => String(d.states || '').split(/[,;]\s*/).filter(Boolean).forEach((s) => counts.set(s, (counts.get(s) || 0) + 1)));
       return [...counts].map(([state, deal_count]) => ({ state, deal_count })).sort((a, b) => b.deal_count - a.deal_count || a.state.localeCompare(b.state));
+    },
+  });
+  dash.calc('state_deals', {
+    title: 'Tracked deals by state',
+    description: 'For each state, the tracked US deals touching it and the acquirer groups involved (deal counts in brackets); a multi-state deal counts once in each of its states.',
+    inputs: ['deals'],
+    fn: (deals) => {
+      const by = new Map();
+      deals.filter((d) => d.region === 'US').forEach((d) => String(d.states || '').split(/[,;]\s*/).filter(Boolean).forEach((s) => {
+        const e = by.get(s) || { state: s, deal_count: 0, groups: new Map() };
+        e.deal_count += 1;
+        const g = d.buyer_group || d.buyer;
+        e.groups.set(g, (e.groups.get(g) || 0) + 1);
+        by.set(s, e);
+      }));
+      return [...by.values()].map((e) => ({
+        state: e.state,
+        deal_count: e.deal_count,
+        buyers: [...e.groups].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).map(([g, n]) => (n > 1 ? `${g} (${n})` : g)).join(', '),
+      })).sort((a, b) => b.deal_count - a.deal_count || a.state.localeCompare(b.state));
     },
   });
   dash.calc('acquirers', {
@@ -1334,6 +1367,69 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     }
   }
 
+  // ---------- STATE PROFILE (market, regulation, players) ----------
+  function stateProfile(sel) {
+    const box = el('div', 'cx-prof');
+    const rows = gate(['states'], box);
+    if (!rows) return box;
+    const s = rows.find((x) => x.state === sel);
+    if (!s) return null;
+    const w = 'state=' + s.state;
+    const m = (e, f) => mark(e, 'states', f, w);
+    const sources = (pairs) => {
+      const items = pairs.filter(([n]) => n);
+      if (!items.length) return null;
+      const p = el('p', 'cx-note');
+      p.append(document.createTextNode(items.length > 1 ? 'Sources: ' : 'Source: '));
+      items.forEach(([n, u, f], i) => { if (i) p.append(document.createTextNode(' · ')); p.append(m(link(n, u), f)); });
+      return p;
+    };
+    const sec = (title, ...kids) => { const x = el('section', 'cx-prof-sec'); x.append(el('h3', 'cx-subh', title), ...kids.filter(Boolean)); return x; };
+
+    let kpi = null;
+    if (isNum(s.sales_m)) {
+      kpi = el('div', 'cx-prof-kpi');
+      kpi.append(m(el('span', 'cx-prof-big', FMT.usdBM(s.sales_m)), 'sales_m'));
+      if (isNum(s.sales_growth_pct)) {
+        const g = m(el('span', 'cx-prof-chg', FMT.pctSigned(s.sales_growth_pct) + ' y/y'), 'sales_growth_pct');
+        g.classList.add(Number(s.sales_growth_pct) >= 0 ? 'cx-up' : 'cx-down');
+        kpi.append(g);
+      }
+      if (s.sales_period) kpi.append(m(el('span', 'cx-prof-per', s.sales_period), 'sales_period'));
+    }
+    const market = sec('Market size', kpi, s.sales_note ? m(el('p', 'cx-prof-txt', s.sales_note), 'sales_note') : null,
+      sources([[s.sales_source, s.sales_url, 'sales_source'], [s.stats_source, s.stats_url, 'stats_source']]));
+
+    const dl = el('dl');
+    const add = (label, node) => { const dd = el('dd'); dd.append(node); dl.append(el('dt', null, label), dd); };
+    add('Program', m(el('span', null, s.program), 'program'));
+    if (s.regulator) add('Regulator', m(s.regulator_url ? link(s.regulator, s.regulator_url) : el('span', null, s.regulator), 'regulator'));
+    if (s.licensing) add('Licensing', m(el('span', null, s.licensing), 'licensing'));
+    if (s.tax) add('Cannabis tax', m(el('span', null, s.tax), 'tax'));
+    const reg = sec('Regulation', dl, sources([[s.reg_source, s.reg_url, 'reg_source'], [s.tax_source, s.tax_url, 'tax_source']]));
+
+    let deals = null;
+    const sd = dash.data('state_deals');
+    if (sd.status === 'ok') {
+      const d = (Array.isArray(sd.data) ? sd.data : []).find((x) => x.state === sel);
+      deals = el('div', 'cx-prof-deals');
+      if (d) {
+        const t = el('span');
+        t.append(mark(el('strong', null, `${d.deal_count} tracked deal${d.deal_count === 1 ? '' : 's'}`), 'state_deals', 'deal_count', w),
+          document.createTextNode(': '), mark(el('span', null, d.buyers), 'state_deals', 'buyers', w));
+        const b = el('button', 'cx-chip', 'Show on M&A tab'); b.type = 'button';
+        b.addEventListener('click', () => { dash.setParams({ deal_state: sel }); showTab('ma'); document.getElementById('tab-ma').scrollIntoView({ block: 'nearest' }); });
+        deals.append(t, b);
+      } else deals.append(el('span', 'cx-empty', 'No deals in this state on the M&A tracker yet.'));
+    }
+    const players = sec('Notable players', s.players ? m(el('p', 'cx-prof-txt', s.players), 'players') : null,
+      sources([[s.players_source, s.players_url, 'players_source'], [s.players_source2, s.players_url2, 'players_source2']]), deals);
+
+    box.append(market, reg, players);
+    if (s.as_of) box.append(m(el('p', 'cx-note', 'Profile checked ' + FMT.day(s.as_of) + '. Taxes shown are cannabis-specific; general sales tax may also apply.'), 'as_of'));
+    return box;
+  }
+
   // ---------- CATALYSTS ----------
   function drawCatalysts() {
     const p = dash.params();
@@ -1369,7 +1465,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     if (cats2) {
       const r = cats2.find((c) => c.state === sel);
       if (!r) {
-        det.replaceChildren(el('div', 'cx-detail-name', STATE_NAMES[sel] || sel), el('p', 'cx-empty', 'No tracked catalyst for this state. Pick a colored state on the map.'));
+        det.replaceChildren(...[el('div', 'cx-detail-name', STATE_NAMES[sel] || sel), el('p', 'cx-empty', 'No tracked catalyst for this state. Pick a colored state on the map.'), stateProfile(sel)].filter(Boolean));
       } else {
         const w = 'state=' + r.state;
         const dl = el('dl');
@@ -1380,7 +1476,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
         row('Deal angle', 'ib_angle');
         dl.append(el('dt', null, 'Source'));
         const dd = el('dd'); dd.append(mark(link(r.source, r.url), 'catalysts', 'source', w)); dl.append(dd);
-        det.replaceChildren(mark(el('div', 'cx-detail-name', r.state_name), 'catalysts', 'state_name', w), mark(el('p', null, r.catalyst), 'catalysts', 'catalyst', w), dl);
+        det.replaceChildren(...[mark(el('div', 'cx-detail-name', r.state_name), 'catalysts', 'state_name', w), mark(el('p', null, r.catalyst), 'catalysts', 'catalyst', w), dl, stateProfile(sel)].filter(Boolean));
       }
     }
 

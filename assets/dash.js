@@ -4,7 +4,7 @@
 (function () {
   'use strict';
   var DATASETS = ['deals', 'news', 'timeline', 'catalysts', 'kpis', 'capmkts', 'financings',
-    'otherdeals', 'market', 'perf', 'bid', 'comps', 'distress'];
+    'otherdeals', 'market', 'perf', 'bid', 'comps', 'distress', 'states'];
   var DEFAULT_PARAMS = { cat_state: 'MA', deal_state: null, deal_status: 'All', news_tag: 'All', fin_type: 'All' };
   var POLL_MS = 5 * 60 * 1000;
 
