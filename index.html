@@ -26,7 +26,6 @@
 .cx-tab:hover { color: var(--color-fg); }
 .cx-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--ui-font-weight-medium); }
 .cx-page { display: flex; flex-direction: column; gap: var(--ui-gap-md); }
-.cx-intel { display: flex; flex-direction: column; gap: var(--ui-gap-md); }
 .cx-page[hidden] { display: none; }
 .cx-grid { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); }
 .cx-kpis { display: grid; gap: var(--ui-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
@@ -1554,7 +1553,6 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     const list = document.getElementById('list-news');
     const news = gate(['news'], list);
     if (news) newsList(list, news.filter((n) => tag === 'All' || n.tag === tag).sort((a, b) => String(b.date).localeCompare(String(a.date))));
-
   }
 
   // ---------- render ----------
