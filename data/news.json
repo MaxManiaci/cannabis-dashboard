@@ -1,5 +1,13 @@
 [
  {
+  "id": "n47",
+  "date": "2026-10-19",
+  "tag": "State",
+  "headline": "New York OCM's Metrc-tracked 30-day payment rule puts 87 retailers on COD list, shrinking wholesale orders",
+  "source": "MJBizDaily",
+  "url": "https://mjbizdaily.com/news/new-york-cannabis-retailers-shrink-orders-as-payment-enforcement-tightens/618675/"
+ },
+ {
   "id": "n46",
   "date": "2026-10-18",
   "tag": "State",
@@ -152,20 +160,28 @@
   "url": "https://www.marijuanamoment.net/dea-ordered-to-reply-to-cannabis-opponents-push-for-more-rescheduling-testimony-newsletter-october-15-2026/"
  },
  {
+  "id": "n48",
+  "date": "2026-10-15",
+  "tag": "State",
+  "headline": "Colorado MED's Craft vape recall widens to 700+ dispensaries over banned solvent and pesticide; 38 illness reports",
+  "source": "MJBizDaily",
+  "url": "https://mjbizdaily.com/news/colorado-cannabis-vape-recall-expands-as-health-complaints-rise/618658/"
+ },
+ {
+  "id": "n49",
+  "date": "2026-10-15",
+  "tag": "State",
+  "headline": "Colorado July marijuana sales rise to $111.2M; August tax and fee revenue reaches $19.3M",
+  "source": "Colorado Department of Revenue",
+  "url": "https://tax.colorado.gov/press-release/marijuana-sales-generate-more-19m-revenue-august-2026"
+ },
+ {
   "id": "n05",
   "date": "2026-10-14",
   "tag": "M&A",
   "headline": "Aurora board again urges holders to reject Curaleaf's US$5.00 revised bid, explores alternatives",
   "source": "Aurora Cannabis (SEC Form 6-K)",
   "url": "https://www.sec.gov/Archives/edgar/data/0001683541/000127956926000974/ex991.htm"
- },
- {
-  "id": "n06",
-  "date": "2026-10-14",
-  "tag": "Federal",
-  "headline": "DEA opposes more briefing on the GAO report, leaves reopening the record to the judge",
-  "source": "Cannabis Business Times",
-  "url": "https://www.cannabisbusinesstimes.com/cannabis-rescheduling/news/15837407/dea-objects-to-additional-rescheduling-briefing-request-by-prohibitionists-defers-to-judge"
  },
  {
   "id": "n26",
@@ -176,27 +192,11 @@
   "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
  },
  {
-  "id": "n31",
-  "date": "2026-10-14",
-  "tag": "Operators",
-  "headline": "Curaleaf opens Wellington store, its 79th in Florida and 189th nationwide",
-  "source": "Curaleaf release (PR Newswire)",
-  "url": "https://prnewswire.com/news-releases/curaleaf-continues-florida-expansion-with-wellington-dispensary-opening-302908058.html"
- },
- {
   "id": "n38",
   "date": "2026-10-14",
   "tag": "State",
   "headline": "Nebraska commission proposes first medical cannabis license fees, $10K-$28.5K a year; new licenses wait on 2027 rules",
   "source": "Nebraska Examiner (via Marijuana Moment)",
   "url": "https://www.marijuanamoment.net/nebraska-officials-consider-changes-to-medical-marijuana-rules/"
- },
- {
-  "id": "n41",
-  "date": "2026-10-14",
-  "tag": "State",
-  "headline": "Minnesota to swap temporary cannabis event organizer approvals for annual, renewable licenses from Jan. 1, 2027",
-  "source": "Minnesota Office of Cannabis Management",
-  "url": "https://content.govdelivery.com/accounts/MNOCM/bulletins/42d7436"
  }
 ]
