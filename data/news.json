@@ -1,5 +1,13 @@
 [
  {
+  "id": "n50",
+  "date": "2026-10-19",
+  "tag": "Operators",
+  "headline": "Glass House preliminary Q3 revenue rises to $56.8M, gross margin dips to 26%; director Jay Nichols resigns",
+  "source": "Glass House Brands release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/10/19/3383338/0/en/glass-house-brands-reports-preliminary-unaudited-third-quarter-financial-results-and-resignation-of-john-nichols-jr-from-board-of-directors.html"
+ },
+ {
   "id": "n47",
   "date": "2026-10-19",
   "tag": "State",
@@ -190,13 +198,5 @@
   "headline": "DEA judge keeps rescheduling stayed, orders the government to answer the motion to reopen by Oct 21",
   "source": "DEA Office of Administrative Law Judges",
   "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
- },
- {
-  "id": "n38",
-  "date": "2026-10-14",
-  "tag": "State",
-  "headline": "Nebraska commission proposes first medical cannabis license fees, $10K-$28.5K a year; new licenses wait on 2027 rules",
-  "source": "Nebraska Examiner (via Marijuana Moment)",
-  "url": "https://www.marijuanamoment.net/nebraska-officials-consider-changes-to-medical-marijuana-rules/"
  }
 ]
