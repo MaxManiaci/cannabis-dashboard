@@ -4696,5 +4696,95 @@
   "kind": "ETF",
   "slot": null,
   "close": 3.81
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.79
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 7.86
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.26
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.04
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.61
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 2.34
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 8.92
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.49
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 3.99
+ },
+ {
+  "date": "2026-10-20",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7712.57
  }
 ]
