@@ -1,5 +1,53 @@
 [
  {
+  "id": "n56",
+  "date": "2026-10-26",
+  "tag": "State",
+  "headline": "Georgia opens Oct. 26–30 medical dispensary window for existing producers; per-producer cap rises to nine stores",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
+ },
+ {
+  "id": "n55",
+  "date": "2026-10-23",
+  "tag": "Operators",
+  "headline": "Vireo Growth buys its leased 415K sq ft Palatka, Florida cultivation campus for $21M",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/vireo-growth-purchases-415733-square-foot-florida-marijuana-cultivation-facility-for-21-million/"
+ },
+ {
+  "id": "n53",
+  "date": "2026-10-23",
+  "tag": "State",
+  "headline": "Oklahoma medical cannabis chief Adria Berry steps down; enforcement deputy Jason Yingling named interim director",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/oklahoma-medical-marijuana-director-adria-berry-stepping-down-enforcement-official-named-interim-replacement/"
+ },
+ {
+  "id": "n51",
+  "date": "2026-10-22",
+  "tag": "Federal",
+  "headline": "DEA judge denies bid to reopen rescheduling hearing; GAO-report briefs due Oct. 29, replies Nov. 5",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
+ },
+ {
+  "id": "n52",
+  "date": "2026-10-21",
+  "tag": "State",
+  "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
+ },
+ {
+  "id": "n54",
+  "date": "2026-10-20",
+  "tag": "M&A",
+  "headline": "Grown Rogue lifts New Jersey subsidiary ABCO Garden State stake to 70% for about $743K",
+  "source": "Grown Rogue release",
+  "url": "https://www.placera.se/pressmeddelanden/grown-rogue-international-grown-rogue-increases-ownership-stake-to-70-in-new-jersey-subsidiary-abco-garden-state-20261020"
+ },
+ {
   "id": "n50",
   "date": "2026-10-19",
   "tag": "Operators",
@@ -150,53 +198,5 @@
   "headline": "Curaleaf moves its Gettysburg, PA dispensary to York, holding at 18 Pennsylvania and 189 US stores",
   "source": "Curaleaf release (PR Newswire)",
   "url": "https://www.prnewswire.com/news-releases/curaleaf-relocates-gettysburg-dispensary-to-york-bringing-care-closer-to-patients-in-south-central-pennsylvania-302909462.html"
- },
- {
-  "id": "n36",
-  "date": "2026-10-15",
-  "tag": "Operators",
-  "headline": "Ohio regulators lift hold on Vext's Vapen vapes after testing; products back in stores and wholesale",
-  "source": "Vext Science release (Newsfile)",
-  "url": "https://www.newsfilecorp.com/release/319278/Vext-Provides-Update-on-Jackson-Ohio-Dispensary"
- },
- {
-  "id": "n37",
-  "date": "2026-10-15",
-  "tag": "State",
-  "headline": "Boston Mayor Michelle Wu comes out against Massachusetts Question 8 legalization repeal",
-  "source": "Marijuana Moment",
-  "url": "https://www.marijuanamoment.net/dea-ordered-to-reply-to-cannabis-opponents-push-for-more-rescheduling-testimony-newsletter-october-15-2026/"
- },
- {
-  "id": "n48",
-  "date": "2026-10-15",
-  "tag": "State",
-  "headline": "Colorado MED's Craft vape recall widens to 700+ dispensaries over banned solvent and pesticide; 38 illness reports",
-  "source": "MJBizDaily",
-  "url": "https://mjbizdaily.com/news/colorado-cannabis-vape-recall-expands-as-health-complaints-rise/618658/"
- },
- {
-  "id": "n49",
-  "date": "2026-10-15",
-  "tag": "State",
-  "headline": "Colorado July marijuana sales rise to $111.2M; August tax and fee revenue reaches $19.3M",
-  "source": "Colorado Department of Revenue",
-  "url": "https://tax.colorado.gov/press-release/marijuana-sales-generate-more-19m-revenue-august-2026"
- },
- {
-  "id": "n05",
-  "date": "2026-10-14",
-  "tag": "M&A",
-  "headline": "Aurora board again urges holders to reject Curaleaf's US$5.00 revised bid, explores alternatives",
-  "source": "Aurora Cannabis (SEC Form 6-K)",
-  "url": "https://www.sec.gov/Archives/edgar/data/0001683541/000127956926000974/ex991.htm"
- },
- {
-  "id": "n26",
-  "date": "2026-10-14",
-  "tag": "Federal",
-  "headline": "DEA judge keeps rescheduling stayed, orders the government to answer the motion to reopen by Oct 21",
-  "source": "DEA Office of Administrative Law Judges",
-  "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
  }
 ]
