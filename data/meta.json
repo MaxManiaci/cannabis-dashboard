@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T16:04:42Z",
+ "updated": "2026-10-26T16:14:58Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
@@ -13,7 +13,7 @@
   },
   "catalysts": {
    "title": "State catalysts and priorities",
-   "updated": "2026-10-16T21:14:05Z",
+   "updated": "2026-10-26T16:14:09Z",
    "rows": 22
   },
   "comps": {
@@ -23,8 +23,8 @@
   },
   "deals": {
    "title": "Cannabis M&A transactions",
-   "updated": "2026-10-18T09:40:50Z",
-   "rows": 41
+   "updated": "2026-10-26T16:14:09Z",
+   "rows": 43
   },
   "distress": {
    "title": "Distressed situations",
@@ -33,17 +33,17 @@
   },
   "financings": {
    "title": "Debt financing terms",
-   "updated": "2026-10-17T15:06:31Z",
-   "rows": 17
+   "updated": "2026-10-26T16:14:09Z",
+   "rows": 18
   },
   "kpis": {
    "title": "Sales outlook and rescheduling status",
-   "updated": "2026-10-17T03:57:21Z",
+   "updated": "2026-10-26T16:14:09Z",
    "rows": 2
   },
   "market": {
    "title": "MSOS fund data and weights",
-   "updated": "2026-10-16T21:14:05Z",
+   "updated": "2026-10-26T16:14:09Z",
    "rows": 6
   },
   "news": {
@@ -68,8 +68,8 @@
   },
   "timeline": {
    "title": "Catalyst calendar",
-   "updated": "2026-10-16T21:55:00Z",
-   "rows": 21
+   "updated": "2026-10-26T16:14:09Z",
+   "rows": 23
   }
  }
 }

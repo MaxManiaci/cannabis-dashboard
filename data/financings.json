@@ -338,5 +338,25 @@
   "use_of_proceeds": "Finances the sale of 100% of the company's equity to its employee stock ownership plan (Missouri and New Jersey operations)",
   "source": "Chicago Atlantic release (Business Wire)",
   "url": "https://www.businesswire.com/news/home/20260121034917/en/Chicago-Atlantic-Closes-Senior-Secured-Financing-to-S1-Enterprises-the-Parent-Company-of-Illicit-Cannabis"
+ },
+ {
+  "id": "f18",
+  "date": "2026-08-07",
+  "date_label": "Aug 7, 2026",
+  "year": 2026,
+  "issuer": "Vireo Growth (non-cannabis subsidiaries)",
+  "instrument": "Asset-based revolving credit facility",
+  "amount_usd_m": 65,
+  "rate_text": "Term SOFR + 1.75%–2.00% (or base rate + 0.75%–1.00%)",
+  "rate_pct": null,
+  "rate_type": "Floating",
+  "maturity_label": "5 years",
+  "security": "Substantially all assets of the non-cannabis subsidiary borrowers",
+  "lender_type": "Bank",
+  "lender": "Bank of Montreal (administrative agent); BMO Capital Markets (arranger and bookrunner)",
+  "issue_terms": "$65M initial commitment, expandable to $85M and to $105M via a $20M accordion; margin set by average availability; 0.25% unused commitment fee",
+  "use_of_proceeds": "Refinance certain subsidiary debt, working capital, capex, general corporate purposes and permitted acquisitions",
+  "source": "Cannabis Business Times (Vireo release)",
+  "url": "https://www.cannabisbusinesstimes.com/finance/news/15831979/vireo-growth-announces-assetbased-credit-facility"
  }
 ]

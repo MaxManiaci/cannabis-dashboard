@@ -130,9 +130,9 @@
   "date": null,
   "date_label": "Date TBD",
   "category": "Federal",
-  "item": "DEA judge rules on the GAO motion, then issues a recommended decision on full rescheduling to the DEA Administrator (stay has no fixed end)",
+  "item": "DEA judge issues a recommended decision on full rescheduling to the DEA Administrator after GAO-report briefing closes (stay lifts automatically then)",
   "upcoming": true,
-  "url": "https://www.marijuanamoment.net/dea-is-ok-with-including-new-report-in-marijuana-rescheduling-hearing-as-opponents-seek-new-testimony-and-document-discovery/"
+  "url": "https://www.marijuanamoment.net/dea-judge-denies-marijuana-rescheduling-opponents-request-to-reopen-hearing-for-more-testimony-but-allows-new-briefs/"
  },
  {
   "id": "t17",
@@ -184,8 +184,26 @@
   "date": "2026-10-21",
   "date_label": "Oct 21, 2026",
   "category": "Federal",
-  "item": "Government's response due on the motion to reopen the DEA rescheduling hearing; stay remains and the GAO-report ruling is reserved",
-  "upcoming": true,
+  "item": "Government's response due on the motion to reopen the DEA rescheduling hearing (judge ruled Oct 22: no reopening, limited briefs allowed)",
+  "upcoming": false,
   "url": "https://www.dea.gov/sites/default/files/2026-10/Proposed%20Marijuana%20Rescheduling_Order%20for%20Response%20to%20Motion%20to%20Reopen%20Hearing.pdf"
+ },
+ {
+  "id": "t23",
+  "date": "2026-10-22",
+  "date_label": "Oct 22, 2026",
+  "category": "Federal",
+  "item": "DEA judge denies opponents' bid to reopen the rescheduling hearing; admits the GAO report and allows limited briefs",
+  "upcoming": false,
+  "url": "https://www.marijuanamoment.net/dea-judge-denies-marijuana-rescheduling-opponents-request-to-reopen-hearing-for-more-testimony-but-allows-new-briefs/"
+ },
+ {
+  "id": "t24",
+  "date": "2026-11-05",
+  "date_label": "Nov 5, 2026",
+  "category": "Federal",
+  "item": "Reply briefs due on the GAO report (optional opening briefs Oct 29); rescheduling stay ends when briefing closes",
+  "upcoming": true,
+  "url": "https://www.marijuanamoment.net/dea-judge-denies-marijuana-rescheduling-opponents-request-to-reopen-hearing-for-more-testimony-but-allows-new-briefs/"
  }
 ]
