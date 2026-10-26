@@ -4,11 +4,11 @@
   "state_name": "Massachusetts",
   "priority": "Risk",
   "category": "Ballot",
-  "catalyst": "Question 8 would end adult-use retail sales (medical kept) — first-ever repeal vote on a legal market",
+  "catalyst": "Question 8 would end adult-use retail sales (medical kept) — first-ever repeal vote on a legal market. Separately, the CCC’s Oct 22 draft medical rules would end mandatory vertical integration (new standalone medical dispensary license; 36-month transition for existing treatment centers) and drop patient residency",
   "next_date": "2026-11-03",
   "date_label": "Nov 3, 2026",
-  "ib_angle": "Binary event for ~800 licensed businesses; polls show repeal trailing badly (Suffolk/Boston Globe, Oct 20: 71% no / 21% yes; UMass Amherst: 55% no / 33% yes). Defeat lifts an overhang on MA valuations.",
-  "source": "The Marijuana Herald (Suffolk/Boston Globe poll)",
+  "ib_angle": "Binary event for ~800 licensed businesses; repeal trails badly in October polls (Suffolk/Boston Globe, Oct 20: 71% no / 21% yes; UMass Amherst/WCVB, Oct 5–12: 61% no / 31% yes). Defeat lifts an overhang on MA valuations; standalone medical licenses would add doors and let treatment centers drop cultivation or manufacturing.",
+  "source": "The Marijuana Herald (Suffolk/Boston Globe poll; CCC Oct 22 materials); WBUR (UMass/WCVB poll)",
   "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
  },
  {
@@ -28,11 +28,11 @@
   "state_name": "Virginia",
   "priority": "High",
   "category": "Market launch",
-  "catalyst": "Adult-use retail sales start Jul 1, 2027; Cannabis Control Authority opens license applications Feb 1, 2027; 350-store cap; 6% state tax (8% after Jul 2029)",
+  "catalyst": "Adult-use retail sales start Jul 1, 2027. CCA released draft regulations Sep 2026 (final expected December); license applications open Feb 1, 2027 and initial licenses are due by May 1, 2027; 350-store cap; 6% state tax (8% after Jul 2029)",
   "next_date": "2027-02-01",
   "date_label": "Feb 1, 2027 applications",
   "ib_angle": "Greenfield build-out: applicants need capital and operating partners; existing vertical medical operators are best placed to convert.",
-  "source": "Virginia Cannabis Control Authority",
+  "source": "Virginia Cannabis Control Authority; Virginia Business (draft regs, Sep 11)",
   "url": "https://cca.virginia.gov/news/virginias-new-marijuana-and-hemp-laws-what-you-need-to-know"
  },
  {
@@ -40,12 +40,12 @@
   "state_name": "Florida",
   "priority": "High",
   "category": "Licensing",
-  "catalyst": "DOH final order (Sep 11) issued all 22 new vertically integrated MMTC licenses from the 2023 round; losing applicants had 30 days to appeal and appeals were expected; adult-use ballot dismissed — next attempt 2028",
+  "catalyst": "DOH final order (Sep 11) issued all 22 new vertically integrated MMTC licenses from the 2023 round; denied applicants had 30 days to seek review at the 1st DCA. Each licensee had to post a $5M bond by Sep 25 and must request cultivation, processing and dispensing authorization within 180, 270 and 365 days. Adult-use ballot dismissed — next attempt 2028",
   "next_date": null,
   "date_label": "Licensees ramping now",
-  "ib_angle": "Each new licensee must post $5M of financial assurance within 10 business days and fund a build-out → financing, JV and sale mandates; incumbents are consolidating (Vireo–FLUENT, Planet 13).",
-  "source": "MJBizDaily",
-  "url": "https://mjbizdaily.com/news/florida-grants-22-cannabis-licenses-despite-judges-call-to-rescore/618145"
+  "ib_angle": "22 new licensees funding build-outs → financing, JV and sale mandates; incumbents are consolidating (Vireo–FLUENT, Planet 13).",
+  "source": "Vicente LLP (DOH final order)",
+  "url": "https://vicentellp.com/insights/blog-florida-mmtc-licenses-2026-final-order/"
  },
  {
   "state": "OH",
@@ -88,11 +88,11 @@
   "state_name": "Rhode Island",
   "priority": "Medium",
   "category": "Licensing",
-  "catalyst": "Adult-use retail licensing restarted under SB 3313: up to 24 retail licenses across six zones; applications due Nov 23; federal judge dismissed the three licensing suits as moot (Oct 21)",
+  "catalyst": "Adult-use retail licensing reopened Aug 7: up to 24 new retail licenses across six zones (6 social equity, 6 worker co-op, 12 general); applications close Nov 23 at 4 p.m. ET. On Oct 21 a federal judge dismissed the three residency suits as moot after the June law change",
   "next_date": "2026-11-23",
   "date_label": "Nov 23, 2026",
-  "ib_angle": "New doors in a small market next to MA and CT operators.",
-  "source": "The Marijuana Herald",
+  "ib_angle": "New doors in a small market next to MA and CT operators; the in-state majority-ownership rule is gone, opening the round to outside capital. No award timeline yet.",
+  "source": "The Marijuana Herald; Rhode Island Current",
   "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
  },
  {
@@ -220,36 +220,36 @@
   "state_name": "Michigan",
   "priority": "Watch",
   "category": "Tax",
-  "catalyst": "24% wholesale excise since Jan 1, 2026 on top of the 10% retail excise and 6% sales tax",
+  "catalyst": "24% wholesale excise since Jan 1, 2026 on top of the 10% retail excise and 6% sales tax; the industry challenge is back at the Court of Appeals on expedited review after an Apr 22 Supreme Court order, and a second suit alleges unconstitutional tax pyramiding",
   "next_date": null,
-  "date_label": "In effect",
-  "ib_angle": "Margin compression is producing distressed sellers.",
-  "source": "BDSA",
-  "url": "https://bdsa.com/ohio-sb-56/"
+  "date_label": "Court of Appeals review pending",
+  "ib_angle": "Margin compression is producing distressed sellers (adult-use sales down $50M year on year through March); a court win would remove the tax.",
+  "source": "MLive via CPA Practice Advisor",
+  "url": "https://www.cpapracticeadvisor.com/2026/04/23/michigan-supreme-court-orders-review-of-states-cannabis-tax/182140/"
  },
  {
   "state": "GA",
   "state_name": "Georgia",
-  "priority": "Watch",
-  "category": "Regulation",
-  "catalyst": "Patient registry passed 55,000 (56,650 as of Sep 23), raising each producer's dispensary cap from 5 to 9; dispensary application window for the six existing producers Oct 26–30; new medical delivery rule (Sep 30) allows USPS shipment",
+  "priority": "Medium",
+  "category": "Licensing",
+  "catalyst": "Dispensary application window (Oct 26–30) for the six existing producers; the per-producer cap rises to nine stores after the patient registry passed 55,000 (56,650 patients as of Sep 23; 22 dispensing licenses as of Sep 30). A new delivery rule (Sep 30) also allows USPS shipment",
   "next_date": "2026-10-30",
   "date_label": "Oct 26–30, 2026 window",
-  "ib_angle": "Higher per-producer store cap creates build-out capital needs in a tightly licensed medical market; delivery adds distribution reach.",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
+  "ib_angle": "Store build-out capital for the six license holders; no new cultivation licenses, so producer licenses stay scarce in a small, tightly licensed medical market. Delivery adds distribution reach.",
+  "source": "Georgia Access to Medical Cannabis Commission (via The Marijuana Herald)",
+  "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000/"
  },
  {
   "state": "IL",
   "state_name": "Illinois",
   "priority": "Watch",
   "category": "Market",
-  "catalyst": "Market topped $2B a year by 2024 and is now in a correction",
+  "catalyst": "Dispensary sales fell to about $1.5B in FY2026 from nearly $2B as prices drop, even with record unit volume (5M+ items in July); cannabis tax revenue $456M vs $474M; 29 new dispensary licenses issued this year",
   "next_date": null,
   "date_label": "Ongoing",
   "ib_angle": "Price compression pressures smaller operators; limited-license structure still supports values.",
-  "source": "Emerald Intel",
-  "url": "https://www.emeraldintel.ai/market-pulse/illinois-cannabis-market-2015-2026-performance-review"
+  "source": "Chicago Sun-Times / WBEZ (IDFPR report)",
+  "url": "https://chicago.suntimes.com/marijuana/2026/10/12/illinois-cannabis-consumption-rising-demand-state-tax-revenues-drop"
  },
  {
   "state": "CA",
