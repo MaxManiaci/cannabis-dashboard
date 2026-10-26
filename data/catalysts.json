@@ -7,9 +7,9 @@
   "catalyst": "Question 8 would end adult-use retail sales (medical kept) — first-ever repeal vote on a legal market",
   "next_date": "2026-11-03",
   "date_label": "Nov 3, 2026",
-  "ib_angle": "Binary event for ~800 licensed businesses; polls show repeal trailing (UMass Amherst: 55% no / 33% yes; September UNH poll: 71% plan to vote no). Defeat lifts an overhang on MA valuations.",
-  "source": "High Times / NORML / WBUR",
-  "url": "https://hightimes.com/analysis/massachusetts-marijuana-repeal-question-8/"
+  "ib_angle": "Binary event for ~800 licensed businesses; polls show repeal trailing badly (Suffolk/Boston Globe, Oct 20: 71% no / 21% yes; UMass Amherst: 55% no / 33% yes). Defeat lifts an overhang on MA valuations.",
+  "source": "The Marijuana Herald (Suffolk/Boston Globe poll)",
+  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
  },
  {
   "state": "PA",
@@ -88,12 +88,12 @@
   "state_name": "Rhode Island",
   "priority": "Medium",
   "category": "Licensing",
-  "catalyst": "Adult-use retail licensing restarted; applications due Nov 23 (dates subject to change); the voided prior round offered 24 licenses",
+  "catalyst": "Adult-use retail licensing restarted under SB 3313: up to 24 retail licenses across six zones; applications due Nov 23; federal judge dismissed the three licensing suits as moot (Oct 21)",
   "next_date": "2026-11-23",
   "date_label": "Nov 23, 2026",
   "ib_angle": "New doors in a small market next to MA and CT operators.",
-  "source": "Vicente LLP",
-  "url": "https://vicentellp.com/insights/rhode-island-cannabis-retail-licensing-reopens-august-7-2026-what-you-need-to-know/"
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
  },
  {
   "state": "NJ",
@@ -232,12 +232,12 @@
   "state_name": "Georgia",
   "priority": "Watch",
   "category": "Regulation",
-  "catalyst": "New medical delivery rule (Sep 30) expands access, including shipment via USPS",
-  "next_date": null,
-  "date_label": "Sep 30, 2026",
-  "ib_angle": "Distribution-led growth in a small, tightly licensed medical market.",
-  "source": "Emerald Intel",
-  "url": "https://www.emeraldintel.ai/market-pulse/from-pharmacies-to-the-postal-service-georgia-tests-cannabis-normalization"
+  "catalyst": "Patient registry passed 55,000 (56,650 as of Sep 23), raising each producer's dispensary cap from 5 to 9; dispensary application window for the six existing producers Oct 26–30; new medical delivery rule (Sep 30) allows USPS shipment",
+  "next_date": "2026-10-30",
+  "date_label": "Oct 26–30, 2026 window",
+  "ib_angle": "Higher per-producer store cap creates build-out capital needs in a tightly licensed medical market; delivery adds distribution reach.",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
  },
  {
   "state": "IL",

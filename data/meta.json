@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T16:14:58Z",
+ "updated": "2026-10-26T16:17:48Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
@@ -13,7 +13,7 @@
   },
   "catalysts": {
    "title": "State catalysts and priorities",
-   "updated": "2026-10-26T16:14:09Z",
+   "updated": "2026-10-26T16:17:29Z",
    "rows": 22
   },
   "comps": {
@@ -23,8 +23,8 @@
   },
   "deals": {
    "title": "Cannabis M&A transactions",
-   "updated": "2026-10-26T16:14:09Z",
-   "rows": 43
+   "updated": "2026-10-26T16:17:29Z",
+   "rows": 44
   },
   "distress": {
    "title": "Distressed situations",
@@ -68,8 +68,8 @@
   },
   "timeline": {
    "title": "Catalyst calendar",
-   "updated": "2026-10-26T16:14:09Z",
-   "rows": 23
+   "updated": "2026-10-26T16:17:29Z",
+   "rows": 24
   }
  }
 }

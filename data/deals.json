@@ -944,5 +944,27 @@
   "source": "Grown Rogue release",
   "url": "https://ir.grownrogue.com/news-events/press-releases/detail/219/grown-rogue-increases-ownership-stake-to-70-in-new-jersey-subsidiary-abco-garden-state",
   "retail_deal": false
+ },
+ {
+  "id": "d44",
+  "date": "2026-06-18",
+  "date_label": "Jun 18, 2026",
+  "is_new": false,
+  "buyer": "Vireo Growth",
+  "buyer_group": "Vireo Growth",
+  "target": "HA-MD (Chesapeake Integrated Health Institute and Maryland Alternative Relief) — indirect 49% equity interest",
+  "target_short": "HA-MD Maryland (49%)",
+  "region": "US",
+  "state": "MD",
+  "states": "MD",
+  "type": "Minority stake acquisition",
+  "value_usd_m": 1.55,
+  "doors": null,
+  "consideration": "$1.55M: $400K cash at closing + $400K 5-year 8% promissory note + 37,035 subordinate voting shares ($750K at a deemed $20.25); agreement dated Nov 3, 2025; Maryland Cannabis Administration approved",
+  "status": "Closed",
+  "status_group": "Closed",
+  "source": "Vireo release (GlobeNewswire) via Cannabis Equipment News",
+  "url": "https://www.cannabisequipmentnews.com/distribution/news/22969374/vireo-growth-completes-acquisition-of-equity-interest-in-maryland-dispensaries",
+  "retail_deal": false
  }
 ]
