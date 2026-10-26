@@ -32,12 +32,52 @@
   "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
  },
  {
+  "id": "n57",
+  "date": "2026-10-22",
+  "tag": "State",
+  "headline": "Massachusetts CCC proposes ending medical vertical integration, adding standalone medical dispensary licenses and dropping patient residency",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-medical/"
+ },
+ {
+  "id": "n58",
+  "date": "2026-10-22",
+  "tag": "Federal",
+  "headline": "AG Blanche says DOJ is not targeting state-legal cannabis businesses, framing Virginia senator's indictment as broader",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/attorney-general-todd-blanche-says-doj-is-not-seeking-to-interfere-with-state-legal-marijuana-businesses/"
+ },
+ {
   "id": "n52",
   "date": "2026-10-21",
   "tag": "State",
   "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
+ },
+ {
+  "id": "n59",
+  "date": "2026-10-21",
+  "tag": "State",
+  "headline": "Massachusetts 2026 cannabis sales top $1.45B through Oct. 18 as poll shows 71% oppose Question 8",
+  "source": "The Marijuana Herald (MA CCC data)",
+  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
+ },
+ {
+  "id": "n60",
+  "date": "2026-10-21",
+  "tag": "State",
+  "headline": "Oregon OLCC seeks 75% marijuana license fee hike from July 2027 to close $17.25M shortfall",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/oregon-marijuana-regulators-seek-75-fee-increase-warn-of-17-25-million-shortfall-and-53-potential-position-cuts/"
+ },
+ {
+  "id": "n61",
+  "date": "2026-10-21",
+  "tag": "State",
+  "headline": "Los Angeles County weighs zoning for up to 90 cannabis licenses in unincorporated areas, including 25 storefronts",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/los-angeles-county-holds-hearing-today-on-proposal-to-allow-up-to-90-marijuana-business-licenses-in-unincorporated-areas/"
  },
  {
   "id": "n54",
@@ -158,45 +198,5 @@
   "headline": "Seven Nevada testing labs warn CCB that sampling rules for 15-lb flower lots could pass contaminated product",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/seven-nevada-marijuana-testing-labs-warn-proposed-rules-could-allow-contaminated-products-to-pass-testing/"
- },
- {
-  "id": "n40",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "Florida medical patients top 942K with 782 dispensaries; 2026 flower sales pass 172M grams",
-  "source": "The Marijuana Herald (FL OMMU data)",
-  "url": "https://themarijuanaherald.com/2026/10/florida-medical-marijuana-patients-have-purchased-over-172-million-grams-of-flower-in-2026-alongside-17-63-billion-milligrams-of-thc/"
- },
- {
-  "id": "n43",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "Oklahoma medical cannabis edibles face new THC-per-serving labeling and child-appeal packaging rules from Nov. 1",
-  "source": "KGOU",
-  "url": "https://www.kgou.org/oklahoma-news/2026-10-16/new-oklahoma-medical-marijuana-packaging-rules-take-effect-nov-1"
- },
- {
-  "id": "n03",
-  "date": "2026-10-15",
-  "tag": "M&A",
-  "headline": "Cronos closes €57.5M CanAdelaar deal, taking the lead in the Dutch adult-use pilot",
-  "source": "GlobeNewswire",
-  "url": "https://www.globenewswire.com/news-release/2026/10/15/3381478/0/en/cronos-completes-acquisition-of-canadelaar-europe-s-largest-adult-use-cannabis-company.html"
- },
- {
-  "id": "n21",
-  "date": "2026-10-15",
-  "tag": "M&A",
-  "headline": "Nevada regulators approve Vireo's Planet 13 merger; holder vote still pending",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/nevada-regulators-approve-vireo-growths-acquisition-of-planet-13-holdings/"
- },
- {
-  "id": "n32",
-  "date": "2026-10-15",
-  "tag": "Operators",
-  "headline": "Curaleaf moves its Gettysburg, PA dispensary to York, holding at 18 Pennsylvania and 189 US stores",
-  "source": "Curaleaf release (PR Newswire)",
-  "url": "https://www.prnewswire.com/news-releases/curaleaf-relocates-gettysburg-dispensary-to-york-bringing-care-closer-to-patients-in-south-central-pennsylvania-302909462.html"
  }
 ]
