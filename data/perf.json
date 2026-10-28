@@ -5209,5 +5209,32 @@
   "kind": "Index",
   "slot": null,
   "close": 7722.6
+ },
+ {
+  "date": "2026-10-27",
+  "ticker": "TRLV",
+  "name": "Trulieve Cannabis",
+  "label": "Trulieve",
+  "kind": "Company",
+  "slot": 0,
+  "close": 10.67
+ },
+ {
+  "date": "2026-10-27",
+  "ticker": "GLAS",
+  "name": "Glass House Brands",
+  "label": "Glass House",
+  "kind": "Company",
+  "slot": 5,
+  "close": 2.34
+ },
+ {
+  "date": "2026-10-27",
+  "ticker": "MSOS",
+  "name": "AdvisorShares Pure US Cannabis ETF",
+  "label": "MSOS",
+  "kind": "ETF",
+  "slot": null,
+  "close": 4.04
  }
 ]
