@@ -1404,7 +1404,7 @@ th[aria-sort="descending"] .cx-sortbtn::after { content: " ↓"; }
     const sales = hasSales
       ? stat('Monthly sales', val(FMT.usdBM(Number(s.sales_m) / Number(s.sales_months)), 'sales_m'),
         m(el('div', 'cx-prof-sub', s.sales_period), 'sales_period'),
-        sub(`Total ${FMT.usdBM(s.sales_m)} ÷ ${s.sales_months}`, s.sales_source, s.sales_url, 'sales_source'))
+        sub(Number(s.sales_months) > 1 ? `Total ${FMT.usdBM(s.sales_m)} ÷ ${s.sales_months}` : null, s.sales_source, s.sales_url, 'sales_source'))
       : (isNum(s.monthly_low_m) && isNum(s.monthly_high_m))
         ? stat('Monthly sales', val(`$${d3.format('~g')(Number(s.monthly_low_m))}–${d3.format('~g')(Number(s.monthly_high_m))}M`, 'monthly_low_m'),
           m(el('div', 'cx-prof-sub', s.sales_period), 'sales_period'), sub(null, s.sales_source, s.sales_url, 'sales_source'))
