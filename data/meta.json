@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-29T15:56:46Z",
+ "updated": "2026-10-29T15:57:39Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
-   "updated": "2026-10-16T21:14:05Z",
+   "updated": "2026-10-29T15:56:49Z",
    "rows": 1
   },
   "capmkts": {
@@ -23,7 +23,7 @@
   },
   "deals": {
    "title": "Cannabis M&A transactions",
-   "updated": "2026-10-26T16:17:29Z",
+   "updated": "2026-10-29T15:56:49Z",
    "rows": 44
   },
   "distress": {
@@ -43,7 +43,7 @@
   },
   "market": {
    "title": "MSOS fund data and weights",
-   "updated": "2026-10-26T16:14:09Z",
+   "updated": "2026-10-29T15:56:49Z",
    "rows": 6
   },
   "news": {
@@ -68,8 +68,8 @@
   },
   "timeline": {
    "title": "Catalyst calendar",
-   "updated": "2026-10-26T16:17:29Z",
-   "rows": 24
+   "updated": "2026-10-29T15:56:49Z",
+   "rows": 25
   }
  }
 }

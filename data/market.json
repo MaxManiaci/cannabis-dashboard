@@ -2,23 +2,23 @@
  {
   "ticker": "MSOS",
   "name": "AdvisorShares Pure US Cannabis ETF",
-  "price": 3.91,
+  "price": 4.05,
   "ye2025_price": 4.72,
   "msos_weight_pct": null,
-  "aum_m": 725.8,
-  "as_of": "2026-10-23",
-  "note": "Close; NAV $3.91",
+  "aum_m": 751.0,
+  "as_of": "2026-10-28",
+  "note": "Close; NAV $4.05",
   "url": "https://advisorshares.com/etfs/msos/",
-  "nav": 3.91
+  "nav": 4.05
  },
  {
   "ticker": "TRLV",
   "name": "Trulieve Cannabis",
-  "price": 10.42,
+  "price": 10.62,
   "ye2025_price": null,
-  "msos_weight_pct": 36.43,
+  "msos_weight_pct": 35.88,
   "aum_m": null,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-28",
   "note": "NYSE",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": null
@@ -26,11 +26,11 @@
  {
   "ticker": "CURLF",
   "name": "Curaleaf Holdings",
-  "price": 7.88,
+  "price": 8.48,
   "ye2025_price": null,
-  "msos_weight_pct": 27.5,
+  "msos_weight_pct": 28.6,
   "aum_m": null,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-28",
   "note": "OTC",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": null
@@ -38,11 +38,11 @@
  {
   "ticker": "GTBIF",
   "name": "Green Thumb Industries",
-  "price": 6.34,
+  "price": 6.41,
   "ye2025_price": null,
-  "msos_weight_pct": 17.69,
+  "msos_weight_pct": 17.28,
   "aum_m": null,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-28",
   "note": "Held via swap",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": null
@@ -50,11 +50,11 @@
  {
   "ticker": "VRNO",
   "name": "Verano Holdings",
-  "price": 5.0,
+  "price": 5.1,
   "ye2025_price": null,
-  "msos_weight_pct": 6.15,
+  "msos_weight_pct": 6.06,
   "aum_m": null,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-28",
   "note": "Held via swap",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": null
@@ -62,11 +62,11 @@
  {
   "ticker": "CRLBF",
   "name": "Cresco Labs",
-  "price": 0.6,
+  "price": 0.61,
   "ye2025_price": null,
-  "msos_weight_pct": 4.15,
+  "msos_weight_pct": 4.09,
   "aum_m": null,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-28",
   "note": "Held via swap",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": null
