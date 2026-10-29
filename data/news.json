@@ -1,5 +1,13 @@
 [
  {
+  "id": "n62",
+  "date": "2026-10-29",
+  "tag": "Operators",
+  "headline": "Verano Q3 revenue rises 5% to $212.4M; adjusted EBITDA $50.4M, 2026 capex guidance raised to $54–60M",
+  "source": "Verano Holdings release (SEC 8-K)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001848416/000184841626000003/vrno-2026930xexx991.htm"
+ },
+ {
   "id": "n56",
   "date": "2026-10-26",
   "tag": "State",
@@ -190,13 +198,5 @@
   "headline": "Colorado legislative auditors to unveil marijuana consumer-safety audit of regulator and state lab at Oct 19 hearing",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/colorado-lawmakers-to-review-statewide-marijuana-consumer-safety-audit-at-october-19-hearing/"
- },
- {
-  "id": "n35",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "Seven Nevada testing labs warn CCB that sampling rules for 15-lb flower lots could pass contaminated product",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/seven-nevada-marijuana-testing-labs-warn-proposed-rules-could-allow-contaminated-products-to-pass-testing/"
  }
 ]
