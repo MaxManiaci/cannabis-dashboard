@@ -112,11 +112,11 @@
   "state_name": "New York",
   "priority": "Medium",
   "category": "Market stress",
-  "catalyst": "87 retailers (~12% of licensees) on OCM's cash-on-delivery list owing ~$3.89M to 44 suppliers, ~281 days delinquent on average; OCM's largest illicit seizure (>$17M)",
-  "next_date": null,
-  "date_label": "Ongoing",
-  "ib_angle": "Stressed single-store retailers → tuck-ins and distressed sales.",
-  "source": "Vicente LLP",
+  "catalyst": "87 retailers (~12% of licensees) on OCM's cash-on-delivery list owing ~$3.89M to 44 suppliers, ~281 days delinquent on average; OCM's largest illicit seizure (>$17M); S10643 (signed Oct 28, Ch. 369) ends the labor peace agreement mandate for licensees; its wage board and applicant ownership/pay disclosure rules take effect Jan 31, 2027 unless lawmakers pass promised amendments",
+  "next_date": "2027-01-31",
+  "date_label": "Jan 31, 2027 (wage board/disclosure effective date)",
+  "ib_angle": "Stressed single-store retailers → tuck-ins and distressed sales; dropping labor peace requirements lowers a compliance hurdle in license transfers and new builds.",
+  "source": "Vicente LLP (COD list); NY Senate (S10643 signed Oct 28)",
   "url": "https://vicentellp.com/insights/new-york-cab-meeting-cod-reporting-metrc-transfers-nursery-licenses/"
  },
  {
