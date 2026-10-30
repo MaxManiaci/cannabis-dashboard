@@ -1,11 +1,27 @@
 [
  {
+  "id": "n67",
+  "date": "2026-10-29",
+  "tag": "Federal",
+  "headline": "Rep. Steve Cohen files bill to fully deschedule marijuana and shift drug-scheduling authority from DEA to HHS",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/u-s-congressmember-steve-cohen-introduces-bill-to-deschedule-marijuana-eliminate-mandatory-minimums-and-overhaul-federal-drug-laws/"
+ },
+ {
   "id": "n62",
   "date": "2026-10-29",
   "tag": "Operators",
   "headline": "Verano Q3 revenue rises 5% to $212.4M; adjusted EBITDA $50.4M, 2026 capex guidance raised to $54–60M",
   "source": "Verano Holdings release (SEC 8-K)",
   "url": "https://www.sec.gov/Archives/edgar/data/0001848416/000184841626000003/vrno-2026930xexx991.htm"
+ },
+ {
+  "id": "n68",
+  "date": "2026-10-28",
+  "tag": "State",
+  "headline": "New York's Hochul signs law ending labor peace mandate for cannabis licensees; wage board slated for repeal",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/new-york-governor-signs-marijuana-labor-bill-agrees-to-eliminate-proposed-industry-wage-board/"
  },
  {
   "id": "n63",
@@ -182,21 +198,5 @@
   "headline": "Kentucky medical program now has 26 dispensaries open across all 11 licensing regions; 28K+ patients approved",
   "source": "Marijuana Moment",
   "url": "https://www.marijuanamoment.net/kentucky-now-has-medical-marijuana-dispensaries-open-in-every-region-of-the-state-governor-announces/"
- },
- {
-  "id": "n25",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "63 Massachusetts lawmakers, incl. both chamber leaders, endorse the No on 8 campaign against repeal",
-  "source": "No on 8 campaign release (Cannabis Business Times)",
-  "url": "https://www.cannabisbusinesstimes.com/us-states/massachusetts/news/15837667/60-massachusetts-lawmakers-endorse-campaign-to-protect-cannabis-legalization"
- },
- {
-  "id": "n27",
-  "date": "2026-10-16",
-  "tag": "Operators",
-  "headline": "Green Thumb opens its 26th Florida RISE store, in Belleview",
-  "source": "Green Thumb release (Cannabis Business Times)",
-  "url": "https://www.cannabisbusinesstimes.com/dispensary/news/15837730/green-thumb-opens-26th-florida-dispensary-in-belleview"
  }
 ]
