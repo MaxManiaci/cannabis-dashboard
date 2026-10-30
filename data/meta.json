@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T01:08:03Z",
+ "updated": "2026-10-30T02:43:55Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
@@ -57,9 +57,9 @@
    "rows": 5
   },
   "perf": {
-   "updated": "2026-10-30T01:08:03Z",
+   "updated": "2026-10-30T02:43:55Z",
    "title": "Stock prices for YTD performance",
-   "rows": 599
+   "rows": 602
   },
   "states": {
    "title": "State market and regulatory profiles",
