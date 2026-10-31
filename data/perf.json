@@ -5416,5 +5416,68 @@
   "kind": "ETF",
   "slot": null,
   "close": 4.08
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "CURLF",
+  "name": "Curaleaf Holdings",
+  "label": "Curaleaf",
+  "kind": "Company",
+  "slot": 1,
+  "close": 8.36
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "GTBIF",
+  "name": "Green Thumb Industries",
+  "label": "Green Thumb",
+  "kind": "Company",
+  "slot": 2,
+  "close": 6.23
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "VRNO",
+  "name": "Verano Holdings",
+  "label": "Verano",
+  "kind": "Company",
+  "slot": 3,
+  "close": 5.01
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "CRLBF",
+  "name": "Cresco Labs",
+  "label": "Cresco Labs",
+  "kind": "Company",
+  "slot": 4,
+  "close": 0.5734
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "VREOF",
+  "name": "Vireo Growth",
+  "label": "Vireo Growth",
+  "kind": "Company",
+  "slot": 6,
+  "close": 7.35
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "TSNDF",
+  "name": "TerrAscend",
+  "label": "TerrAscend",
+  "kind": "Company",
+  "slot": 7,
+  "close": 0.4795
+ },
+ {
+  "date": "2026-10-30",
+  "ticker": "^GSPC",
+  "name": "S&P 500 Index",
+  "label": "S&P 500",
+  "kind": "Index",
+  "slot": null,
+  "close": 7580.07
  }
 ]
