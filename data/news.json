@@ -1,5 +1,45 @@
 [
  {
+  "id": "n73",
+  "date": "2026-10-30",
+  "tag": "State",
+  "headline": "Massachusetts Senate budget panel advances ~$6M for cannabis regulatory overhaul; full Senate vote set Nov. 5",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/massachusetts-senate-committee-advances-6-million-for-marijuana-regulatory-reforms/"
+ },
+ {
+  "id": "n72",
+  "date": "2026-10-30",
+  "tag": "State",
+  "headline": "New York appeals court unanimously upholds $200M social equity dispensary fund against federal preemption challenge",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/new-york-court-funding-marijuana/"
+ },
+ {
+  "id": "n71",
+  "date": "2026-10-30",
+  "tag": "Federal",
+  "headline": "DEA asks rescheduling judge to give GAO report no weight; opponents urge rejection, replies due Nov. 5",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
+ },
+ {
+  "id": "n70",
+  "date": "2026-10-30",
+  "tag": "Federal",
+  "headline": "DEA guidance gives pending medical cannabis applicants until Nov. 29 to build compliant supply chains",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/10/dea-gives-medical-marijuana-businesses-until-november-29-to-meet-federal-supply-chain-requirements/"
+ },
+ {
+  "id": "n69",
+  "date": "2026-10-30",
+  "tag": "Federal",
+  "headline": "DOJ: DEA issues first federal registrations to 900+ medical dispensaries in seven states; manufacturers still under review",
+  "source": "U.S. Department of Justice release",
+  "url": "https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries"
+ },
+ {
   "id": "n67",
   "date": "2026-10-29",
   "tag": "Federal",
@@ -24,20 +64,20 @@
   "url": "https://themarijuanaherald.com/2026/10/new-york-governor-signs-marijuana-labor-bill-agrees-to-eliminate-proposed-industry-wage-board/"
  },
  {
-  "id": "n63",
-  "date": "2026-10-28",
-  "tag": "Federal",
-  "headline": "DEA prepares public list of timely medical cannabis registration applicants, to be updated daily once posted",
-  "source": "Marijuana Moment",
-  "url": "https://www.marijuanamoment.net/dea-prepares-to-release-list-of-marijuana-businesses-that-applied-for-federal-protections-under-trumps-rescheduling-move/"
- },
- {
   "id": "n64",
   "date": "2026-10-28",
   "tag": "Operators",
   "headline": "Jushi Q3 revenue up 7% to $70.5M; adjusted EBITDA $13.6M, wholesale revenue up 40% to a record",
   "source": "Jushi Holdings release (GlobeNewswire)",
   "url": "https://www.globenewswire.com/news-release/2026/10/28/3390730/0/en/jushi-holdings-inc-reports-third-quarter-2026-financial-results.html"
+ },
+ {
+  "id": "n63",
+  "date": "2026-10-28",
+  "tag": "Federal",
+  "headline": "DEA prepares public list of timely medical cannabis registration applicants, to be updated daily once posted",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/dea-prepares-to-release-list-of-marijuana-businesses-that-applied-for-federal-protections-under-trumps-rescheduling-move/"
  },
  {
   "id": "n65",
@@ -80,12 +120,12 @@
   "url": "https://themarijuanaherald.com/2026/10/oklahoma-medical-marijuana-director-adria-berry-stepping-down-enforcement-official-named-interim-replacement/"
  },
  {
-  "id": "n51",
+  "id": "n58",
   "date": "2026-10-22",
   "tag": "Federal",
-  "headline": "DEA judge denies bid to reopen rescheduling hearing; GAO-report briefs due Oct. 29, replies Nov. 5",
+  "headline": "AG Blanche says DOJ is not targeting state-legal cannabis businesses, framing Virginia senator's indictment as broader",
   "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
+  "url": "https://themarijuanaherald.com/2026/10/attorney-general-todd-blanche-says-doj-is-not-seeking-to-interfere-with-state-legal-marijuana-businesses/"
  },
  {
   "id": "n57",
@@ -96,28 +136,20 @@
   "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-medical/"
  },
  {
-  "id": "n58",
+  "id": "n51",
   "date": "2026-10-22",
   "tag": "Federal",
-  "headline": "AG Blanche says DOJ is not targeting state-legal cannabis businesses, framing Virginia senator's indictment as broader",
+  "headline": "DEA judge denies bid to reopen rescheduling hearing; GAO-report briefs due Oct. 29, replies Nov. 5",
   "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/attorney-general-todd-blanche-says-doj-is-not-seeking-to-interfere-with-state-legal-marijuana-businesses/"
+  "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
  },
  {
-  "id": "n52",
+  "id": "n61",
   "date": "2026-10-21",
   "tag": "State",
-  "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
+  "headline": "Los Angeles County weighs zoning for up to 90 cannabis licenses in unincorporated areas, including 25 storefronts",
   "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
- },
- {
-  "id": "n59",
-  "date": "2026-10-21",
-  "tag": "State",
-  "headline": "Massachusetts 2026 cannabis sales top $1.45B through Oct. 18 as poll shows 71% oppose Question 8",
-  "source": "The Marijuana Herald (MA CCC data)",
-  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
+  "url": "https://themarijuanaherald.com/2026/10/los-angeles-county-holds-hearing-today-on-proposal-to-allow-up-to-90-marijuana-business-licenses-in-unincorporated-areas/"
  },
  {
   "id": "n60",
@@ -128,12 +160,20 @@
   "url": "https://themarijuanaherald.com/2026/10/oregon-marijuana-regulators-seek-75-fee-increase-warn-of-17-25-million-shortfall-and-53-potential-position-cuts/"
  },
  {
-  "id": "n61",
+  "id": "n59",
   "date": "2026-10-21",
   "tag": "State",
-  "headline": "Los Angeles County weighs zoning for up to 90 cannabis licenses in unincorporated areas, including 25 storefronts",
+  "headline": "Massachusetts 2026 cannabis sales top $1.45B through Oct. 18 as poll shows 71% oppose Question 8",
+  "source": "The Marijuana Herald (MA CCC data)",
+  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
+ },
+ {
+  "id": "n52",
+  "date": "2026-10-21",
+  "tag": "State",
+  "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
   "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/los-angeles-county-holds-hearing-today-on-proposal-to-allow-up-to-90-marijuana-business-licenses-in-unincorporated-areas/"
+  "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
  },
  {
   "id": "n54",
@@ -158,45 +198,5 @@
   "headline": "New York OCM's Metrc-tracked 30-day payment rule puts 87 retailers on COD list, shrinking wholesale orders",
   "source": "MJBizDaily",
   "url": "https://mjbizdaily.com/news/new-york-cannabis-retailers-shrink-orders-as-payment-enforcement-tightens/618675/"
- },
- {
-  "id": "n46",
-  "date": "2026-10-18",
-  "tag": "State",
-  "headline": "Worcester City Council to vote Oct. 20 on mayor's resolution opposing Massachusetts Question 8 repeal",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/worcester-city-council-to-vote-october-20-on-mayors-resolution-opposing-marijuana-legalization-repeal"
- },
- {
-  "id": "n44",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "New Jersey Senate leaders' bipartisan bill S4287 would make unlicensed cannabis retail a third-degree crime; clears Judiciary panel",
-  "source": "MJBizDaily",
-  "url": "https://mjbizdaily.com/news/bipartisan-new-jersey-bill-targets-unlicensed-cannabis-retailers/618689/"
- },
- {
-  "id": "n45",
-  "date": "2026-10-16",
-  "tag": "Operators",
-  "headline": "Federal grand jury indicts La Mota CEO on eight counts over $1.5M+ in unpaid payroll taxes",
-  "source": "MJBizDaily",
-  "url": "https://mjbizdaily.com/news/controversial-oregon-cannabis-executive-charged-with-tax-fraud/618693/"
- },
- {
-  "id": "n39",
-  "date": "2026-10-16",
-  "tag": "Operators",
-  "headline": "Trulieve licenses Seed Junky Genetics brand for Pennsylvania, relaunching it as a standalone brand in Florida",
-  "source": "Seed Junky Genetics release (Cannabis Business Times)",
-  "url": "https://www.cannabisbusinesstimes.com/us-states/pennsylvania/news/15837733/seed-junky-genetics-expands-trulieve-partnership-to-pennsylvania"
- },
- {
-  "id": "n28",
-  "date": "2026-10-16",
-  "tag": "State",
-  "headline": "Kentucky medical program now has 26 dispensaries open across all 11 licensing regions; 28K+ patients approved",
-  "source": "Marijuana Moment",
-  "url": "https://www.marijuanamoment.net/kentucky-now-has-medical-marijuana-dispensaries-open-in-every-region-of-the-state-governor-announces/"
  }
 ]
