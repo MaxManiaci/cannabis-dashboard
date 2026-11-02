@@ -1,5 +1,21 @@
 [
  {
+  "id": "n76",
+  "date": "2026-11-02",
+  "tag": "State",
+  "headline": "Delaware finalizes rule letting cultivators make own-flower pre-rolls for sale to retailers, effective Nov. 11",
+  "source": "The Marijuana Herald",
+  "url": "https://themarijuanaherald.com/2026/11/delaware-finalizes-rule-allowing-marijuana-growers-to-produce-and-sell-their-own-pre-rolls/"
+ },
+ {
+  "id": "n74",
+  "date": "2026-10-30",
+  "tag": "Federal",
+  "headline": "DEA moves to deny Minnesota dispensary's registration, saying dual medical/adult-use licenses fall outside federal medical definition",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/dea-refuses-to-approve-marijuana-businesses-in-states-that-allow-dual-medical-and-recreational-licensing/"
+ },
+ {
   "id": "n73",
   "date": "2026-10-30",
   "tag": "State",
@@ -38,6 +54,14 @@
   "headline": "DOJ: DEA issues first federal registrations to 900+ medical dispensaries in seven states; manufacturers still under review",
   "source": "U.S. Department of Justice release",
   "url": "https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries"
+ },
+ {
+  "id": "n75",
+  "date": "2026-10-29",
+  "tag": "Capital markets",
+  "headline": "MariMed holders approve 1-for-50 to 1-for-100 reverse split, with eye on potential US exchange listing",
+  "source": "MariMed release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/10/29/3391101/0/en/marimed-stockholders-approve-proposed-reverse-stock-split.html"
  },
  {
   "id": "n67",
@@ -174,29 +198,5 @@
   "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
- },
- {
-  "id": "n54",
-  "date": "2026-10-20",
-  "tag": "M&A",
-  "headline": "Grown Rogue lifts New Jersey subsidiary ABCO Garden State stake to 70% for about $743K",
-  "source": "Grown Rogue release",
-  "url": "https://www.placera.se/pressmeddelanden/grown-rogue-international-grown-rogue-increases-ownership-stake-to-70-in-new-jersey-subsidiary-abco-garden-state-20261020"
- },
- {
-  "id": "n50",
-  "date": "2026-10-19",
-  "tag": "Operators",
-  "headline": "Glass House preliminary Q3 revenue rises to $56.8M, gross margin dips to 26%; director Jay Nichols resigns",
-  "source": "Glass House Brands release (GlobeNewswire)",
-  "url": "https://www.globenewswire.com/news-release/2026/10/19/3383338/0/en/glass-house-brands-reports-preliminary-unaudited-third-quarter-financial-results-and-resignation-of-john-nichols-jr-from-board-of-directors.html"
- },
- {
-  "id": "n47",
-  "date": "2026-10-19",
-  "tag": "State",
-  "headline": "New York OCM's Metrc-tracked 30-day payment rule puts 87 retailers on COD list, shrinking wholesale orders",
-  "source": "MJBizDaily",
-  "url": "https://mjbizdaily.com/news/new-york-cannabis-retailers-shrink-orders-as-payment-enforcement-tightens/618675/"
  }
 ]
