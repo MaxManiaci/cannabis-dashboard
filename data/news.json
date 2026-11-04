@@ -1,5 +1,13 @@
 [
  {
+  "id": "n81",
+  "date": "2026-11-04",
+  "tag": "State",
+  "headline": "Idaho voters defeat HJR 4, keeping citizens' power to legalize marijuana via ballot initiative",
+  "source": "KIFI Local News 8",
+  "url": "https://localnews8.com/news/top-stories/2026/11/04/idaho-voters-reject-hj4/"
+ },
+ {
   "id": "n77",
   "date": "2026-11-04",
   "tag": "State",
@@ -190,13 +198,5 @@
   "headline": "Massachusetts CCC proposes ending medical vertical integration, adding standalone medical dispensary licenses and dropping patient residency",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-medical/"
- },
- {
-  "id": "n51",
-  "date": "2026-10-22",
-  "tag": "Federal",
-  "headline": "DEA judge denies bid to reopen rescheduling hearing; GAO-report briefs due Oct. 29, replies Nov. 5",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
  }
 ]
