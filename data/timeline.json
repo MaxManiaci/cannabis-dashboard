@@ -49,9 +49,9 @@
   "date": "2026-11-03",
   "date_label": "Nov 3, 2026",
   "category": "Ballot",
-  "item": "Election Day: Massachusetts Question 8 (repeal), Idaho HJR 4; PA, NH and WI legislative races",
-  "upcoming": true,
-  "url": "https://mgmagazine.com/policy-regulation/cannabis-ballot-2026-reform-pushback/"
+  "item": "Election Day: Massachusetts Question 8 repeal fails by about 3 to 1; Idaho HJR 4 rejected (66%+ no, unofficial); projected Democratic Senate flip in PA; Democrats win Wisconsin governor and both chambers",
+  "upcoming": false,
+  "url": "https://norml.org/blog/2026/11/04/massachusetts-voters-overwhelmingly-reject-ballot-proposal-seeking-to-repeal-marijuana-legalization"
  },
  {
   "id": "t07",
@@ -212,7 +212,7 @@
   "date_label": "Oct 26–30, 2026",
   "category": "Licensing",
   "item": "Georgia dispensary application window for existing medical producers (cap rises to 9 stores each)",
-  "upcoming": true,
+  "upcoming": false,
   "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
  },
  {
@@ -232,5 +232,23 @@
   "item": "New York cannabis wage board and applicant ownership/pay disclosure rules take effect unless amended (S10643, signed Oct 28, also ended the labor peace mandate)",
   "upcoming": true,
   "url": "https://www.nysenate.gov/legislation/bills/2025/S10643"
+ },
+ {
+  "id": "t28",
+  "date": "2026-11-03",
+  "date_label": "Nov 3, 2026",
+  "category": "Deal",
+  "item": "Aurora signs C$561M arrangement to be acquired by Organigram, a rival to Curaleaf's hostile bid; holder votes by Dec 31, close expected Jan 2027",
+  "upcoming": false,
+  "url": "https://www.sec.gov/Archives/edgar/data/0001683541/000110465926121740/tm2628773d2_ex99-1.htm"
+ },
+ {
+  "id": "t29",
+  "date": "2026-12-10",
+  "date_label": "Dec 10, 2026",
+  "category": "Deal",
+  "item": "Planet 13 special meeting to vote on the Vireo Growth merger",
+  "upcoming": true,
+  "url": "https://www.sec.gov/Archives/edgar/data/0001813452/000110465926121478/tm2621776-7_defm14a.htm"
  }
 ]

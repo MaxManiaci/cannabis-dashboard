@@ -1,5 +1,13 @@
 [
  {
+  "id": "k10",
+  "date": "2026-10-30",
+  "date_label": "Oct 30, 2026",
+  "item": "Cresco holders back reorganization ahead of a potential US listing",
+  "detail": "Each resolution won at least 94%: a new parent company (TopCo), a possible later move of TopCo from British Columbia to Delaware, and a longer multiple-voting-share sunset tied to a US listing",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001832928/000183292826000016/a2026annualgeneralandspeci.htm"
+ },
+ {
   "id": "k1",
   "date": "2026-09-21",
   "date_label": "Sep 21, 2026",
