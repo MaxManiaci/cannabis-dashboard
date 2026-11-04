@@ -1,5 +1,37 @@
 [
  {
+  "id": "n77",
+  "date": "2026-11-04",
+  "tag": "State",
+  "headline": "Massachusetts voters reject Question 8 repeal of adult-use cannabis by roughly three-to-one margin",
+  "source": "WBUR",
+  "url": "https://www.wbur.org/news/2026/11/04/massachusetts-ballot-question-results"
+ },
+ {
+  "id": "n78",
+  "date": "2026-11-04",
+  "tag": "Operators",
+  "headline": "Planet 13 receives DEA registrations covering all 34 of its Florida medical dispensaries",
+  "source": "Planet 13 release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/04/3395125/0/en/planet-13-receives-dea-registrations-for-all-34-florida-dispensaries.html"
+ },
+ {
+  "id": "n79",
+  "date": "2026-11-03",
+  "tag": "Operators",
+  "headline": "Jushi says DEA granted registrations for some of its state-licensed medical cannabis operations",
+  "source": "Jushi Holdings release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/03/3394723/0/en/jushi-holdings-inc-announces-receipt-of-dea-registrations-for-state-licensed-medical-cannabis-operations.html"
+ },
+ {
+  "id": "n80",
+  "date": "2026-11-02",
+  "tag": "Operators",
+  "headline": "Vireo Growth secures DEA registrations for all 41 Florida medical dispensaries; Q3 results due Nov. 10",
+  "source": "Vireo Growth release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/02/3393825/0/en/vireo-growth-inc-receives-federal-dea-registrations-for-florida-medical-cannabis-dispensaries.html"
+ },
+ {
   "id": "n76",
   "date": "2026-11-02",
   "tag": "State",
@@ -166,37 +198,5 @@
   "headline": "DEA judge denies bid to reopen rescheduling hearing; GAO-report briefs due Oct. 29, replies Nov. 5",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/dea-judge-rejects-request-to-reopen-marijuana-rescheduling-hearing-sets-november-5-deadline-for-final-arguments/"
- },
- {
-  "id": "n61",
-  "date": "2026-10-21",
-  "tag": "State",
-  "headline": "Los Angeles County weighs zoning for up to 90 cannabis licenses in unincorporated areas, including 25 storefronts",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/los-angeles-county-holds-hearing-today-on-proposal-to-allow-up-to-90-marijuana-business-licenses-in-unincorporated-areas/"
- },
- {
-  "id": "n60",
-  "date": "2026-10-21",
-  "tag": "State",
-  "headline": "Oregon OLCC seeks 75% marijuana license fee hike from July 2027 to close $17.25M shortfall",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/oregon-marijuana-regulators-seek-75-fee-increase-warn-of-17-25-million-shortfall-and-53-potential-position-cuts/"
- },
- {
-  "id": "n59",
-  "date": "2026-10-21",
-  "tag": "State",
-  "headline": "Massachusetts 2026 cannabis sales top $1.45B through Oct. 18 as poll shows 71% oppose Question 8",
-  "source": "The Marijuana Herald (MA CCC data)",
-  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-sales-top-1-45-billion-in-2026-reach-nearly-12-billion-all-time-new-state-data-shows/"
- },
- {
-  "id": "n52",
-  "date": "2026-10-21",
-  "tag": "State",
-  "headline": "Federal judge dismisses three Rhode Island licensing suits as moot; up to 24 retail licenses open through Nov. 23",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
  }
 ]
