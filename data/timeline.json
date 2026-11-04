@@ -202,9 +202,9 @@
   "date": "2026-11-05",
   "date_label": "Nov 5, 2026",
   "category": "Federal",
-  "item": "Reply briefs due on the GAO report (optional opening briefs Oct 29); rescheduling stay ends when briefing closes",
+  "item": "Optional reply briefs due on the GAO report; the judge then prepares a recommended decision on full rescheduling",
   "upcoming": true,
-  "url": "https://www.marijuanamoment.net/dea-judge-denies-marijuana-rescheduling-opponents-request-to-reopen-hearing-for-more-testimony-but-allows-new-briefs/"
+  "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
  },
  {
   "id": "t25",
@@ -250,5 +250,23 @@
   "item": "Planet 13 special meeting to vote on the Vireo Growth merger",
   "upcoming": true,
   "url": "https://www.sec.gov/Archives/edgar/data/0001813452/000110465926121478/tm2621776-7_defm14a.htm"
+ },
+ {
+  "id": "t30",
+  "date": "2026-10-30",
+  "date_label": "Oct 30, 2026",
+  "category": "Federal",
+  "item": "DEA issues first federal registrations to 900+ medical dispensaries in seven states; manufacturer and distributor applications still under review",
+  "upcoming": false,
+  "url": "https://www.marijuanamoment.net/dea-officially-grants-federal-registration-and-protections-to-more-than-900-medical-marijuana-dispensaries/"
+ },
+ {
+  "id": "t31",
+  "date": "2026-10-29",
+  "date_label": "Oct 29, 2026",
+  "category": "Federal",
+  "item": "GAO-report briefs filed in the rescheduling case; DEA asks the judge to give the report no weight, opponents urge keeping Schedule I",
+  "upcoming": false,
+  "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
  }
 ]
