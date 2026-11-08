@@ -16,12 +16,12 @@
   "state_name": "Pennsylvania",
   "priority": "High",
   "category": "Legislation",
-  "catalyst": "Democrats projected to flip the Senate (about 26-24) while keeping the House and governor (Shapiro reelected) on Nov 3, a trifecta that would control which adult-use bills get votes; House passed HB 1200 in 2025. Next vehicle is the FY27-28 budget",
+  "catalyst": "Democrats won the Senate majority on Nov 3 (flipping four GOP seats, losing one) while keeping the House and governor (Shapiro reelected), the first Democratic trifecta in decades; adult-use 'may be on the table in 2027'. House passed HB 1200 in 2025. Next vehicle is the FY27-28 budget",
   "next_date": "2027-02-02",
   "date_label": "Feb 2027 budget address (est.)",
-  "ib_angle": "Medical-only with capped permits keeps doors scarce (Cresco paid $50M for 9 stores). A Democratic Senate raises 2027 adult-use odds, which would re-rate incumbents; results still projected.",
-  "source": "The Marijuana Herald (Nov 4, projected results)",
-  "url": "https://themarijuanaherald.com/2026/11/pennsylvania-democrats-marijuana-legalization/"
+  "ib_angle": "Medical-only with capped permits keeps doors scarce (Cresco paid $50M for 9 stores). A Democratic trifecta raises 2027 adult-use odds, which would re-rate incumbents.",
+  "source": "WHYY (Nov 5); The Marijuana Herald (Nov 4)",
+  "url": "https://whyy.org/articles/pennsylvania-democrats-trifecta/"
  },
  {
   "state": "VA",
@@ -196,12 +196,12 @@
   "state_name": "New Hampshire",
   "priority": "Watch",
   "category": "Legislation",
-  "catalyst": "Democrats reportedly won both chambers in early Nov 3 returns, but Gov. Ayotte, who opposes legalization, was reelected and Senate Democrats look about one seat short of a veto-proof majority",
+  "catalyst": "Democrats won both chambers on Nov 3: about 292 of 400 House seats per the House Clerk, and a 15-9 Senate per the AP forecast, just shy of a veto-proof majority; results not final (recounts likely). Gov. Ayotte, who opposes legalization, was reelected",
   "next_date": null,
   "date_label": "2027 session",
-  "ib_angle": "Legislature more receptive, but a veto keeps near-term odds low; last New England holdout.",
-  "source": "The Marijuana Herald (Nov 4, early returns)",
-  "url": "https://themarijuanaherald.com/2026/11/states-most-likely-to-legalize-recreational-marijuana-in-2027-following-historic-election-results/"
+  "ib_angle": "Legislature more receptive and the House may have a veto-proof margin, but the Senate looks one seat short, so a veto keeps near-term odds low; last New England holdout.",
+  "source": "NHPR (Nov 6, unofficial counts)",
+  "url": "https://www.nhpr.org/nh-news/2026-11-04/democrats-sweep-nh-newhampshire-state-house-executive-council-majorities-legislature-election"
  },
  {
   "state": "ID",
