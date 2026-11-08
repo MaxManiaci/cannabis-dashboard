@@ -1,5 +1,13 @@
 [
  {
+  "id": "n87",
+  "date": "2026-11-06",
+  "tag": "Operators",
+  "headline": "Cresco Labs Q3 revenue up 5% to $173M; adjusted EBITDA $35M (20.2% margin), free cash flow $21M",
+  "source": "Cresco Labs release (SEC 6-K)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001832928/000183292826000018/q32026pressrelease.htm"
+ },
+ {
   "id": "n83",
   "date": "2026-11-05",
   "tag": "Operators",
@@ -48,6 +56,14 @@
   "url": "https://www.cannabisbusinesstimes.com/us-states/pennsylvania/news/16424242/pennsylvania-flips-senate-secures-cannabis-legalization-trifecta"
  },
  {
+  "id": "n88",
+  "date": "2026-11-04",
+  "tag": "State",
+  "headline": "Wisconsin Democrats win legislature and governorship; advocates expect legalization bill early in 2027 session",
+  "source": "Cannabis Business Times",
+  "url": "https://www.cannabisbusinesstimes.com/us-states/wisconsin/news/16424308/wisconsin-eyes-2027-cannabis-legalization-with-new-democratic-legislature-governor"
+ },
+ {
   "id": "n79",
   "date": "2026-11-03",
   "tag": "Operators",
@@ -62,6 +78,14 @@
   "headline": "Curaleaf keeps Aurora bid open, challenging undisclosed terms of Organigram's rival C$7.80/share deal",
   "source": "Curaleaf statement (via Cannabis Business Times)",
   "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/16424372/curaleaf-issues-statement-regarding-alternative-proposal-for-aurora-cannabis"
+ },
+ {
+  "id": "n86",
+  "date": "2026-11-03",
+  "tag": "Operators",
+  "headline": "Curaleaf Q3 revenue rises 11% to record $352.7M; adjusted EBITDA $77.6M at 22% margin, $32.7M net loss",
+  "source": "Curaleaf release (SEC 8-K)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001756770/000162828026069455/q326-exx99xxearningsrelease.htm"
  },
  {
   "id": "n80",
@@ -174,29 +198,5 @@
   "headline": "DEA prepares public list of timely medical cannabis registration applicants, to be updated daily once posted",
   "source": "Marijuana Moment",
   "url": "https://www.marijuanamoment.net/dea-prepares-to-release-list-of-marijuana-businesses-that-applied-for-federal-protections-under-trumps-rescheduling-move/"
- },
- {
-  "id": "n65",
-  "date": "2026-10-27",
-  "tag": "State",
-  "headline": "Nevada revenue panel weighs scrapping 15% wholesale cannabis tax for a higher retail excise; no action taken",
-  "source": "Marijuana Moment (Nevada Current)",
-  "url": "https://www.marijuanamoment.net/nevada-lawmakers-consider-marijuana-tax-overhaul-for-maturing-market-as-prices-fall/"
- },
- {
-  "id": "n66",
-  "date": "2026-10-26",
-  "tag": "Capital markets",
-  "headline": "Safe Harbor signs non-binding term sheet for reverse merger with Opifex Media; Opifex holders to own ~85%",
-  "source": "Safe Harbor Financial release (GlobeNewswire)",
-  "url": "https://www.globenewswire.com/news-release/2026/10/26/3388070/0/en/safe-harbor-financial-signs-non-binding-term-sheet-to-combine-with-opifex-media-creating-a-nasdaq-listed-diversified-holding-company.html"
- },
- {
-  "id": "n56",
-  "date": "2026-10-26",
-  "tag": "State",
-  "headline": "Georgia opens Oct. 26–30 medical dispensary window for existing producers; per-producer cap rises to nine stores",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
  }
 ]
