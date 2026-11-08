@@ -1,5 +1,13 @@
 [
  {
+  "id": "n83",
+  "date": "2026-11-05",
+  "tag": "Operators",
+  "headline": "Trulieve Q3 revenue $230M as Harvest exit leaves medical-only base; adjusted EBITDA $89M, 39% margin",
+  "source": "Trulieve release (SEC 8-K)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001754195/000175419526000087/exhibit991trlvearningsrele.htm"
+ },
+ {
   "id": "n81",
   "date": "2026-11-04",
   "tag": "State",
@@ -24,12 +32,36 @@
   "url": "https://www.globenewswire.com/news-release/2026/11/04/3395125/0/en/planet-13-receives-dea-registrations-for-all-34-florida-dispensaries.html"
  },
  {
+  "id": "n82",
+  "date": "2026-11-04",
+  "tag": "Operators",
+  "headline": "Green Thumb Q3 revenue up 11% to $324.4M; $4.8M net loss, $316M cash at quarter end",
+  "source": "Green Thumb Industries Form 10-Q (SEC)",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001795139/000119312526447252/gtbif-20260930.htm"
+ },
+ {
+  "id": "n84",
+  "date": "2026-11-04",
+  "tag": "State",
+  "headline": "Pennsylvania Democrats projected to flip state Senate, handing Shapiro a trifecta for adult-use legalization",
+  "source": "Cannabis Business Times",
+  "url": "https://www.cannabisbusinesstimes.com/us-states/pennsylvania/news/16424242/pennsylvania-flips-senate-secures-cannabis-legalization-trifecta"
+ },
+ {
   "id": "n79",
   "date": "2026-11-03",
   "tag": "Operators",
   "headline": "Jushi says DEA granted registrations for some of its state-licensed medical cannabis operations",
   "source": "Jushi Holdings release (GlobeNewswire)",
   "url": "https://www.globenewswire.com/news-release/2026/11/03/3394723/0/en/jushi-holdings-inc-announces-receipt-of-dea-registrations-for-state-licensed-medical-cannabis-operations.html"
+ },
+ {
+  "id": "n85",
+  "date": "2026-11-03",
+  "tag": "M&A",
+  "headline": "Curaleaf keeps Aurora bid open, challenging undisclosed terms of Organigram's rival C$7.80/share deal",
+  "source": "Curaleaf statement (via Cannabis Business Times)",
+  "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/16424372/curaleaf-issues-statement-regarding-alternative-proposal-for-aurora-cannabis"
  },
  {
   "id": "n80",
@@ -166,37 +198,5 @@
   "headline": "Georgia opens Oct. 26–30 medical dispensary window for existing producers; per-producer cap rises to nine stores",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/georgia-opens-new-medical-marijuana-dispensary-application-window-as-patient-registry-surpasses-56000"
- },
- {
-  "id": "n55",
-  "date": "2026-10-23",
-  "tag": "Operators",
-  "headline": "Vireo Growth buys its leased 415K sq ft Palatka, Florida cultivation campus for $21M",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/vireo-growth-purchases-415733-square-foot-florida-marijuana-cultivation-facility-for-21-million/"
- },
- {
-  "id": "n53",
-  "date": "2026-10-23",
-  "tag": "State",
-  "headline": "Oklahoma medical cannabis chief Adria Berry steps down; enforcement deputy Jason Yingling named interim director",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/oklahoma-medical-marijuana-director-adria-berry-stepping-down-enforcement-official-named-interim-replacement/"
- },
- {
-  "id": "n58",
-  "date": "2026-10-22",
-  "tag": "Federal",
-  "headline": "AG Blanche says DOJ is not targeting state-legal cannabis businesses, framing Virginia senator's indictment as broader",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/attorney-general-todd-blanche-says-doj-is-not-seeking-to-interfere-with-state-legal-marijuana-businesses/"
- },
- {
-  "id": "n57",
-  "date": "2026-10-22",
-  "tag": "State",
-  "headline": "Massachusetts CCC proposes ending medical vertical integration, adding standalone medical dispensary licenses and dropping patient residency",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/massachusetts-marijuana-medical/"
  }
 ]
