@@ -175,7 +175,7 @@
   "date": null,
   "date_label": "Q4 2026",
   "category": "Deal",
-  "item": "Expected closings: Vireo–FLUENT (FL) and Vireo's four-deal Ohio platform",
+  "item": "Expected closing: Vireo's four-deal Ohio platform (Vireo–FLUENT closed Nov 9)",
   "upcoming": true,
   "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15831354/vireo-growth-announces-4deal-transaction-to-establish-ohio-presence-with-8-dispensaries"
  },
@@ -268,5 +268,23 @@
   "item": "GAO-report briefs filed in the rescheduling case; DEA asks the judge to give the report no weight, opponents urge keeping Schedule I",
   "upcoming": false,
   "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
+ },
+ {
+  "id": "t32",
+  "date": "2026-11-09",
+  "date_label": "Nov 9, 2026",
+  "category": "Deal",
+  "item": "Vireo Growth closes all-stock FLUENT acquisition, adding 33 Florida dispensaries",
+  "upcoming": false,
+  "url": "https://www.globenewswire.com/news-release/2026/11/10/3399282/0/en/vireo-growth-inc-announces-third-quarter-2026-results.html"
+ },
+ {
+  "id": "t33",
+  "date": "2026-12-23",
+  "date_label": "Dec 23, 2026",
+  "category": "Deal",
+  "item": "Aurora special meeting (virtual) to vote on the Organigram arrangement; record date Nov 18",
+  "upcoming": true,
+  "url": "https://themarijuanaherald.com/2026/11/aurora-cannabis-sets-december-23-shareholder-vote-on-c561-million-organigram-acquisition-new-sec-filing-confirms/"
  }
 ]
