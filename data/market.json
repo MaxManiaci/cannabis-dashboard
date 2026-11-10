@@ -2,12 +2,12 @@
  {
   "ticker": "MSOS",
   "name": "AdvisorShares Pure US Cannabis ETF",
-  "price": 4.13,
+  "price": 4.24,
   "ye2025_price": 4.72,
   "msos_weight_pct": null,
   "aum_m": 793.3,
   "as_of": "2026-11-06",
-  "note": "Close $4.13 (Nov 5); NAV $4.28 (Nov 6)",
+  "note": "Close $4.24; NAV $4.28 (Nov 6)",
   "url": "https://advisorshares.com/etfs/msos/",
   "nav": 4.28
  },
