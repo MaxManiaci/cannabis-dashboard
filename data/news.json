@@ -1,5 +1,29 @@
 [
  {
+  "id": "n96",
+  "date": "2026-11-11",
+  "tag": "Federal",
+  "headline": "DEA moves to reject medical registrations in CA, IL, DE, ND, OR and DC, citing dual-market and certification rules",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/dea-is-rejecting-medical-marijuana-businesses-that-want-federal-rescheduling-protections-in-multiple-states/"
+ },
+ {
+  "id": "n95",
+  "date": "2026-11-10",
+  "tag": "State",
+  "headline": "Texas Democrats prefile adult-use legalization bills for 2027 session with 15% wholesale, 20% retail taxes",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/marijuana-would-be-legalized-statewide-in-texas-under-new-bills-filed-for-2027-session/"
+ },
+ {
+  "id": "n94",
+  "date": "2026-11-10",
+  "tag": "Federal",
+  "headline": "Sixteen Democratic governors, led by Maryland's Wes Moore, urge Congress to pass SAFE Banking Act",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/16-governors-from-across-the-u-s-push-congress-to-pass-marijuana-banking-bill/"
+ },
+ {
   "id": "n92",
   "date": "2026-11-10",
   "tag": "Operators",
@@ -22,6 +46,14 @@
   "headline": "Vireo Growth Q3 revenue nearly triples to $253.7M; adjusted EBITDA $42.7M, guides Q4 to $250–265M",
   "source": "Vireo Growth release (SEC filing)",
   "url": "https://www.sec.gov/Archives/edgar/data/0001813452/000110465926124800/vreof-ex99d1.htm"
+ },
+ {
+  "id": "n93",
+  "date": "2026-11-09",
+  "tag": "M&A",
+  "headline": "Vireo Growth closes all-stock FLUENT acquisition, lifting Florida footprint to about 74 dispensaries",
+  "source": "Vireo Growth release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/09/3398427/0/en/vireo-growth-inc-completes-acquisition-of-fluent-corp.html"
  },
  {
   "id": "n87",
@@ -166,37 +198,5 @@
   "headline": "DEA asks rescheduling judge to give GAO report no weight; opponents urge rejection, replies due Nov. 5",
   "source": "Marijuana Moment",
   "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
- },
- {
-  "id": "n70",
-  "date": "2026-10-30",
-  "tag": "Federal",
-  "headline": "DEA guidance gives pending medical cannabis applicants until Nov. 29 to build compliant supply chains",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/dea-gives-medical-marijuana-businesses-until-november-29-to-meet-federal-supply-chain-requirements/"
- },
- {
-  "id": "n69",
-  "date": "2026-10-30",
-  "tag": "Federal",
-  "headline": "DOJ: DEA issues first federal registrations to 900+ medical dispensaries in seven states; manufacturers still under review",
-  "source": "U.S. Department of Justice release",
-  "url": "https://www.justice.gov/opa/pr/justice-department-announces-issuance-federal-registrations-medical-marijuana-dispensaries"
- },
- {
-  "id": "n75",
-  "date": "2026-10-29",
-  "tag": "Capital markets",
-  "headline": "MariMed holders approve 1-for-50 to 1-for-100 reverse split, with eye on potential US exchange listing",
-  "source": "MariMed release (GlobeNewswire)",
-  "url": "https://www.globenewswire.com/news-release/2026/10/29/3391101/0/en/marimed-stockholders-approve-proposed-reverse-stock-split.html"
- },
- {
-  "id": "n67",
-  "date": "2026-10-29",
-  "tag": "Federal",
-  "headline": "Rep. Steve Cohen files bill to fully deschedule marijuana and shift drug-scheduling authority from DEA to HHS",
-  "source": "The Marijuana Herald",
-  "url": "https://themarijuanaherald.com/2026/10/u-s-congressmember-steve-cohen-introduces-bill-to-deschedule-marijuana-eliminate-mandatory-minimums-and-overhaul-federal-drug-laws/"
  }
 ]
