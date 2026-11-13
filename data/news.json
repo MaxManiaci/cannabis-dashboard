@@ -1,5 +1,13 @@
 [
  {
+  "id": "n97",
+  "date": "2026-11-12",
+  "tag": "Operators",
+  "headline": "iAnthus Q3 revenue rises to $38.4M, adjusted EBITDA more than doubles to $5.2M; auditor PKFOD resigns",
+  "source": "iAnthus release (GlobeNewswire)",
+  "url": "https://www.globenewswire.com/news-release/2026/11/12/3402301/0/en/ianthus-reports-fiscal-third-quarter-2026-financial-results-and-change-in-auditor.html"
+ },
+ {
   "id": "n96",
   "date": "2026-11-11",
   "tag": "Federal",
@@ -190,13 +198,5 @@
   "headline": "New York appeals court unanimously upholds $200M social equity dispensary fund against federal preemption challenge",
   "source": "The Marijuana Herald",
   "url": "https://themarijuanaherald.com/2026/10/new-york-court-funding-marijuana/"
- },
- {
-  "id": "n71",
-  "date": "2026-10-30",
-  "tag": "Federal",
-  "headline": "DEA asks rescheduling judge to give GAO report no weight; opponents urge rejection, replies due Nov. 5",
-  "source": "Marijuana Moment",
-  "url": "https://www.marijuanamoment.net/dea-says-trumps-marijuana-rescheduling-move-isnt-weakened-by-federal-watchdog-report-that-found-gaps-in-process/"
  }
 ]

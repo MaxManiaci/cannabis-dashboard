@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T16:21:14Z",
+ "updated": "2026-11-13T16:27:12Z",
  "datasets": {
   "bid": {
    "title": "Curaleaf–Aurora bid terms",
@@ -48,7 +48,7 @@
   },
   "news": {
    "title": "Cannabis headlines",
-   "updated": "2026-11-13T16:20:44Z",
+   "updated": "2026-11-13T16:26:52Z",
    "rows": 25
   },
   "otherdeals": {
