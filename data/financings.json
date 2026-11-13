@@ -1,5 +1,25 @@
 [
  {
+  "id": "f19",
+  "date": "2026-11-03",
+  "date_label": "Nov 3, 2026",
+  "year": 2026,
+  "issuer": "Ascend Wellness Holdings",
+  "instrument": "Mortgage loans (2026 Mortgage Loans)",
+  "amount_usd_m": 10.995,
+  "rate_text": "8.50% per annum",
+  "rate_pct": 8.5,
+  "rate_type": null,
+  "maturity_label": "Oct 2031",
+  "security": "Company-owned real estate in Chicago and Tinley Park, IL; Aberdeen and Ellicott City, MD; and Boston, MA",
+  "lender_type": "Bank",
+  "lender": "CF Bank",
+  "issue_terms": "Series of mortgage loans; gross proceeds $10,995,000; amortization and prepayment terms not disclosed",
+  "use_of_proceeds": "Support expansion of the retail footprint and pursue acquisition opportunities",
+  "source": "Ascend Wellness Holdings release (CNW)",
+  "url": "https://greenstocknews.com/news/otcmkts/aawh/ascend-wellness-holdings-closes-11-million-non-dilutive-mortgage-loan-on-five-properties-across-three-states"
+ },
+ {
   "id": "f01",
   "date": "2026-10-05",
   "date_label": "Oct 5, 2026",
