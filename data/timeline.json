@@ -64,12 +64,12 @@
  },
  {
   "id": "t08",
-  "date": "2026-12-01",
-  "date_label": "Dec 2026",
+  "date": "2026-12-31",
+  "date_label": "By Dec 31, 2026",
   "category": "Legislation",
-  "item": "North Carolina advisory council's final regulatory recommendations",
+  "item": "North Carolina advisory council's final report due; draft recommendations (Nov 17) include adult-use with state-controlled retail and private cultivation licenses",
   "upcoming": true,
-  "url": "https://www.cannabisbusinesstimes.com/us-states/north-carolina/news/15837705/nc-adults-back-cannabis-legalization-as-state-tees-up-2027-reform"
+  "url": "https://www.marijuanamoment.net/north-carolina-governors-cannabis-council-weighs-recommendations-for-legally-regulating-thc-including-state-controlled-dispensaries/"
  },
  {
   "id": "t09",
@@ -85,9 +85,9 @@
   "date": "2026-12-11",
   "date_label": "Dec 11, 2026",
   "category": "Federal",
-  "item": "Federal intoxicating-hemp THC restrictions take effect (delayed from Nov 12) — same day as the next federal funding deadline",
+  "item": "Federal intoxicating-hemp THC restrictions take effect (phase one began Nov 12) — same day as the next federal funding deadline; Senate Hemp Guardrails Act (Nov 17) would replace the ban with regulation",
   "upcoming": true,
-  "url": "https://www.akerman.com/en/perspectives/congress-approves-one-month-delay-of-federal-hemp-thc-restrictions.html"
+  "url": "https://cannabisbusinesstimes.com/hemp/news/16541927/us-senators-finalize-plan-to-rescue-hemp-products-from-ban"
  },
  {
   "id": "t12",
@@ -295,5 +295,14 @@
   "item": "Curaleaf says it has all required competition clearances (Germany, Canada) for its Aurora bid; offer unchanged, expires Dec 4",
   "upcoming": false,
   "url": "https://www.prnewswire.com/news-releases/curaleaf-receives-all-required-competition-law-clearances-for-proposed-acquisition-of-aurora-cannabis-302934337.html"
+ },
+ {
+  "id": "t35",
+  "date": "2026-11-11",
+  "date_label": "Nov 11, 2026",
+  "category": "Federal",
+  "item": "DEA sends show-cause orders rejecting medical registrations in CA, DE, DC, IL, ND and OR over dual-market and certification rules",
+  "upcoming": false,
+  "url": "https://www.marijuanamoment.net/dea-is-rejecting-medical-marijuana-businesses-that-want-federal-rescheduling-protections-in-multiple-states/"
  }
 ]

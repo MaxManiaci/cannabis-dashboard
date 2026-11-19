@@ -160,12 +160,12 @@
   "state_name": "North Carolina",
   "priority": "Watch",
   "category": "Legislation",
-  "catalyst": "Democrats won control of the state House on Nov 3 (Republicans expected to keep the Senate); Gov. Stein supports a regulated adult-use market. Governor's advisory council issues regulatory recommendations in Dec 2026 as a 2027 roadmap; 63% back adult-use, 74% medical (SurveyUSA)",
-  "next_date": "2026-12-01",
-  "date_label": "Dec 2026 report",
-  "ib_angle": "Large state with no regulated program; position ahead of 2027 bills.",
-  "source": "The Marijuana Herald (Nov 4); Cannabis Business Times (council, poll)",
-  "url": "https://themarijuanaherald.com/2026/11/states-most-likely-to-legalize-recreational-marijuana-in-2027-following-historic-election-results/"
+  "catalyst": "Democrats won control of the state House on Nov 3 (Republicans expected to keep the Senate); Gov. Stein supports a regulated adult-use market. The governor's advisory council discussed draft recommendations Nov 17 (adult-use for 21+, state-controlled retail run through a contracted vendor, private cultivation and processing licenses, one THC regulator); final vote and report due by Dec 31 as a 2027 roadmap",
+  "next_date": "2026-12-31",
+  "date_label": "Report by Dec 31",
+  "ib_angle": "Large state with no regulated program; a state-run retail model would steer deal value to cultivation and processing licenses. Position ahead of 2027 bills.",
+  "source": "Marijuana Moment (Nov 17); The Marijuana Herald (Nov 4)",
+  "url": "https://www.marijuanamoment.net/north-carolina-governors-cannabis-council-weighs-recommendations-for-legally-regulating-thc-including-state-controlled-dispensaries/"
  },
  {
   "state": "HI",
