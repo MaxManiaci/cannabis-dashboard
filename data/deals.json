@@ -966,5 +966,27 @@
   "source": "Vireo release (GlobeNewswire) via Cannabis Equipment News",
   "url": "https://www.cannabisequipmentnews.com/distribution/news/22969374/vireo-growth-completes-acquisition-of-equity-interest-in-maryland-dispensaries",
   "retail_deal": false
+ },
+ {
+  "id": "d45",
+  "date": "2026-01-12",
+  "date_label": "Jan 12, 2026",
+  "is_new": false,
+  "buyer": "MM Brands Inc. (formed and funded by KEY Investment Partners)",
+  "buyer_group": "KEY Investment Partners",
+  "target": "BellRock Brands — Dixie, Rebel Coast, Défoncé and Mary's brand portfolio (out of receivership)",
+  "target_short": "BellRock Brands",
+  "region": "US",
+  "state": "CO",
+  "states": "CO",
+  "type": "Brand acquisition",
+  "value_usd_m": null,
+  "doors": null,
+  "consideration": "Undisclosed; buys all brand assets out of receivership (since March 2024) and provides working capital; products sold in 11 markets; ex-Curaleaf CEO Joe Bayern named CEO",
+  "status": "Closed",
+  "status_group": "Closed",
+  "source": "KEY Investment Partners release (mg Magazine)",
+  "url": "https://mgmagazine.com/press-releases/key-investment-partners-acquires-bellrock-brands/",
+  "retail_deal": false
  }
 ]
