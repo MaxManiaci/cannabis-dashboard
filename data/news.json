@@ -1,5 +1,45 @@
 [
  {
+  "id": "n107",
+  "date": "2026-11-23",
+  "tag": "Federal",
+  "headline": "DEA asks D.C. Circuit to deny operators' challenges to rescheduling registration rules; four Pennsylvania firms also suing",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/dea-pushes-back-against-marijuana-businesses-legal-challenges-to-new-rescheduling-rules/"
+ },
+ {
+  "id": "n109",
+  "date": "2026-11-20",
+  "tag": "State",
+  "headline": "Massachusetts Cannabis Control Commission unanimously approves drive-thru and curbside pickup rules for retailers",
+  "source": "WAMC",
+  "url": "https://wamc.org/news/2026-11-20/mass-regulators-approve-drive-thru-establishment-rules-for-cannabis-shops"
+ },
+ {
+  "id": "n108",
+  "date": "2026-11-20",
+  "tag": "State",
+  "headline": "Texas Governor-elect Gina Hinojosa says voters deserve a ballot on marijuana legalization; would need two-thirds legislative vote",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/texans-deserve-a-chance-to-vote-on-marijuana-legalization-at-the-ballot-new-governor-says/"
+ },
+ {
+  "id": "n110",
+  "date": "2026-11-19",
+  "tag": "Federal",
+  "headline": "USPS says medical marijuana remains nonmailable but is reviewing the policy after federal rescheduling",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/hemp-debate-could-upend-federal-funding-legislation-newsletter-november-19-2026/"
+ },
+ {
+  "id": "n106",
+  "date": "2026-11-19",
+  "tag": "Federal",
+  "headline": "Utah, Arizona and Oklahoma medical operators sue DEA in D.C. Circuit over Nov. 29 supply-chain sourcing directive",
+  "source": "Marijuana Moment",
+  "url": "https://www.marijuanamoment.net/medical-marijuana-companies-sue-dea-in-federal-court-over-restrictions-it-imposed-for-rescheduling-protections/"
+ },
+ {
   "id": "n105",
   "date": "2026-11-16",
   "tag": "Operators",
@@ -158,45 +198,5 @@
   "headline": "Wisconsin Democrats win legislature and governorship; advocates expect legalization bill early in 2027 session",
   "source": "Cannabis Business Times",
   "url": "https://www.cannabisbusinesstimes.com/us-states/wisconsin/news/16424308/wisconsin-eyes-2027-cannabis-legalization-with-new-democratic-legislature-governor"
- },
- {
-  "id": "n84",
-  "date": "2026-11-04",
-  "tag": "State",
-  "headline": "Pennsylvania Democrats projected to flip state Senate, handing Shapiro a trifecta for adult-use legalization",
-  "source": "Cannabis Business Times",
-  "url": "https://www.cannabisbusinesstimes.com/us-states/pennsylvania/news/16424242/pennsylvania-flips-senate-secures-cannabis-legalization-trifecta"
- },
- {
-  "id": "n82",
-  "date": "2026-11-04",
-  "tag": "Operators",
-  "headline": "Green Thumb Q3 revenue up 11% to $324.4M; $4.8M net loss, $316M cash at quarter end",
-  "source": "Green Thumb Industries Form 10-Q (SEC)",
-  "url": "https://www.sec.gov/Archives/edgar/data/0001795139/000119312526447252/gtbif-20260930.htm"
- },
- {
-  "id": "n81",
-  "date": "2026-11-04",
-  "tag": "State",
-  "headline": "Idaho voters defeat HJR 4, keeping citizens' power to legalize marijuana via ballot initiative",
-  "source": "KIFI Local News 8",
-  "url": "https://localnews8.com/news/top-stories/2026/11/04/idaho-voters-reject-hj4/"
- },
- {
-  "id": "n78",
-  "date": "2026-11-04",
-  "tag": "Operators",
-  "headline": "Planet 13 receives DEA registrations covering all 34 of its Florida medical dispensaries",
-  "source": "Planet 13 release (GlobeNewswire)",
-  "url": "https://www.globenewswire.com/news-release/2026/11/04/3395125/0/en/planet-13-receives-dea-registrations-for-all-34-florida-dispensaries.html"
- },
- {
-  "id": "n77",
-  "date": "2026-11-04",
-  "tag": "State",
-  "headline": "Massachusetts voters reject Question 8 repeal of adult-use cannabis by roughly three-to-one margin",
-  "source": "WBUR",
-  "url": "https://www.wbur.org/news/2026/11/04/massachusetts-ballot-question-results"
  }
 ]
