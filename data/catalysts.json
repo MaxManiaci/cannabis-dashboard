@@ -64,12 +64,12 @@
   "state_name": "Texas",
   "priority": "Medium",
   "category": "Licensing",
-  "catalyst": "Democrats won the governor's race (Hinojosa) and lieutenant governor (Vikki Goodwin unseated Dan Patrick) on Nov 3, per the Texas Tribune; advocates see a path to a comprehensive regulated market when the session opens Jan 12, 2027. HB 46 TCUP expansion: 12 new dispensing licenses conditionally awarded (9 in Dec 2025, 3 in Apr 2026); licensees must be operational within 24 months",
+  "catalyst": "Democrats won the governor's race (Gov.-elect Gina Hinojosa), lieutenant governor (Vikki Goodwin unseated Dan Patrick) and attorney general (Nathan Johnson) on Nov 3. Adult-use bills are pre-filed for the session opening Jan 12, 2027: the Texas Regulation of Cannabis Act (Reps. Moody and Bucy; 20% retail tax, TDLR oversight, local bans barred) and SB 237 (Sen. Alvarado). HB 46 TCUP expansion: 12 new dispensing licenses conditionally awarded (9 in Dec 2025, 3 in Apr 2026); licensees must be operational within 24 months",
   "next_date": "2027-01-12",
   "date_label": "Jan 2027 session",
   "ib_angle": "Build-out capital for new TCUP licensees; a new statewide leadership raises 2027 odds of widening the program toward a full regulated market, the largest remaining greenfield.",
-  "source": "Marijuana Moment (Texas Tribune, Nov 5); Texas DPS",
-  "url": "https://www.marijuanamoment.net/texas-election-results-boost-efforts-for-legal-marijuana-and-hemp-access-advocates-say/"
+  "source": "Texas Tribune (Nov 18); Marijuana Moment (Nov 5); Texas DPS",
+  "url": "https://texastribune.org/2026/11/18/texas-thc-cannabis-bills-lawmakers/"
  },
  {
   "state": "NE",
@@ -88,9 +88,9 @@
   "state_name": "Rhode Island",
   "priority": "Medium",
   "category": "Licensing",
-  "catalyst": "Adult-use retail licensing reopened Aug 7: up to 24 new retail licenses across six zones (6 social equity, 6 worker co-op, 12 general); applications close Nov 23 at 4 p.m. ET. On Oct 21 a federal judge dismissed the three residency suits as moot after the June law change",
-  "next_date": "2026-11-23",
-  "date_label": "Nov 23, 2026",
+  "catalyst": "Adult-use retail licensing reopened Aug 7: up to 24 new retail licenses across six zones (6 social equity, 6 worker co-op, 12 general); the application window was scheduled to close Nov 23. On Oct 21 a federal judge dismissed the three residency suits as moot after the June law change",
+  "next_date": null,
+  "date_label": "Awards TBD",
   "ib_angle": "New doors in a small market next to MA and CT operators; the in-state majority-ownership rule is gone, opening the round to outside capital. No award timeline yet.",
   "source": "The Marijuana Herald; Rhode Island Current",
   "url": "https://themarijuanaherald.com/2026/10/federal-judge-dismisses-all-three-lawsuits-challenging-rhode-island-marijuana-licensing-program/"
@@ -244,7 +244,7 @@
   "state_name": "Illinois",
   "priority": "Watch",
   "category": "Market",
-  "catalyst": "Dispensary sales fell to about $1.5B in FY2026 from nearly $2B as prices drop, even with record unit volume (5M+ items in July); cannabis tax revenue $456M vs $474M; 29 new dispensary licenses issued this year",
+  "catalyst": "Dispensary sales fell to about $1.5B in FY2026 from nearly $2B as prices drop, even with record unit volume (5M+ items in July); cannabis tax revenue $456M vs $474M; 29 new dispensary licenses issued this year; Jushi agreed Nov 24 to buy an Illinois cultivation and processing facility for $6.5M (Q1 2027 close), and Vireo's Planet 13 merger now requires IDFPR approval of the Illinois dispensary license transfer",
   "next_date": null,
   "date_label": "Ongoing",
   "ib_angle": "Price compression pressures smaller operators; limited-license structure still supports values.",

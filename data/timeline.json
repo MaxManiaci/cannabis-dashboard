@@ -58,8 +58,8 @@
   "date": "2026-11-23",
   "date_label": "Nov 23, 2026",
   "category": "Licensing",
-  "item": "Rhode Island adult-use retail license applications due (dates subject to change)",
-  "upcoming": true,
+  "item": "Rhode Island adult-use retail license application window scheduled to close (up to 24 licenses); no award timeline yet",
+  "upcoming": false,
   "url": "https://vicentellp.com/insights/rhode-island-cannabis-retail-licensing-reopens-august-7-2026-what-you-need-to-know/"
  },
  {
@@ -304,5 +304,23 @@
   "item": "DEA sends show-cause orders rejecting medical registrations in CA, DE, DC, IL, ND and OR over dual-market and certification rules",
   "upcoming": false,
   "url": "https://www.marijuanamoment.net/dea-is-rejecting-medical-marijuana-businesses-that-want-federal-rescheduling-protections-in-multiple-states/"
+ },
+ {
+  "id": "t36",
+  "date": "2026-11-29",
+  "date_label": "Nov 29, 2026",
+  "category": "Federal",
+  "item": "DEA deadline for medical registrants to buy from and sell only to registered operators; operators ask the D.C. Circuit to pause the rules, DEA opposes (Nov 23)",
+  "upcoming": true,
+  "url": "https://www.marijuanamoment.net/dea-pushes-back-against-marijuana-businesses-legal-challenges-to-new-rescheduling-rules/"
+ },
+ {
+  "id": "t37",
+  "date": "2026-11-12",
+  "date_label": "Nov 12, 2026",
+  "category": "Deal",
+  "item": "Vireo and Planet 13 amend merger agreement to add Illinois IDFPR license-transfer approval as a closing condition",
+  "upcoming": false,
+  "url": "https://www.sec.gov/Archives/edgar/data/1771706/000110465926129125/tm2629937d1_ex2-1.htm"
  }
 ]
